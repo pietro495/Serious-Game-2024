@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"background_commands",
-    "path":"sprites/background_commands/background_commands.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

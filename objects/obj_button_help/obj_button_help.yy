@@ -6,16 +6,14 @@
   ],
   "managed":true,
   "name":"obj_button_help",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent","path":"objects/obj_parent/obj_parent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_parent/obj_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Help",},
-  ],
+  "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_parent",
-    "path":"objects/obj_parent/obj_parent.yy",
+    "name":"obj_button_parent",
+    "path":"objects/obj_button_parent/obj_button_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -30,13 +28,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"button_text","filters":[],"listItems":[],"multiselect":false,"name":"button_text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"help","varType":2,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprite3_azzuro",
-    "path":"sprites/sprite3_azzuro/sprite3_azzuro.yy",
+    "name":"button_help",
+    "path":"sprites/button_help/button_help.yy",
   },
   "spriteMaskId":null,
   "visible":true,
