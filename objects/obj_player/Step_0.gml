@@ -1,19 +1,5 @@
 /// @description Player movement
 
-var scaleMin;
-var scaleSpeed;
-
-switch (room) {
-	case rm_street_1: 
-		scaleMin = 0.95;
-		scaleSpeed = 0.05;
-		break;
-	case rm_vicolo_1:
-		scaleMin = 0.8;
-		scaleSpeed = 0.05;
-		break;
-}
-
 // Check keys for movement
 moveRight = keyboard_check(vk_right); // If key is pressed, then moveRight is 1, else 0
 moveLeft = keyboard_check(vk_left);
@@ -24,17 +10,13 @@ moveDown = keyboard_check(vk_down);
 vx = ((moveRight - moveLeft) * walkSpeed);
 vy = ((moveDown - moveUp) * walkSpeed);
 
-// Adjust sprite scale based on direction if no collision with objects
-if (!collision_point(x+vx, y, obj_par_environment, true, true) && !collision_point(x, y+vy, obj_par_environment, true, true)) {
-	if (vy > 0) { // Moving down
-	    var new_scale = clamp(image_yscale + scaleSpeed, scaleFactor * scaleMin, scaleFactor * 1);
-	    image_xscale = new_scale;
-	    image_yscale = new_scale;
-	} else if (vy < 0) { // Moving up
-	    var new_scale = clamp(image_yscale - scaleSpeed, scaleFactor * scaleMin, scaleFactor * 1);
-	    image_xscale = new_scale;
-	    image_yscale = new_scale;
-	}
+// Adjust sprite scale if no collision with objects
+if (!collision_point(x+vx, y, obj_par_environment, true, true) && !collision_point(x, y+vy, obj_par_environment, true, true)) {	
+	normalized_y = y / room_height; // Normalize y to a 0-1 range
+	scaleMultiplier = 0.3 + (1 - 0.3) * normalized_y; // Interpolate between 0.3 (minimum scale factor) and 1
+	new_scale = clamp(scaleFactor * scaleMultiplier, scaleFactor * 0.3, scaleFactor * 1); // Scale adjustment
+	image_xscale = new_scale;
+    image_yscale = new_scale;
 }
 
 // If idle
