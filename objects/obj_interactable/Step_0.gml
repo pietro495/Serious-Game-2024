@@ -1,9 +1,8 @@
-/// @description Detect ALT key press
+/// @description Highlight on hover
 
-if (keyboard_check(vk_alt)) {
-	sprite_index = asset_get_index(sprite_name + "_highlight");
-    highlight_enabled = true;
+var hovered_object = instance_position(mouse_x, mouse_y, obj_interactable);
+if (hovered_object != noone) {
+    window_set_cursor(cr_handpoint);
 } else {
-	sprite_index = asset_get_index(sprite_name);
-    highlight_enabled = false;
+    window_set_cursor(cr_arrow);
 }

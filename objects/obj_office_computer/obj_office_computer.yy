@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_vicolo_boxes",
-  "eventList":[],
+  "%Name":"obj_office_computer",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_vicolo_boxes",
+  "name":"obj_office_computer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Vicolo",
-    "path":"folders/Objects/Environment/Vicolo.yy",
+    "name":"Office",
+    "path":"folders/Objects/Environment/Office.yy",
   },
   "parentObjectId":{
-    "name":"obj_par_environment",
-    "path":"objects/obj_par_environment/obj_par_environment.yy",
+    "name":"obj_interactable",
+    "path":"objects/obj_interactable/obj_interactable.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_vicolo_boxes",
-    "path":"sprites/spr_vicolo_boxes/spr_vicolo_boxes.yy",
+    "name":"spr_office_computer",
+    "path":"sprites/spr_office_computer/spr_office_computer.yy",
   },
   "spriteMaskId":null,
   "visible":true,
