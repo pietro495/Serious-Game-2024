@@ -1,6 +1,6 @@
 
 // Se un dialogo è visibile
-if (showing_dialog == true) { 
+ if(showing_dialog){
     var text_x = 30; // Posizione X del testo
     var text_y = 18; // Posizione Y del testo
     var height = 32; // Altezza iniziale della finestra del dialogo
@@ -8,6 +8,7 @@ if (showing_dialog == true) {
     var padding = 16; // Spazio interno alla finestra
     
     // Calcola l'altezza del testo del messaggio corrente
+	
     height = string_height(current_dialog.message); 
 
     // Confronta l'altezza del testo con quella dello sprite e usa la più grande
@@ -43,4 +44,4 @@ if (showing_dialog == true) {
     
     // Aumenta gradualmente l'alfa per creare un effetto di dissolvenza (da trasparente a visibile)
     alpha = lerp(alpha, 1, 0.06); 
-}
+ }

@@ -10,5 +10,3 @@ moveLeft = 0;
 moveUp = 0;
 moveDown = 0;
 scaleFactor = 5;
-dialog= new Dialogue();
-

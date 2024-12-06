@@ -95,6 +95,3 @@ if (vx != 0 || vy != 0) {
 
 // Depth sorting
 depth = -y;
-
-
-
