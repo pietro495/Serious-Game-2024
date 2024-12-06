@@ -54,6 +54,7 @@
     {"id":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},},
     {"id":{"name":"obj_parent","path":"objects/obj_parent/obj_parent.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_player2","path":"objects/obj_player2/obj_player2.yy",},},
     {"id":{"name":"obj_vicolo_bin","path":"objects/obj_vicolo_bin/obj_vicolo_bin.yy",},},
     {"id":{"name":"obj_vicolo_boxes","path":"objects/obj_vicolo_boxes/obj_vicolo_boxes.yy",},},
     {"id":{"name":"obj_vicolo_car","path":"objects/obj_vicolo_car/obj_vicolo_car.yy",},},
@@ -61,6 +62,7 @@
     {"id":{"name":"obj_vicolo_ringhiera_right","path":"objects/obj_vicolo_ringhiera_right/obj_vicolo_ringhiera_right.yy",},},
     {"id":{"name":"obj_vicolo_trash","path":"objects/obj_vicolo_trash/obj_vicolo_trash.yy",},},
     {"id":{"name":"MenuRoom","path":"rooms/MenuRoom/MenuRoom.yy",},},
+    {"id":{"name":"rm_dialogue_test","path":"rooms/rm_dialogue_test/rm_dialogue_test.yy",},},
     {"id":{"name":"rm_exit","path":"rooms/rm_exit/rm_exit.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"rm_help","path":"rooms/rm_help/rm_help.yy",},},
@@ -96,6 +98,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_dialogue_test","path":"rooms/rm_dialogue_test/rm_dialogue_test.yy",},},
     {"roomId":{"name":"rm_vicolo_1","path":"rooms/rm_vicolo_1/rm_vicolo_1.yy",},},
     {"roomId":{"name":"rm_street_1","path":"rooms/rm_street_1/rm_street_1.yy",},},
     {"roomId":{"name":"rm_office","path":"rooms/rm_office/rm_office.yy",},},
