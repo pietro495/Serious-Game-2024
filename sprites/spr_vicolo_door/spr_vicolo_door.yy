@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Environment",
-    "path":"folders/Sprites/Environment.yy",
+    "name":"Vicolo",
+    "path":"folders/Sprites/Environment/Vicolo.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
