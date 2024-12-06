@@ -1,6 +1,6 @@
 /// @description Add dialogue lines
 
-// Inherit the parent event
+// Inherit the parent event Create()
 event_inherited(); 
 
 dialog.add(dialogue,"hello");

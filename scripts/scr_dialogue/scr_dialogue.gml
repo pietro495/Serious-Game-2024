@@ -11,7 +11,7 @@ function Dialogue() constructor{
         // Aggiunge un oggetto con sprite e messaggio all'array _dialogs
         array_push(_dialogs, {
             sprite: _sprite,  // Lo sprite che rappresenta il personaggio o l'elemento del dialogo
-            message: _message, // Il messaggio di dialogo che sarà mostrato
+            msg: _message, // Il messaggio di dialogo che sarà mostrato
         });
     }
     
@@ -35,14 +35,38 @@ function Dialogue() constructor{
 
 }
 
-function scr_show_dialogue(_object){
+function scr_showDialogue(_object){
 	var dialogueInstance = instance_create_depth(x, y, -10000, _object);
 	
 	if (instance_exists(dialogueInstance)) {
-		global.playerControl = false;
-		dialogueInstance.showing_dialog = true;
-		dialogueInstance.current_dialog = dialogueInstance.dialog.pop(); 
+		dialogueInstance.currentDialog = dialogueInstance.dialog.pop(); 
 	}       
 }
 
+function scr_showPrompt(_object, _x, _y){
+	if (instance_exists(_object)) {
+		if (!instance_exists(obj_dialogue_parent) && !instance_exists(obj_question_mark)) {
+			iii = instance_create_depth(_x, _y, -10000, obj_question_mark);
+			return iii;
+		}
+	}
+}
 
+function scr_dismissPrompt(_whichPrompt, _toReset) {
+	if (_whichPrompt != undefined) {
+		if (instance_exists(_whichPrompt)) {
+			// Tell Prompt Object To Fade Out
+			with (_whichPrompt)  // With executes code on that particular instance of _whichPrompt
+				fadeMe = "fadeOut";
+			}
+			// Reset Appropriate Prompt Variable
+			if (instance_exists(obj_player)) {
+				with (obj_player) {
+					switch _toReset {
+						// Reset npcPrompt
+						case 0: npcPrompt = noone; break;
+					}
+			}
+		}	
+	}	
+}

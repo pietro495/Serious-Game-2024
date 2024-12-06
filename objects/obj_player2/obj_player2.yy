@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
   "%Name":"obj_player2",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_player2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"NPCs",
+    "path":"folders/Objects/NPCs.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_par_npc",
+    "path":"objects/obj_par_npc/obj_par_npc.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_idle_right",
-    "path":"sprites/spr_player_idle_right/spr_player_idle_right.yy",
+    "name":"spr_victim1_idle_left",
+    "path":"sprites/spr_victim1_idle_left/spr_victim1_idle_left.yy",
   },
   "spriteMaskId":null,
   "visible":true,

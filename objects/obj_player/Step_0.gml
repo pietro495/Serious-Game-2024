@@ -26,6 +26,18 @@ if (!collision_point(x+vx, y, obj_par_environment, true, true) && !collision_poi
     image_yscale = new_scale;
 }
 
+// Check for collisions with NPCs in a rectangle. Look for the parent NPC object (obj_player2)
+ nearbyNPC = collision_rectangle(x-lookRange, y-lookRange, x+lookRange, y+lookRange, obj_player2, false, true);
+ if (nearbyNPC) {
+	// Pop up prompt
+	if (npcPrompt == noone || npcPrompt == undefined) {
+		npcPrompt = scr_showPrompt(nearbyNPC, nearbyNPC.x, nearbyNPC.y - nearbyNPC.sprite_height - 30);
+	}
+ } else {
+	// Get rid of prompt
+	scr_dismissPrompt(npcPrompt, 0);
+ }
+
 // If idle
 if (vx == 0 && vy == 0) {
 	// Change idle Sprite based on last direction
