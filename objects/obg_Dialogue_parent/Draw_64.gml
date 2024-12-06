@@ -1,3 +1,4 @@
+/// @description Draw dialogue GUI
 
 // Se un dialogo è visibile
  if(showing_dialog){

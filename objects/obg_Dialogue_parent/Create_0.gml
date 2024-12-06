@@ -1,3 +1,5 @@
+/// @description Variables
+
 // Creazione di un oggetto Dialogue per gestire il sistema di dialoghi
 dialog = new Dialogue(); 
 

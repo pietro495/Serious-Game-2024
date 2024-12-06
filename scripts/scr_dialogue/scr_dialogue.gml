@@ -35,12 +35,14 @@ function Dialogue() constructor{
 
 }
 
-function show_Dialogue(_object){
-	var z= instance_create_depth(x, y, -10000, _object);
-	        
-	z.showing_dialog=true;
-	z.current_dialog = z.dialog.pop(); 
+function scr_show_dialogue(_object){
+	var dialogueInstance = instance_create_depth(x, y, -10000, _object);
 	
+	if (instance_exists(dialogueInstance)) {
+		global.playerControl = false;
+		dialogueInstance.showing_dialog = true;
+		dialogueInstance.current_dialog = dialogueInstance.dialog.pop(); 
+	}       
 }
 
 

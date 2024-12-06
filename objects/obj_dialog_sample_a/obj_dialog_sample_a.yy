@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Dialog_SampleA",
+  "%Name":"obj_dialog_sample_a",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Dialog_SampleA",
+  "name":"obj_dialog_sample_a",
   "overriddenProperties":[],
   "parent":{
     "name":"Dialogue",
     "path":"folders/Objects/Dialogue.yy",
   },
   "parentObjectId":{
-    "name":"obg_Dialogue_parent",
-    "path":"objects/obg_Dialogue_parent/obg_Dialogue_parent.yy",
+    "name":"obg_dialogue_parent",
+    "path":"objects/obg_dialogue_parent/obg_dialogue_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
