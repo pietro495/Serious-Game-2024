@@ -5,9 +5,11 @@ var hovered_object = instance_position(mouse_x, mouse_y, obj_interactable);
 var can_click_on_hover = !instance_exists(obj_office_blackboard);
 
 if (can_click_on_hover) {
-	if (hovered_object != noone) {
+	if (hovered_object != noone && can_click_on_hover) {
 	    window_set_cursor(cr_handpoint);
 	} else {
 	    window_set_cursor(cr_arrow);
 	}
+} else {
+	window_set_cursor(cr_arrow);
 }
