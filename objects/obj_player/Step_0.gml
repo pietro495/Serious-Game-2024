@@ -115,5 +115,14 @@ if (vx != 0 || vy != 0) {
 // Depth sorting
 depth = -y;
 
+var cam_x = camera_get_view_x(view_camera[0]);
+var cam_y = camera_get_view_y(view_camera[0]);
 
+// Get the viewport's dimensions
+var view_w = camera_get_view_width(view_camera[0]);
+var view_h = camera_get_view_height(view_camera[0]);
 
+show_debug_message(cam_x);
+show_debug_message(cam_y);
+show_debug_message(mouse_x - cam_x);
+show_debug_message(mouse_y - cam_y);
