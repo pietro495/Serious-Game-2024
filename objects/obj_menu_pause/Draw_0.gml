@@ -18,7 +18,7 @@ if(pause)
 			draw_set_alpha(0.5);
 			draw_rectangle_color(0,0,room_width,room_height,c_black,c_black,c_black,c_black,false);
 			draw_set_alpha(1); // Ripristina l'alpha a 1 per il test
-			draw_set_font(Menu);
+			draw_set_font(fnt_pause_menu);
 			
 	
 	        // Imposta l'allineamento del testo e disegna "ciao" al centro dello schermo
