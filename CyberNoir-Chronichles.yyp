@@ -82,6 +82,7 @@
     {"id":{"name":"rm_street_1","path":"rooms/rm_street_1/rm_street_1.yy",},},
     {"id":{"name":"rm_vicolo_1","path":"rooms/rm_vicolo_1/rm_vicolo_1.yy",},},
     {"id":{"name":"scr_dialogue","path":"scripts/scr_dialogue/scr_dialogue.yy",},},
+    {"id":{"name":"scr_utils","path":"scripts/scr_utils/scr_utils.yy",},},
     {"id":{"name":"snd_indie_dev_blues","path":"sounds/snd_indie_dev_blues/snd_indie_dev_blues.yy",},},
     {"id":{"name":"button_exit","path":"sprites/button_exit/button_exit.yy",},},
     {"id":{"name":"button_play","path":"sprites/button_play/button_play.yy",},},
