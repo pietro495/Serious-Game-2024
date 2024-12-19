@@ -1,3 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
-save_game();
+/// @description Debug save
+
+if (keyboard_check(vk_control)) {
+	save_game();
+}

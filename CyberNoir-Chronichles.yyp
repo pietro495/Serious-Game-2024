@@ -48,6 +48,7 @@
   },
   "name":"CyberNoir-Chronichles",
   "resources":[
+    {"id":{"name":"fnt_common","path":"fonts/fnt_common/fnt_common.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"fnt_pause_menu","path":"fonts/fnt_pause_menu/fnt_pause_menu.yy",},},
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},

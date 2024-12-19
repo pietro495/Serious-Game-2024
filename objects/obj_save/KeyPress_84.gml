@@ -1,3 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
-load_game();
+/// @description Debug load
+
+if (keyboard_check(vk_control)) {
+	load_game();
+}

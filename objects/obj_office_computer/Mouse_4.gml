@@ -1,6 +1,11 @@
 /// @description Open computer
 
-if (!instance_exists(obj_office_blackboard)) {
+var can_click_on_hover = (
+	!instance_exists(obj_office_blackboard) && 
+	(!instance_exists(obj_menu_pause) || (instance_exists(obj_menu_pause) && !obj_menu_pause.pause))
+);
+
+if (can_click_on_hover) {
 	var viewport_coord = scr_get_viewport_coord();
 	var center_x = viewport_coord[0];
 	var center_y = viewport_coord[1]; 

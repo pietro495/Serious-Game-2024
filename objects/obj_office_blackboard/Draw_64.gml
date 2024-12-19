@@ -7,6 +7,7 @@ var center_y = viewport_coord[1];
 draw_self();
 
 // Draw text
+draw_set_font(fnt_common);
 draw_text_ext_color(48, center_y - 150, emailText, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
 
 if (hovering_over_clue1) {

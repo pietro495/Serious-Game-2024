@@ -13,6 +13,3 @@ scaleFactor = 5;
 npcPrompt = noone;
 nearbyNPC = noone;
 lookRange = 64;
-
-
-show_debug_message(dir);
