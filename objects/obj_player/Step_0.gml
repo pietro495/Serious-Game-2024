@@ -1,7 +1,7 @@
 /// @description Player movement
 
 // Check keys for movement
-if (global.playerControl) {
+if (global.game_data.playerControl) {
 	moveRight = keyboard_check(vk_right); // If key is pressed, then moveRight is 1, else 0
 	moveLeft = keyboard_check(vk_left);
 	moveUp = keyboard_check(vk_up);

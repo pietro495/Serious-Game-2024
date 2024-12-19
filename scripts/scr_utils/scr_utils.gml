@@ -43,9 +43,8 @@ function load_game() {
 		buffer_delete(_buffer);
 		global.game_data = json_parse(_json);
 		show_debug_message(global.game_data);
-		
-		
-             // Carica la stanza solo se già nella stanza corretta
+		room_goto(asset_get_index(global.game_data.room_name));
+		load_room();
 	}
 }
  

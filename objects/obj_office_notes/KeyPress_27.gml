@@ -1,4 +1,4 @@
 /// @description Close the blackboard
 
-global.playerControl = true;
+global.game_data.playerControl = true;
 instance_destroy();

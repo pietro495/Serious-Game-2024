@@ -1,5 +1,5 @@
 /// @description Destroy me
 
 // Destroy me
-global.playerControl = true;
+global.game_data.playerControl = true;
 instance_destroy();

@@ -3,4 +3,4 @@
 textWidth = 450;
 lineHeight = 28;
 
-global.playerControl = false;
+global.game_data.playerControl = false;

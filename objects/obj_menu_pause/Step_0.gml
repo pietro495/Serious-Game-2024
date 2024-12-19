@@ -42,7 +42,7 @@ if (mouse_check_button_pressed(mb_left) && pause) {
 
     if (hovering_over_esci) {
 		
-        room_goto(MenuRoom);
+        room_goto(rm_menu);
     }
 }
 
