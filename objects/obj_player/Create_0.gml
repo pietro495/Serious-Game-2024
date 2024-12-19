@@ -4,7 +4,7 @@
 walkSpeed = 4;
 vx = 0;
 vy = 0;
-dir = 3;
+dir = global.game_data.playerDir || 3;
 moveRight = 0;
 moveLeft = 0;
 moveUp = 0;
@@ -14,3 +14,4 @@ npcPrompt = noone;
 nearbyNPC = noone;
 lookRange = 64;
 
+show_debug_message(dir);
