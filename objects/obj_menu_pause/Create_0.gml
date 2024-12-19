@@ -10,3 +10,9 @@ centerY=room_height/2;
 
 option_height= 40;
 option_selected=-1;
+
+
+hovering_over_salva=false;
+hovering_over_esci=false;
+hovering_over_continua=false;
+

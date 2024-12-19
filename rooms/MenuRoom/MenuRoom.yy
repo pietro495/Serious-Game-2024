@@ -21,8 +21,8 @@
   ],
   "name":"MenuRoom",
   "parent":{
-    "name":"CyberNoir-Chronichles",
-    "path":"CyberNoir-Chronichles.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

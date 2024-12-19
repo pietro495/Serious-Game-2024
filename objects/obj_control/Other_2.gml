@@ -1,4 +1,4 @@
 /// @description Global variables and others
 
 global.playerControl = true;
-global.clues_collected = [];
+global.game_data.clues_collected = [];
