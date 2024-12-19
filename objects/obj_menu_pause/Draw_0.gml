@@ -18,14 +18,14 @@ if(pause)
 			draw_set_alpha(0.5);
 			draw_rectangle_color(0,0,room_width,room_height,c_black,c_black,c_black,c_black,false);
 			draw_set_alpha(1); // Ripristina l'alpha a 1 per il test
-	    
+			draw_set_font(Menu);
 			
 	
 	        // Imposta l'allineamento del testo e disegna "ciao" al centro dello schermo
 	        draw_set_halign(fa_center);
 	        draw_set_valign(fa_middle);
 	       	draw_set_color(c_white);
-		   draw_text(centerX, centerY-50, "Continua");
+			draw_text(centerX, centerY-50, "Continua");
 			draw_text(centerX, centerY, "Salva");
 			draw_text(centerX, centerY+50, "Esci");
 		

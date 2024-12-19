@@ -26,7 +26,10 @@ hovering_over_esci = (computed_mouse_x > 371 && computed_mouse_x < 422 && comput
 hovering_over_salva = (computed_mouse_x > 368 && computed_mouse_x < 432 && computed_mouse_y > 377 && computed_mouse_y < 392);
 
 // Gestione del click del mouse
-if (mouse_check_button_pressed(mb_left)) {
+if (mouse_check_button_pressed(mb_left) && pause) {
+	
+	
+	
     if (hovering_over_continua) {
         pause = !pause;
 
@@ -38,7 +41,7 @@ if (mouse_check_button_pressed(mb_left)) {
     }
 
     if (hovering_over_esci) {
-
+		
         room_goto(MenuRoom);
     }
 }

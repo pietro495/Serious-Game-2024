@@ -48,7 +48,7 @@ function save_room()
 	*/
 	
 	
-	with( obj_player)
+	with(obj_player)
 	{
 	
 		var _struct = 
@@ -88,7 +88,13 @@ function load_game()
 		global.game_data = json_parse( _json);
 	
 		show_debug_message(global.game_data);
-		load_room();
+		
+		var saved_room = global.game_data.room_name;
+        if(saved_room != undefined && saved_room != room_get_name(room)) {
+            room_goto(asset_get_index(saved_room));
+        } else {
+            load_room();  // Carica la stanza solo se già nella stanza corretta
+        }
 
 	}
 
