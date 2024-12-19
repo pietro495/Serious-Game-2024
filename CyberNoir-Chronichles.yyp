@@ -116,8 +116,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"MenuRoom","path":"rooms/MenuRoom/MenuRoom.yy",},},
     {"roomId":{"name":"rm_office","path":"rooms/rm_office/rm_office.yy",},},
+    {"roomId":{"name":"MenuRoom","path":"rooms/MenuRoom/MenuRoom.yy",},},
     {"roomId":{"name":"rm_dialogue_test","path":"rooms/rm_dialogue_test/rm_dialogue_test.yy",},},
     {"roomId":{"name":"rm_street_1","path":"rooms/rm_street_1/rm_street_1.yy",},},
     {"roomId":{"name":"rm_vicolo_1","path":"rooms/rm_vicolo_1/rm_vicolo_1.yy",},},
