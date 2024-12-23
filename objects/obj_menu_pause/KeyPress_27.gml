@@ -1,3 +1,5 @@
 /// @description Close menu
 
-pause=!pause;
+if (room != rm_menu) {
+	pause = !pause;
+}
