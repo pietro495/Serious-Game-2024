@@ -91,6 +91,7 @@
     {"id":{"name":"scr_dialogue","path":"scripts/scr_dialogue/scr_dialogue.yy",},},
     {"id":{"name":"scr_sequence_control","path":"scripts/scr_sequence_control/scr_sequence_control.yy",},},
     {"id":{"name":"scr_utils","path":"scripts/scr_utils/scr_utils.yy",},},
+    {"id":{"name":"seq_first_play_end","path":"sequences/seq_first_play_end/seq_first_play_end.yy",},},
     {"id":{"name":"seq_first_play","path":"sequences/seq_first_play/seq_first_play.yy",},},
     {"id":{"name":"snd_indie_dev_blues","path":"sounds/snd_indie_dev_blues/snd_indie_dev_blues.yy",},},
     {"id":{"name":"snd_knock","path":"sounds/snd_knock/snd_knock.yy",},},

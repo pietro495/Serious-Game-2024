@@ -37,7 +37,5 @@ if (pause) {
  } else {
 	 if (!global.firstPlay) {
 		global.playerControl = true;
-	 } else {
-		global.playerControl = false;
 	 }
  }

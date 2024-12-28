@@ -24,3 +24,9 @@ function scr_playSequence(_seqToPlay) {
 function scr_first_play() {
 	room_goto(rm_office_start);
 }
+
+function scr_first_play_end() {
+	global.firstPlay = false;
+	global.playerControl = true;
+	room_goto(rm_office_start);
+}

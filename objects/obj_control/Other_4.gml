@@ -10,9 +10,11 @@ switch room {
 		//}
 	} break;
 	case rm_office_start: {
-		global.playerControl = false;
 		obj_player.dir = 2;
-		scr_showDialogue(obj_dialogue_firstPlay);
+		if (global.firstPlay) {
+			global.playerControl = false;
+			scr_showDialogue(obj_dialogue_firstPlay);
+		}
 	}
 }
 

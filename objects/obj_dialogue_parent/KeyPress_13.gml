@@ -6,6 +6,7 @@ if (dialog.count() <= 0) {
 	if (fadeMe == 1) {
 		fadeMe = 2;
 	}
+	alarm[0] = 10;
 } else {
 	currentDialog = dialog.pop(); 
 }
