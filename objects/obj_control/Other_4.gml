@@ -9,4 +9,15 @@ switch room {
 		//	audio_play_sound(snd_indie_dev_blues, 1, true);
 		//}
 	} break;
+	case rm_office_start: {
+		global.playerControl = false;
+		obj_player.dir = 2;
+	}
+}
+
+// Mark sequences layer
+if (layer_exists("Cutscenes")) {
+	curSeqLayer = "Cutscenes";
+} else {
+	curSeqLayer = "Instances";
 }

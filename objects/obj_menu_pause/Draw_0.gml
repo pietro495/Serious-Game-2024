@@ -8,7 +8,7 @@ var centerY = camera_get_view_y(view_camera[0]) + (camera_get_view_height(view_c
 if (pause) {
 	draw_self();
 	
-	global.game_data.playerControl = false;
+	global.playerControl = false;
 	draw_set_alpha(0.75);
 	draw_rectangle_color(0,0,room_width,room_height,c_black,c_black,c_black,c_black,false);
 	draw_set_alpha(1); // Ripristina l'alpha a 1 per il test
@@ -35,5 +35,9 @@ if (pause) {
 		draw_text(centerX, centerY+75, "Esci");
 	}
  } else {
-	 global.game_data.playerControl = true;
+	 if (!global.firstPlay) {
+		global.playerControl = true;
+	 } else {
+		global.playerControl = false;
+	 }
  }
