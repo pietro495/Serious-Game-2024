@@ -60,6 +60,7 @@
     {"id":{"name":"obj_commands","path":"objects/obj_commands/obj_commands.yy",},},
     {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
     {"id":{"name":"obj_dialog_sample_a","path":"objects/obj_dialog_sample_a/obj_dialog_sample_a.yy",},},
+    {"id":{"name":"obj_dialogue_firstPlay","path":"objects/obj_dialogue_firstPlay/obj_dialogue_firstPlay.yy",},},
     {"id":{"name":"obj_dialogue_parent","path":"objects/obj_dialogue_parent/obj_dialogue_parent.yy",},},
     {"id":{"name":"obj_interactable","path":"objects/obj_interactable/obj_interactable.yy",},},
     {"id":{"name":"obj_liutenant","path":"objects/obj_liutenant/obj_liutenant.yy",},},

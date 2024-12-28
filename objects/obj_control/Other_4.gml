@@ -12,6 +12,7 @@ switch room {
 	case rm_office_start: {
 		global.playerControl = false;
 		obj_player.dir = 2;
+		scr_showDialogue(obj_dialogue_firstPlay);
 	}
 }
 

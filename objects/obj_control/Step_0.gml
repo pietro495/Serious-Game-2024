@@ -25,5 +25,3 @@ switch sequenceState {
 		curSeq = noone;
 	}; break;
 }
-
-show_debug_message(global.playerControl);
