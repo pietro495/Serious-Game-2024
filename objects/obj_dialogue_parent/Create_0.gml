@@ -12,7 +12,7 @@ fadeSpeed = 0.1;
 guiAlpha = 0;
 
 // Remove player control on creation
-global.game_data.playerControl = false;
+global.playerControl = false;
 
 // Close question mark prompt
 scr_dismissPrompt(obj_question_mark, 0);

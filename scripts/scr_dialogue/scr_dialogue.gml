@@ -4,6 +4,7 @@ function Dialogue() constructor{
     
     // lista che conterrà i dialoghi
     _dialogs = [];
+	currentPosition = "right"; // Posizione iniziale dello sprite
     
     // Funzione add: aggiunge un nuovo dialogo alla lista _dialogs
     // Prende due parametri: uno sprite e un messaggio
@@ -22,6 +23,9 @@ function Dialogue() constructor{
         
         // Rimuove il primo elemento dall'array _dialogs
         array_delete(_dialogs, 0, 1);
+		
+		// Alterna la posizione: se è "left", diventa "right", e viceversa
+        currentPosition = (currentPosition == "left") ? "right" : "left";
         
         // Restituisce l'elemento rimosso (il dialogo)
         return _t;

@@ -1,6 +1,7 @@
 /// @description Draw dialogue GUI
 
 draw_set_alpha(guiAlpha);
+draw_set_font(fnt_common);
 
 var text_x = 30; // Posizione X del testo
 var text_y = 18; // Posizione Y del testo
@@ -32,12 +33,28 @@ draw_set_color(c_white);
 draw_rectangle(border, border, display_get_gui_width() - border, height - border, false); 
     
 // Disegna lo sprite associato al dialogo se presente
-if (currentDialog.sprite != -1) { 
-	draw_sprite(currentDialog.sprite, 0, border * 3, border * 3); 
+if (currentDialog.sprite != -1) {
+    var sprite_x, sprite_y;
+    var text_start_x, max_text_width;
+
+    if (dialog.currentPosition == "left") {
+        // Sprite a sinistra
+        sprite_x = border * 3;
+        text_start_x = sprite_get_width(currentDialog.sprite) + (padding * 2);
+        max_text_width = display_get_gui_width() - text_start_x - padding; // Larghezza massima testo
+    } else {
+        // Sprite a destra
+        sprite_x = display_get_gui_width() - sprite_get_width(currentDialog.sprite) - (border * 3);
+        text_start_x = padding * 2; // Testo parte a sinistra
+        max_text_width = sprite_x - text_start_x - padding; // Larghezza massima testo
+    }
+
+    // Disegna lo sprite
+    draw_sprite(currentDialog.sprite, 0, sprite_x, border * 3);
+
+    // Disegna il testo con wrapping
+    draw_set_color(c_black);
+    draw_text_ext(text_start_x, text_y, currentDialog.msg, 16, max_text_width);
 }
-    
-// Disegna il testo del messaggio con margini definiti
-draw_set_color(c_black); 
-draw_text_ext(text_x, text_y, currentDialog.msg, 16, display_get_gui_width() - 192);
 
 draw_set_alpha(1);

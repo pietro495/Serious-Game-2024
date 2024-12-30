@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
  
 global.game_data = {
-	playerControl : true,
+	playerControl : false,
 	clues_collected : [],
 	playerDir: 3,
 	room_data: {}

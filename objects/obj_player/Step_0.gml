@@ -1,7 +1,7 @@
 /// @description Player movement
 
 // Check keys for movement
-if (global.game_data.playerControl) {
+if (global.playerControl) {
 	moveRight = keyboard_check(vk_right); // If key is pressed, then moveRight is 1, else 0
 	moveLeft = keyboard_check(vk_left);
 	moveUp = keyboard_check(vk_up);
@@ -91,6 +91,18 @@ if (vx != 0 || vy != 0) {
 	// Move audio listener with me
 	// Every frame, move the listener with the player
 	//audio_listener_set_position(0, x, y, 0);
+}
+
+//Set listener if sequence is playing
+if (instance_exists(obj_control) and obj_control.sequenceState == seqState.playing) {
+	var _camX = camera_get_view_x(view_camera[0])+floor(camera_get_view_width(view_camera[0])*0.5);
+	var _camY = camera_get_view_y(view_camera[0])+floor(camera_get_view_height(view_camera[0])*0.5);
+	
+	audio_listener_set_position(0,800,800,0);
+}
+//Otherwise, move audio listener with me
+else {
+	audio_listener_set_position(0,x,y,0);
 }
 
 // Check for collisions with NPCs in a rectangle. Look for the parent NPC object (obj_par_npc)
