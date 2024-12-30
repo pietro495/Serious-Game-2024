@@ -10,4 +10,15 @@ draw_set_valign(fa_top);   // Default is top-aligned
 draw_set_font(fnt_common); // Ensure correct font is used
 draw_set_color(c_black);   // Set text color to black
 
+var viewport_coord = scr_get_viewport_coord();
+var center_x = viewport_coord[0]; 
+var center_y = viewport_coord[1]; 
+
+// Draw textbox
 draw_self();
+
+// Draw text
+draw_set_font(fnt_common);
+draw_set_halign(fa_center);
+draw_text_ext_color(400, 370, welcome, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+draw_set_halign(fa_left);

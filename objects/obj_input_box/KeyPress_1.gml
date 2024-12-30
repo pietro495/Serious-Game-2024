@@ -25,7 +25,7 @@ if (active) {
 
     // Esegui qualcosa con Enter
     if (keyboard_check_pressed(vk_enter)) {
-        show_message("Hai scritto: " + input_text);
+        //show_message("Hai scritto: " + input_text);
         input_text = ""; // Resetta il testo
     }
 }
