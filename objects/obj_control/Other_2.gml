@@ -1,6 +1,6 @@
 /// @description Global variables and others
 
-global.playerControl = false;
+global.playerControl = true;
 //global.game_data.clues_collected = [];
 global.firstPlay = true;
 

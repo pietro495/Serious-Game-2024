@@ -22,15 +22,15 @@ if (pause) {
 	draw_text(centerX, centerY, "Salva");
 	draw_text(centerX, centerY+75, "Esci");
 		
-	if(hovering_over_continua) {
+	if (hovering_over_continua) {
 		draw_set_color(c_yellow);
 		draw_text(centerX, centerY-75, "Continua");
 	} 
-	if(hovering_over_salva) {
+	if (hovering_over_salva) {
 		draw_set_color(c_yellow);
 		draw_text(centerX, centerY, "Salva");	
 	}
-	if(hovering_over_esci) {
+	if (hovering_over_esci) {
 		draw_set_color(c_yellow);
 		draw_text(centerX, centerY+75, "Esci");
 	}

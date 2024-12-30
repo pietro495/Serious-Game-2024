@@ -22,6 +22,7 @@ function scr_playSequence(_seqToPlay) {
 }
 
 function scr_first_play() {
+	global.playerControl = false;
 	room_goto(rm_office_start);
 }
 
