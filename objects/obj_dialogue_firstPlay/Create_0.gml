@@ -19,6 +19,6 @@ dialog.add(spr_dialogue_boss,"Un impiegato della OmniTech. Ha ricevuto un'email,
 dialog.add(spr_dialogue_detective,"Un internet café... ecco un salto indietro di vent'anni. Hai detto che è sparito nel nulla? Qui c'è qualcosa di molto grave sotto...");
 dialog.add(spr_dialogue_boss,"Esatto, e voglio che tu risolva il caso. Vai al café e cerca degli indizi.");
 dialog.add(spr_dialogue_detective,"E poi dicono che il mio lavoro è stressante.");
-dialog.add(spr_dialogue_boss,"Tsk. Non sai nemmeno come muoverti o interagire con l'ambiente. Usa le frecce direzionali ←↑→↓ per muoverti, premi Spazio per avviare un dialogo quando appare un punto interrogativo sulla testa di un giocatore. Premi ALT per evidenziare gli oggetti cliccabili e cliccali con il mouse per interagirvi.");
-dialog.add(spr_dialogue_boss,"Premi ESC per aprire il menù. E ricorda di salvare spesso.");
+dialog.add(spr_dialogue_boss,"Tsk. Non sai nemmeno come muoverti o interagire con l'ambiente. Usa le frecce direzionali ←↑→↓ per muoverti, premi Spazio per avviare un dialogo quando appare un punto interrogativo sulla testa di un giocatore. Premi ALT per evidenziare gli oggetti cliccabili e cliccali con il tasto sinistro del mouse per interagirvi.");
+dialog.add(spr_dialogue_boss,"Premi F11 per andare a schermo intero. \nPremi ESC per aprire il menù. E ricorda di salvare spesso.");
 dialog.add(spr_dialogue_detective,"D'accordo. Grazie tenente.");
