@@ -5,6 +5,7 @@ function Dialogue() constructor{
     // lista che conterrà i dialoghi
     _dialogs = [];
 	currentPosition = "right"; // Posizione iniziale dello sprite
+	previousDialog = undefined;
     
     // Funzione add: aggiunge un nuovo dialogo alla lista _dialogs
     // Prende due parametri: uno sprite e un messaggio
@@ -18,18 +19,22 @@ function Dialogue() constructor{
     
     // Funzione pop: rimuove e restituisce il primo elemento dalla lista _dialogs
     pop = function() {
-        // Prende il primo elemento dell'array _dialogs (il dialogo corrente)
-        var _t = array_first(_dialogs);
-        
-        // Rimuove il primo elemento dall'array _dialogs
-        array_delete(_dialogs, 0, 1);
-		
-		// Alterna la posizione: se è "left", diventa "right", e viceversa
-        currentPosition = (currentPosition == "left") ? "right" : "left";
-        
-        // Restituisce l'elemento rimosso (il dialogo)
-        return _t;
-    }
+	    // Prendi il primo elemento della lista
+	    var _t = array_first(_dialogs);
+    
+	    // Rimuovi il primo elemento
+	    array_delete(_dialogs, 0, 1);
+
+	    // Controlla se il personaggio è cambiato (sprite diverso)
+	    if (!is_undefined(previousDialog) && previousDialog.sprite != _t.sprite) {
+	        currentPosition = (currentPosition == "left") ? "right" : "left";
+	    }
+
+	    // Aggiorna il dialogo precedente
+	    previousDialog = _t;
+
+	    return _t;
+	}
     
     // Funzione count: restituisce la lunghezza dell'array _dialogs
     count = function() {
