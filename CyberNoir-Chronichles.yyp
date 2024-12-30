@@ -67,6 +67,7 @@
     {"id":{"name":"obj_liutenant","path":"objects/obj_liutenant/obj_liutenant.yy",},},
     {"id":{"name":"obj_menu_pause","path":"objects/obj_menu_pause/obj_menu_pause.yy",},},
     {"id":{"name":"obj_office_blackboard","path":"objects/obj_office_blackboard/obj_office_blackboard.yy",},},
+    {"id":{"name":"obj_office_boxes","path":"objects/obj_office_boxes/obj_office_boxes.yy",},},
     {"id":{"name":"obj_office_computer","path":"objects/obj_office_computer/obj_office_computer.yy",},},
     {"id":{"name":"obj_office_notes","path":"objects/obj_office_notes/obj_office_notes.yy",},},
     {"id":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},},
@@ -114,6 +115,7 @@
     {"id":{"name":"spr_dialogue_boss","path":"sprites/spr_dialogue_boss/spr_dialogue_boss.yy",},},
     {"id":{"name":"spr_dialogue_detective","path":"sprites/spr_dialogue_detective/spr_dialogue_detective.yy",},},
     {"id":{"name":"spr_office_blackboard","path":"sprites/spr_office_blackboard/spr_office_blackboard.yy",},},
+    {"id":{"name":"spr_office_boxes","path":"sprites/spr_office_boxes/spr_office_boxes.yy",},},
     {"id":{"name":"spr_office_computer_highlight","path":"sprites/spr_office_computer_highlight/spr_office_computer_highlight.yy",},},
     {"id":{"name":"spr_office_computer","path":"sprites/spr_office_computer/spr_office_computer.yy",},},
     {"id":{"name":"spr_player_idle_down","path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",},},
@@ -137,6 +139,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_office_start","path":"rooms/rm_office_start/rm_office_start.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_office","path":"rooms/rm_office/rm_office.yy",},},
     {"roomId":{"name":"rm_dialogue_test","path":"rooms/rm_dialogue_test/rm_dialogue_test.yy",},},
@@ -145,7 +148,6 @@
     {"roomId":{"name":"rm_exit","path":"rooms/rm_exit/rm_exit.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"roomId":{"name":"rm_help","path":"rooms/rm_help/rm_help.yy",},},
-    {"roomId":{"name":"rm_office_start","path":"rooms/rm_office_start/rm_office_start.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
