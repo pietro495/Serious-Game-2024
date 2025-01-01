@@ -21,4 +21,5 @@ dialog.add(spr_dialogue_boss,"Esatto, e voglio che tu risolva il caso. Vai nell'
 dialog.add(global.dialogueSprite,"E poi dicono che il mio lavoro non è stressante.");
 dialog.add(spr_dialogue_boss,"Tsk. Non sai nemmeno come muoverti o interagire con l'ambiente.\nUsa le frecce direzionali ←↑→↓ per muoverti.\nPremi Spazio per avviare un dialogo quando appare un punto interrogativo sulla testa di un giocatore.");
 dialog.add(spr_dialogue_boss,"Premi ALT per evidenziare gli oggetti cliccabili e cliccali con il tasto sinistro del mouse per interagirvi.\nPremi F11 per andare a schermo intero. \nPremi ESC per aprire il menù. E ricorda di salvare la partita spesso.");
+dialog.add(spr_dialogue_boss,"Ora prendi questo libro, contiene informazioni essenziali per conoscere meglio il phishing e altro che ti sarà utile nella tua avventura.\nPuoi aprirlo cliccando sul libro in alto a destra.");
 dialog.add(global.dialogueSprite,"D'accordo. Grazie tenente.");

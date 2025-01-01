@@ -6,8 +6,8 @@
   "name":"obj_select_char_textup",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"User Interface",
+    "path":"folders/Objects/User Interface.yy",
   },
   "parentObjectId":null,
   "persistent":false,

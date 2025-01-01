@@ -1,9 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_select_char_textdown",
-  "eventList":[],
+  "%Name":"obj_inventory_book",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_select_char_textdown",
+  "name":"obj_inventory_book",
   "overriddenProperties":[],
   "parent":{
     "name":"User Interface",
@@ -28,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_select_char_text2",
-    "path":"sprites/spr_select_char_text2/spr_select_char_text2.yy",
+    "name":"spr_inventory_book",
+    "path":"sprites/spr_inventory_book/spr_inventory_book.yy",
   },
   "spriteMaskId":null,
   "visible":true,
