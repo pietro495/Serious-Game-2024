@@ -8,7 +8,11 @@ if (dialog.count() <= 0) {
 	}
 	alarm[0] = 10;
 	
-	scr_playSequence(seq_first_play_end);
+	if (global.gender == 0) {
+		scr_playSequence(seq_first_play_end_male);
+	} else {
+		scr_playSequence(seq_first_play_end_female);
+	}
 } else {
 	currentDialog = dialog.pop(); 
 }

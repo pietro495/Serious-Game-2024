@@ -9,8 +9,8 @@
     {"name":"inst_6D7E1E8F","path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"inst_1748F753","path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"inst_7C0EACB4","path":"rooms/rm_menu/rm_menu.yy",},
-    {"name":"inst_28C4B4","path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"inst_2D8DCF96","path":"rooms/rm_menu/rm_menu.yy",},
+    {"name":"inst_28C4B4","path":"rooms/rm_menu/rm_menu.yy",},
   ],
   "isDnd":false,
   "layers":[
