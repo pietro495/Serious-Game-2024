@@ -1,9 +1,9 @@
 /// @description Select sprite
 
-if (global.gender == -1 || global.gender == 1) {
-	global.gender = 0;
-	global.dialogueSprite = spr_dialogue_detective_male;
+if (global.game_data.gender == -1 || global.game_data.gender == 1) {
+	global.game_data.gender = 0;
+	global.game_data.dialogueSprite = spr_dialogue_detective_male;
 } else {
-	global.gender = -1;
-	global.dialogueSprite = noone;
+	global.game_data.gender = -1;
+	global.game_data.dialogueSprite = noone;
 }

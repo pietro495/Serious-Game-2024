@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_button_play",
+  "%Name":"obj_button_load",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_button_play",
+  "name":"obj_button_load",
   "overriddenProperties":[],
   "parent":{
     "name":"Button",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"btn_play",
-    "path":"sprites/btn_play/btn_play.yy",
+    "name":"spr_btn_load",
+    "path":"sprites/spr_btn_load/spr_btn_load.yy",
   },
   "spriteMaskId":null,
   "visible":true,

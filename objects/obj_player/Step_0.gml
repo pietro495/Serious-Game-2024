@@ -43,16 +43,16 @@ if (vx == 0 && vy == 0) {
 	// Change idle Sprite based on last direction
 	switch dir {
 		case 0: 
-			sprite_index = global.gender == 0 ? spr_player_male_idle_right : spr_player_female_idle_right;
+			sprite_index = global.game_data.gender == 0 ? spr_player_male_idle_right : spr_player_female_idle_right;
 			break;
 		case 1: 
-			sprite_index = global.gender == 0 ? spr_player_male_idle_up : spr_player_female_idle_up;
+			sprite_index = global.game_data.gender == 0 ? spr_player_male_idle_up : spr_player_female_idle_up;
 			break;
 		case 2: 
-			sprite_index = global.gender == 0 ? spr_player_male_idle_left : spr_player_female_idle_left;
+			sprite_index = global.game_data.gender == 0 ? spr_player_male_idle_left : spr_player_female_idle_left;
 			break;
 		case 3: 
-			sprite_index = global.gender == 0 ? spr_player_male_idle_down : spr_player_female_idle_down;
+			sprite_index = global.game_data.gender == 0 ? spr_player_male_idle_down : spr_player_female_idle_down;
 			break;
 	}
 }
@@ -72,19 +72,19 @@ if (vx != 0 || vy != 0) {
 	
 	// Change walking Sprite based on direction
 	if (vx > 0) {
-		sprite_index = global.gender == 0 ? spr_player_male_walk_right : spr_player_female_walk_right;
+		sprite_index = global.game_data.gender == 0 ? spr_player_male_walk_right : spr_player_female_walk_right;
 		dir = 0;
 	}
 	if (vx < 0) {
-		sprite_index = global.gender == 0 ? spr_player_male_walk_left : spr_player_female_walk_left;
+		sprite_index = global.game_data.gender == 0 ? spr_player_male_walk_left : spr_player_female_walk_left;
 		dir = 2;
 	}
 	if (vy > 0) {
-		sprite_index = global.gender == 0 ? spr_player_male_walk_down : spr_player_female_walk_down;
+		sprite_index = global.game_data.gender == 0 ? spr_player_male_walk_down : spr_player_female_walk_down;
 		dir = 3;
 	}
 	if (vy < 0) {
-		sprite_index = global.gender == 0 ? spr_player_male_walk_up : spr_player_female_walk_up;
+		sprite_index = global.game_data.gender == 0 ? spr_player_male_walk_up : spr_player_female_walk_up;
 		dir = 1;
 	}
 	

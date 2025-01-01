@@ -20,6 +20,7 @@ if (mouse_check_button_pressed(mb_left) && pause) {
 
     if (hovering_over_salva) {
         save_game();
+		pause = !pause;
     }
 
     if (hovering_over_esci) {

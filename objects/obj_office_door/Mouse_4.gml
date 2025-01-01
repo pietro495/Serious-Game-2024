@@ -1,6 +1,6 @@
 /// @description Go into another room
 
-if (global.gameStatus = 1) {
-	global.gameStatus = 2;
+if (global.game_data.gameStatus = 1) {
+	global.game_data.gameStatus = 2;
 	room_goto(rm_omnitech_office);
 }

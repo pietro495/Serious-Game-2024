@@ -27,7 +27,7 @@ switch sequenceState {
 }
 
 // Draw inventory
-if (global.gameStatus == 1) {
+if (global.game_data.gameStatus >= 1) {
 	if (!instance_exists(obj_inventory_book)) {
 		instance_create_depth(748, 52, -5000, obj_inventory_book);
 	}

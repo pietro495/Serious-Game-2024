@@ -2,7 +2,7 @@
 
 var alpha = 0.5;
 
-if (global.gender == 1) {
+if (global.game_data.gender == 1) {
     alpha = 1;
 } else {
     alpha = 0.5;
