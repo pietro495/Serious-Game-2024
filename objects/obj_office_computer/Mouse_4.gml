@@ -3,6 +3,7 @@
 var can_click_on_hover = (
 	!instance_exists(obj_office_blackboard) && 
 	(!instance_exists(obj_menu_pause) || (instance_exists(obj_menu_pause) && !obj_menu_pause.pause))
+	&& !instance_exists(obj_dialogue_parent)
 );
 
 if (can_click_on_hover) {

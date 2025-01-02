@@ -1,7 +1,7 @@
 /// @description Draw dialogue GUI
 
 draw_set_alpha(guiAlpha);
-draw_set_font(fnt_common);
+draw_set_font(fnt_common_18);
 
 var text_x = 30; // Posizione X del testo
 var text_y = 18; // Posizione Y del testo
@@ -54,7 +54,7 @@ if (currentDialog.sprite != -1) {
 
     // Disegna il testo con wrapping
     draw_set_color(c_black);
-    draw_text_ext(text_start_x, text_y, currentDialog.msg, 16, max_text_width);
+    draw_text_ext(text_start_x, text_y, currentDialog.msg, 24, max_text_width);
 }
 
 draw_set_alpha(1);

@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"btn_help",
-    "path":"sprites/btn_help/btn_help.yy",
+    "name":"spr_btn_help",
+    "path":"sprites/spr_btn_help/spr_btn_help.yy",
   },
   "spriteMaskId":null,
   "visible":true,
