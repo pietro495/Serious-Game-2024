@@ -1,19 +1,17 @@
-/// @description Insert description here
-// You can write your code in this editor
-global.quiz_questions=
-[{  question_sprite:spr_question_1,
-	options_sprites:[spr_option_0,spr_option_1],
-	correct_option:0
-},
-{	question_sprite:spr_question_2,
-	options_sprites:[spr_option_3,spr_option_4],
-	correct_option:1
-}
+/// @description Variables
+global.quiz_questions = ds_map_create();
 
+global.quiz_questions[? "omnitech"] = [
+    {question_sprite: spr_phishing_minigame_question, options_sprites: [spr_omnitech_quiz_q1_a3, spr_omnitech_quiz_q1_a1, spr_omnitech_quiz_q1_a2, spr_omnitech_quiz_q1_a4], correct_option: 1},
+    {question_sprite: spr_phishing_minigame_question, options_sprites: [spr_omnitech_quiz_q2_a2, spr_omnitech_quiz_q2_a4, spr_omnitech_quiz_q2_a3, spr_omnitech_quiz_q2_a1], correct_option: 3}
 ];
 
-current_question = 0; // Indice della domanda corrente
-score = 0;				// Punteggio iniziale
-answer_objects = []; // Array per tracciare le caselle di risposta attive
+global.quiz_questions[? "final"] = [
+    {question_sprite: spr_phishing_minigame_question, options_sprites: [spr_omnitech_quiz_q1_a3, spr_omnitech_quiz_q1_a1, spr_omnitech_quiz_q1_a2, spr_omnitech_quiz_q1_a4], correct_option: 1},
+    {question_sprite: spr_phishing_minigame_question, options_sprites: [spr_omnitech_quiz_q2_a2, spr_omnitech_quiz_q2_a4, spr_omnitech_quiz_q2_a3, spr_omnitech_quiz_q2_a1], correct_option: 3}
+];
 
+score = 0;	
+global.current_question = 0; // Indice della domanda corrente			// Punteggio iniziale
+global.answer_objects = []; // Array per tracciare le caselle di risposta attive
 global.wrong_answer = [];

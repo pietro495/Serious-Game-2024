@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_question_sprite",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_quiz_omnitech",
+  "eventList":[],
   "managed":true,
-  "name":"obj_question_sprite",
-  "overriddenProperties":[],
+  "name":"obj_quiz_omnitech",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_quiz","path":"objects/obj_quiz/obj_quiz.yy",},"propertyId":{"name":"quizName","path":"objects/obj_quiz/obj_quiz.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"omnitech\"",},
+  ],
   "parent":{
     "name":"Quiz_test",
     "path":"folders/Objects/Quiz_test.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_quiz",
+    "path":"objects/obj_quiz/obj_quiz.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
