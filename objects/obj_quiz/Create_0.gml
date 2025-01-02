@@ -16,3 +16,4 @@ current_question = 0; // Indice della domanda corrente
 score = 0;				// Punteggio iniziale
 answer_objects = []; // Array per tracciare le caselle di risposta attive
 
+global.wrong_answer = [];
