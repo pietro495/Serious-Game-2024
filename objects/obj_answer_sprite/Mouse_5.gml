@@ -7,13 +7,12 @@ if (point_in_rectangle(mouse_x, mouse_y, x, y, x + sprite_width, y + sprite_heig
     if (answer_index == correct_index) {
         // Incrementa lo score se la risposta è corretta
         with (obj_quiz) {
-            score += 1; // Aumenta il punteggio di 1
-			
+            score += 1; 
         }
-        // Mostra un messaggio di risposta corretta
+
         show_message("Risposta corretta!");
     } else {
-        // Mostra un messaggio di risposta sbagliata
+		global.wrong_answer[array_length(global.wrong_answer)]=sprite_index;
         show_message("Risposta sbagliata!");
     }
 
@@ -23,11 +22,22 @@ if (point_in_rectangle(mouse_x, mouse_y, x, y, x + sprite_width, y + sprite_heig
 
         // Verifica se ci sono ancora domande nel quiz
         if (current_question >= array_length(global.quiz_questions)) {
-			quiz_completed=true;
-		
-
-            // Se non ci sono altre domande, mostra il messaggio finale con il punteggio
+			
+			//elimino le rispsoste alla fine del quiz
+			for (var i = 0; i < array_length(answer_objects); i++) {
+				instance_destroy(answer_objects[i]);
+			 }
+			 
+			 //elimino le domande alla fine del quiz
+			with(obj_question_sprite){
+				instance_destroy();
+			}
+           
             show_message("Quiz completato! Punteggio: " + string(score));
+			
+			show_message(string(current_question));
+			
+			show_wronganswers();
 			
         } else {
             // Altrimenti, mostra la domanda successiva

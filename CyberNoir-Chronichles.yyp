@@ -241,6 +241,9 @@
     {"roomId":{"name":"rm_exit","path":"rooms/rm_exit/rm_exit.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"roomId":{"name":"rm_help","path":"rooms/rm_help/rm_help.yy",},},
+    {"roomId":{"name":"rm_dialogue_test","path":"rooms/rm_dialogue_test/rm_dialogue_test.yy",},},
+    {"roomId":{"name":"rm_office","path":"rooms/rm_office/rm_office.yy",},},
+    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

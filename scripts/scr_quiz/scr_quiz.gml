@@ -35,9 +35,16 @@ function show_question1() {
         // Aggiunge l'istanza della risposta nell'array per una futura gestione
         answer_objects[i] = answer_instance; 
     }
+}
+
+
+function show_wronganswers(){
+	var x_offset=250;
+	var y_offset=350;
+	var spacing=120;
 	
-
-
-
-
+	for(var i=0;i<array_length(global.wrong_answer);i++){
+		//creo un istanza assegnandola allo sprite
+	instance_create_layer(x_offset,y_offset+i*spacing,"Instances",obj_answer_sprite).sprite_index=global.wrong_answer[i];
+	}
 }
