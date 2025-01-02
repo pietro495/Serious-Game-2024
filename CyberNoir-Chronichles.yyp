@@ -228,8 +228,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_quiz_final","path":"rooms/rm_quiz_final/rm_quiz_final.yy",},},
+    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"rm_office","path":"rooms/rm_office/rm_office.yy",},},
     {"roomId":{"name":"rm_omnitech_office","path":"rooms/rm_omnitech_office/rm_omnitech_office.yy",},},
     {"roomId":{"name":"rm_choose_sprite","path":"rooms/rm_choose_sprite/rm_choose_sprite.yy",},},
