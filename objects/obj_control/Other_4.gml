@@ -11,7 +11,7 @@ switch room {
 	} break;
 	case rm_office_start: {
 		obj_player.dir = 2;
-		if (global.firstPlay) {
+		if (global.game_data.firstPlay) {
 			global.playerControl = false;
 			scr_showDialogue(obj_dialogue_firstPlay);
 		}

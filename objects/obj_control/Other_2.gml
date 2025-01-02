@@ -2,7 +2,7 @@
 
 global.playerControl = true;
 //global.game_data.clues_collected = [];
-global.firstPlay = true;
+global.game_data.firstPlay = true;
 
 // Sequence states
 enum seqState {

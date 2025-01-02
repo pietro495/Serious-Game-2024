@@ -39,7 +39,7 @@ if (pause && !instance_exists(obj_dialogue_parent)) {
 		draw_text(centerX, centerY+75, "Esci");
 	}
  } else {
-	 if (!global.firstPlay) {
+	 if (!global.game_data.firstPlay) {
 		global.playerControl = true;
 	 }
  }

@@ -1,7 +1,7 @@
 /// @description Draw dialogue GUI
 
 draw_set_alpha(guiAlpha);
-draw_set_font(fnt_common_18);
+draw_set_font(fnt_common_16);
 
 var text_x = 30; // Posizione X del testo
 var text_y = 18; // Posizione Y del testo

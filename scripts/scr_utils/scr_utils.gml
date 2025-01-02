@@ -5,6 +5,7 @@
 	0 - Game start
 	1 - Il giocatore ha parlato con il tenente nella room firstPlay.
 	2 - L'utente è nell'ufficio del tizio della OmniTech
+	3 - L'utente è nell'ufficio del tizio della OmniTech e ha sbloccato il computer
 */
  
 global.game_data = {
@@ -12,6 +13,7 @@ global.game_data = {
 	gender: -1,
 	dialogueSprite: noone,
 	gameStatus: 0,
+	firstPlay: true,
 	clues_collected: [],
 	playerDir: 3,
 	room_data: {}
