@@ -8,8 +8,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_quiz","path":"objects/obj_quiz/obj_quiz.yy",},"propertyId":{"name":"quizName","path":"objects/obj_quiz/obj_quiz.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"omnitech\"",},
   ],
   "parent":{
-    "name":"Quiz_test",
-    "path":"folders/Objects/Quiz_test.yy",
+    "name":"Quiz",
+    "path":"folders/Objects/Quiz.yy",
   },
   "parentObjectId":{
     "name":"obj_quiz",

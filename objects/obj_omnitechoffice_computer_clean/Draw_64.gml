@@ -29,43 +29,30 @@ draw_text_ext_color(102, 191, emails[currentMail].from, lineHeight, textWidth, c
 draw_text_ext_color(102, 223, emails[currentMail].to, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
 draw_text_ext_color(102, 255, emails[currentMail].subject, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
 draw_text_ext_color(102, 287, emails[currentMail].body, 16, textWidth, c_black, c_black, c_black, c_black, image_alpha);
-draw_set_font(fnt_common_10);
 if (currentMail > 0) {
-	draw_text_ext_color(102, 466, "Mail precedente", 16, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (!instance_exists(obj_button_prevmail)) {
+		prevMailBtn = instance_create_depth(154, 470, -10050, obj_button_prevmail);
+	}
+} else {
+	instance_destroy(obj_button_prevmail);
 }
 if (currentMail + 1 < array_length(emails)) {
-	draw_text_ext_color(610, 466, "Mail successiva", 16, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (!instance_exists(obj_button_nextmail)) {
+		nextMailBtn = instance_create_depth(645, 470, -10050, obj_button_nextmail);
+	}
+} else {
+	instance_destroy(obj_button_nextmail);
 }
 if (currentMail + 1 == array_length(emails)) {
-	draw_text_ext_color(660, 466, "Finisci", 16, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (!instance_exists(obj_button_finishmail)) {
+		finishBtn = instance_create_depth(645, 470, -10050, obj_button_finishmail);
+	}
+} else {
+	instance_destroy(obj_button_finishmail);
 }
-draw_set_font(fnt_common_16);
-draw_text_ext_color(100, 548, "Segna come mail di phishing", 16, textWidth, c_white, c_white, c_white, c_white, image_alpha);
-draw_text_ext_color(485, 548, "Segna come mail reale", 16, textWidth, c_white, c_white, c_white, c_white, image_alpha);
-draw_set_font(fnt_common);
-
-if (hovering_over_prev && currentMail > 0) {
-	draw_set_font(fnt_common_10);
-	draw_text_ext_color(102, 466, "Mail precedente", 16, textWidth, c_blue, c_blue, c_blue, c_blue, image_alpha);
-	draw_set_font(fnt_common);
+if (!instance_exists(obj_button_mark_as_phishing)) {
+	phishingBtn = instance_create_depth(216, 548, -10050, obj_button_mark_as_phishing);
 }
-if (hovering_over_next && currentMail + 1 < array_length(emails)) {
-	draw_set_font(fnt_common_10);
-	draw_text_ext_color(610, 466, "Mail successiva", 16, textWidth, c_blue, c_blue, c_blue, c_blue, image_alpha);
-	draw_set_font(fnt_common);
-}
-if (hovering_over_end && currentMail + 1 == array_length(emails)) {
-	draw_set_font(fnt_common_10);
-	draw_text_ext_color(660, 466, "Finisci", 16, textWidth, c_blue, c_blue, c_blue, c_blue, image_alpha);
-	draw_set_font(fnt_common);
-}
-if (hovering_over_phishing) {
-	draw_set_font(fnt_common_16);
-	draw_text_ext_color(100, 548, "Segna come mail di phishing", 16, textWidth, c_yellow, c_yellow, c_yellow, c_yellow, image_alpha);
-	draw_set_font(fnt_common);
-}
-if (hovering_over_real) {
-	draw_set_font(fnt_common_16);
-	draw_text_ext_color(485, 548, "Segna come mail reale", 16, textWidth, c_yellow, c_yellow, c_yellow, c_yellow, image_alpha);
-	draw_set_font(fnt_common);
+if (!instance_exists(obj_button_mark_as_real)) {
+	realBtn = instance_create_depth(601, 548, -10050, obj_button_mark_as_real);
 }

@@ -5,11 +5,14 @@ var cam_y = camera_get_view_y(view_camera[0]);
 var computed_mouse_x = mouse_x - cam_x;
 var computed_mouse_y = mouse_y - cam_y;
 
-hovering_over_phishing = (computed_mouse_x > 98 && computed_mouse_x < 346 && computed_mouse_y > 552 && computed_mouse_y < 572);
-hovering_over_real = (computed_mouse_x > 480 && computed_mouse_x < 680 && computed_mouse_y > 552 && computed_mouse_y < 572);
-hovering_over_next = (computed_mouse_x > 609 && computed_mouse_x < 697 && computed_mouse_y > 468 && computed_mouse_y < 480);
-hovering_over_prev = (computed_mouse_x > 102 && computed_mouse_x < 190 && computed_mouse_y > 468 && computed_mouse_y < 480);
-hovering_over_end = (computed_mouse_x > 658 && computed_mouse_x < 698 && computed_mouse_y > 468 && computed_mouse_y < 480);
+//show_debug_message(computed_mouse_x);
+//show_debug_message(computed_mouse_y);
+
+hovering_over_phishing = (computed_mouse_x > 81 && computed_mouse_x < 351 && computed_mouse_y > 528 && computed_mouse_y < 562);
+hovering_over_real = (computed_mouse_x > 466 && computed_mouse_x < 738 && computed_mouse_y > 528 && computed_mouse_y < 562);
+hovering_over_next = (computed_mouse_x > 591 && computed_mouse_x < 694 && computed_mouse_y > 459 && computed_mouse_y < 480);
+hovering_over_prev = (computed_mouse_x > 102 && computed_mouse_x < 202 && computed_mouse_y > 459 && computed_mouse_y < 480);
+hovering_over_end = (computed_mouse_x > 591 && computed_mouse_x < 694 && computed_mouse_y > 459 && computed_mouse_y < 480);
 
 if (hovering_over_phishing || hovering_over_real || hovering_over_next || hovering_over_prev) {
 	window_set_cursor(cr_handpoint);
@@ -39,7 +42,6 @@ if (!click_processed && hovering_over_prev && mouse_check_button_pressed(mb_left
 }
 
 if (!click_processed && hovering_over_end && mouse_check_button_pressed(mb_left) && currentMail + 1 == array_length(emails)) {
-	show_debug_message(currentMail + 1 == array_length(emails));
 	var hasCheckedAll = true;
 	
 	for (var i = 0; i < array_length(emails); i++) {
@@ -74,4 +76,40 @@ if (!click_processed && hovering_over_end && mouse_check_button_pressed(mb_left)
 	}
 	
 	click_processed = true;
+}
+
+if (instance_exists(obj_button_nextmail)) {
+	if (hovering_over_next && currentMail + 1 < array_length(emails)) {
+		nextMailBtn.sprite_index = spr_btn_nextmail;
+	} else {
+		nextMailBtn.sprite_index = spr_btn_nextmail_disabled;
+	}
+}
+if (instance_exists(obj_button_prevmail)) {
+	if (hovering_over_prev && currentMail > 0) {
+		prevMailBtn.sprite_index = spr_btn_prevmail;
+	} else {
+		prevMailBtn.sprite_index = spr_btn_prevmail_disabled;
+	}
+}
+if (instance_exists(obj_button_finishmail)) {
+	if (hovering_over_end && currentMail + 1 == array_length(emails)) {
+		finishBtn.sprite_index = spr_btn_finish;
+	} else {
+		finishBtn.sprite_index = spr_btn_finish_disabled;
+	}
+}
+if (instance_exists(obj_button_mark_as_phishing)) {
+	if (hovering_over_phishing) {
+		phishingBtn.sprite_index = spr_btn_mark_as_phishing;
+	} else {
+		phishingBtn.sprite_index = spr_btn_mark_as_phishing_disabled;
+	}
+}
+if (instance_exists(obj_button_mark_as_real)) {
+	if (hovering_over_real) {
+		realBtn.sprite_index = spr_btn_mark_as_real;
+	} else {
+		realBtn.sprite_index = spr_btn_mark_as_real_disabled;
+	}
 }

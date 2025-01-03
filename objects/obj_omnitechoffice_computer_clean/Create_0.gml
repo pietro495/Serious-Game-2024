@@ -1,5 +1,11 @@
 /// @description Setup
 
+nextMailBtn = noone;
+prevMailBtn = noone;
+finishBtn = noone;
+realBtn = noone;
+phishingBtn = noone;
+
 // Email content
 padding = 16;
 textWidth = 600;

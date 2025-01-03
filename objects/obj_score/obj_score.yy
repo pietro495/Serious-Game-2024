@@ -8,8 +8,8 @@
   "name":"obj_score",
   "overriddenProperties":[],
   "parent":{
-    "name":"Quiz_test",
-    "path":"folders/Objects/Quiz_test.yy",
+    "name":"Quiz",
+    "path":"folders/Objects/Quiz.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -9,7 +9,10 @@
     "name":"Button",
     "path":"folders/Objects/Button.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_button_phishing_par",
+    "path":"objects/obj_button_phishing_par/obj_button_phishing_par.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_btn_mark_as_phishing",
-    "path":"sprites/spr_btn_mark_as_phishing/spr_btn_mark_as_phishing.yy",
+    "name":"spr_btn_mark_as_real_disabled",
+    "path":"sprites/spr_btn_mark_as_real_disabled/spr_btn_mark_as_real_disabled.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"quiz_test",
-    "path":"folders/Sprites/quiz_test.yy",
+    "name":"Quiz",
+    "path":"folders/Sprites/Quiz.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

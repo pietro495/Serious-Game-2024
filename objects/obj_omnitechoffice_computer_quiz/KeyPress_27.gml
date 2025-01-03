@@ -1,4 +1,3 @@
-/// @description Close computer
+/// @description Disable close event
 
-global.playerControl = true;
-instance_destroy();
+// Event is disabled because the quiz is mandatory

@@ -13,7 +13,10 @@
     "name":"Omnitech Office",
     "path":"folders/Objects/Environment/Omnitech Office.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_overlay",
+    "path":"objects/obj_overlay/obj_overlay.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -1,8 +1,4 @@
-function show_quiz_question(quizName) {
-	var coordinates = scr_get_viewport_coord();
-	var coord_x = coordinates[0];
-	var coord_y = coordinates[1];
-	
+function show_quiz_question(quizName) {	
 	draw_set_alpha(1); // Ripristina l'alpha a 1 per il test
 	
     // Pulisce le risposte mostrate precedentemente (se esistono)
@@ -18,27 +14,26 @@ function show_quiz_question(quizName) {
     // Crea un'istanza per visualizzare lo sprite della domanda nella layer "Instances"
 	var question_instance = noone;
 	if (quizName == "omnitech") {
-		var question_instance = instance_create_depth(coord_x, 500, -10050, obj_question_sprite)
+		var question_instance = instance_create_depth(400, 437, -10001, obj_question_sprite)
 		
 	} else {
-		var question_instance = instance_create_depth(100, 100, -10050, obj_question_sprite)
+		var question_instance = instance_create_depth(100, 100, -10001, obj_question_sprite)
 	}
     
     question_instance.sprite_index = question_data.question_sprite; // Imposta lo sprite della domanda corrente
-    
-    // Posizione verticale iniziale per le risposte
-    var y_offset = 568; // Posizione verticale iniziale
-    //var vertical_spacing = 120; // Spaziatura tra le opzioni
     
     // Ciclo per creare e mostrare tutte le opzioni di risposta
     for (var i = 0; i < array_length(question_data.options_sprites); i++) {
         // Crea un'istanza per l'opzione di risposta nella layer "Instances"; con questo mi creo un'istanza di obj_answer_sprite e la disegno sul layer
 		var answer_instance = noone;
-		if (i % 2 == 0) { // pari
-			answer_instance = instance_create_depth(coord_x, i > 1 ? 695 : 588, -10050, obj_answer_sprite)
-		} else {
-			answer_instance = instance_create_depth(coord_x + 400, i > 1 ? 695 : 588, -10050, obj_answer_sprite)
+		if (quizName == "omnitech") {
+			if (i % 2 == 0) { // pari
+				answer_instance = instance_create_depth(210, i > 1 ? 632 : 525, -10001, obj_answer_sprite_omnitech)
+			} else {
+				answer_instance = instance_create_depth(210 + 379, i > 1 ? 632 : 525, -10001, obj_answer_sprite_omnitech)
+			}
 		}
+		
 		
 		draw_set_alpha(1);
 		

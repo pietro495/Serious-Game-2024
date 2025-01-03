@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"OmnitechOffice",
-    "path":"folders/Sprites/quiz_test/OmnitechOffice.yy",
+    "path":"folders/Sprites/Quiz/OmnitechOffice.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

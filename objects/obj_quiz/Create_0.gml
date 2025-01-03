@@ -11,7 +11,8 @@ global.quiz_questions[? "final"] = [
     {question_sprite: spr_phishing_minigame_question, options_sprites: [spr_omnitech_quiz_q2_a2, spr_omnitech_quiz_q2_a4, spr_omnitech_quiz_q2_a3, spr_omnitech_quiz_q2_a1], correct_option: 3}
 ];
 
-score = 0;	
+global.quizScore = 0;
 global.current_question = 0; // Indice della domanda corrente			// Punteggio iniziale
 global.answer_objects = []; // Array per tracciare le caselle di risposta attive
 global.wrong_answer = [];
+global.current_answers = [];
