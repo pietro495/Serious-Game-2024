@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_vicolo_car",
+  "%Name":"spr_vicolo_car_highlight",
   "bboxMode":2,
   "bbox_bottom":246,
   "bbox_left":0,
   "bbox_right":335,
-  "bbox_top":73,
+  "bbox_top":-1,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -21,19 +21,19 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"1c4ce227-4c12-42d2-99c8-e8b76c4f6bbf","blendMode":0,"displayName":"default","isLocked":false,"name":"1c4ce227-4c12-42d2-99c8-e8b76c4f6bbf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_vicolo_car",
+  "name":"spr_vicolo_car_highlight",
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Vicolo",
-    "path":"folders/Sprites/Environment/Vicolo.yy",
+    "name":"Highlights",
+    "path":"folders/Sprites/Highlights.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_vicolo_car",
+    "%Name":"spr_vicolo_car_highlight",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_vicolo_car",
+    "name":"spr_vicolo_car_highlight",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,7 +69,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b9afbf29-11e4-40d6-a43c-a44d3d092327","path":"sprites/spr_vicolo_car/spr_vicolo_car.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b9afbf29-11e4-40d6-a43c-a44d3d092327","path":"sprites/spr_vicolo_car_highlight/spr_vicolo_car_highlight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ad9f4cbb-78fe-4b3b-8354-cf0c165cf1d2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

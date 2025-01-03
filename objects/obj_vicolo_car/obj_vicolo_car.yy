@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_vicolo_car",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_vicolo_car",
   "overriddenProperties":[],
@@ -10,8 +13,8 @@
     "path":"folders/Objects/Environment/Vicolo.yy",
   },
   "parentObjectId":{
-    "name":"obj_par_environment",
-    "path":"objects/obj_par_environment/obj_par_environment.yy",
+    "name":"obj_interactable",
+    "path":"objects/obj_interactable/obj_interactable.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

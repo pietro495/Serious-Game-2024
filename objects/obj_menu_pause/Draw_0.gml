@@ -11,6 +11,9 @@ if (pause && !instance_exists(obj_dialogue_parent)) {
 	if (instance_exists(obj_inventory_book)) {
 		instance_destroy(obj_inventory_book);
 	}
+	if (instance_exists(obj_inventory_taccuino)) {
+		instance_destroy(obj_inventory_taccuino);
+	}
 	
 	global.playerControl = false;
 	draw_set_alpha(0.65);

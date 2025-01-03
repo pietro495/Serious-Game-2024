@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_omnitechoffice_door",
+  "%Name":"obj_vicolo_control",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_omnitechoffice_door",
+  "name":"obj_vicolo_control",
   "overriddenProperties":[],
   "parent":{
-    "name":"Omnitech Office",
-    "path":"folders/Objects/Environment/Omnitech Office.yy",
+    "name":"Vicolo",
+    "path":"folders/Objects/Environment/Vicolo.yy",
   },
-  "parentObjectId":{
-    "name":"obj_interactable",
-    "path":"objects/obj_interactable/obj_interactable.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_omnitech_door",
-    "path":"sprites/spr_omnitech_door/spr_omnitech_door.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

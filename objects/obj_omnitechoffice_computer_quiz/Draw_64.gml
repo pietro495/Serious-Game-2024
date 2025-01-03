@@ -28,7 +28,7 @@ draw_text_ext_color(102, 112, emails[currentMail].to, lineHeight, textWidth, c_b
 draw_text_ext_color(102, 144, emails[currentMail].subject, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
 draw_text_ext_color(102, 176, emails[currentMail].body, 16, textWidth, c_black, c_black, c_black, c_black, image_alpha);
 draw_set_font(fnt_common_16_bold);
-var current_letter = array_length(global.current_answers) > global.current_question + 1 ? global.current_answers[global.current_question] : "";
+var current_letter = array_length(global.current_answers) >= global.current_question + 1 ? global.current_answers[global.current_question] : "";
 draw_text_ext_color(43, 699, "La tua scelta: " + current_letter, 16, textWidth, c_white, c_white, c_white, c_white, image_alpha);
 draw_set_font(fnt_common);
 draw_text_ext_color(16, 488, "A)", 16, textWidth, c_white, c_white, c_white, c_white, image_alpha);

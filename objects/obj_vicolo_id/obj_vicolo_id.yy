@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_omnitechoffice_computer_quiz",
+  "%Name":"obj_vicolo_id",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":27,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_omnitechoffice_computer_quiz",
+  "name":"obj_vicolo_id",
   "overriddenProperties":[],
   "parent":{
-    "name":"Omnitech Office",
-    "path":"folders/Objects/Environment/Omnitech Office.yy",
+    "name":"Vicolo",
+    "path":"folders/Objects/Environment/Vicolo.yy",
   },
   "parentObjectId":{
     "name":"obj_overlay",
@@ -38,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_omnitech_computer_big_clean",
-    "path":"sprites/spr_omnitech_computer_big_clean/spr_omnitech_computer_big_clean.yy",
+    "name":"spr_vicolo_id",
+    "path":"sprites/spr_vicolo_id/spr_vicolo_id.yy",
   },
   "spriteMaskId":null,
   "visible":true,

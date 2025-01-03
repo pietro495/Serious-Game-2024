@@ -51,18 +51,28 @@ if (isHovering && mouse_check_button_pressed(mb_left) && array_length(global.cur
 	
 	// Verifica se ci sono ancora domande nel quiz
 	if (global.current_question >= array_length(global.quiz_questions[? quizName])) {	
-		//elimino le rispsoste alla fine del quiz
+		// elimino le rispsoste alla fine del quiz
 		for (var i = 0; i < array_length(global.answer_objects); i++) {
 			instance_destroy(global.answer_objects[i]);
 		}
 			 
-		//elimino le domande alla fine del quiz
+		// elimino le domande alla fine del quiz
 		with(obj_question_sprite) {
 			instance_destroy();
 		}
 			
 		if (global.quizScore == array_length(global.quiz_questions[? quizName])) {
 			show_message("Complimenti! Hai risposto correttamente a tutte le domande!");
+			global.quizScore = 0;
+			global.current_question = 0;
+			global.answer_objects = [];
+			global.wrong_answer = [];
+			global.current_answers = [];
+			
+			if (quizName == "omnitech") {
+				instance_destroy(obj_omnitechoffice_computer_quiz);
+				instance_destroy(obj_button_quiz_next_omnitech);
+			}
 		} else {
 			show_message("Mi dispiace, ma non hai risposto correttamente a tutte le domande. Riprova.");
 			global.quizScore = 0;

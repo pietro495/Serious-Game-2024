@@ -37,31 +37,4 @@ if (isHovering && mouse_check_button_pressed(mb_left)) {
 			break;
 	}
 	global.current_answers[global.current_question] = letter;
-
-    // Passa alla domanda successiva
-	//global.current_question += 1; // Aumenta l'indice della domanda corrente
-	
-    // Verifica se ci sono ancora domande nel quiz
-    /*if (global.current_question >= array_length(global.quiz_questions[? quizName])) {	
-		//elimino le rispsoste alla fine del quiz
-		for (var i = 0; i < array_length(global.answer_objects); i++) {
-			instance_destroy(global.answer_objects[i]);
-		}
-			 
-		//elimino le domande alla fine del quiz
-		with(obj_question_sprite) {
-			instance_destroy();
-		}
-			
-		if (scoreToCheck == array_length(global.quiz_questions[? quizName])) {
-			show_message("Complimenti! Hai risposto correttamente a tutte le domande!");
-		} else {
-			show_message("Sbagliato");
-		}
-	
-		show_wronganswers(quizName);	
-     } else {
-        // Altrimenti, mostra la domanda successiva
-        show_quiz_question(quizName); 
-	}*/
 }

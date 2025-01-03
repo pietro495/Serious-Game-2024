@@ -6,6 +6,8 @@
 	1 - Il giocatore ha parlato con il tenente nella room firstPlay.
 	2 - L'utente è nell'ufficio del tizio della OmniTech
 	3 - L'utente è nell'ufficio del tizio della OmniTech e ha sbloccato il computer
+	4 - L'utente è nell'ufficio del tizio della OmniTech e ha superato il minigioco
+	5 - L'utente è all'esterno dell'internet cafè
 */
  
 global.game_data = {
