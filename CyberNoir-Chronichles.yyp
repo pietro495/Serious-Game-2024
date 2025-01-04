@@ -317,6 +317,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"roomId":{"name":"rm_johnsmith_bar","path":"rooms/rm_johnsmith_bar/rm_johnsmith_bar.yy",},},
     {"roomId":{"name":"rm_dialogue_test","path":"rooms/rm_dialogue_test/rm_dialogue_test.yy",},},
     {"roomId":{"name":"rm_quiz_final","path":"rooms/rm_quiz_final/rm_quiz_final.yy",},},
     {"roomId":{"name":"rm_office","path":"rooms/rm_office/rm_office.yy",},},
@@ -332,7 +333,6 @@
     {"roomId":{"name":"rm_dialogue_test","path":"rooms/rm_dialogue_test/rm_dialogue_test.yy",},},
     {"roomId":{"name":"rm_office","path":"rooms/rm_office/rm_office.yy",},},
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
-    {"roomId":{"name":"rm_johnsmith_bar","path":"rooms/rm_johnsmith_bar/rm_johnsmith_bar.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
