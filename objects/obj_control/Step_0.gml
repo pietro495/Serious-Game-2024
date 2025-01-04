@@ -27,11 +27,20 @@ switch sequenceState {
 }
 
 // Draw inventory
-if (global.game_data.gameStatus >= 1) {
+if (global.game_data.gameStatus >= 0) {
 	if (!instance_exists(obj_inventory_book)) {
 		instance_create_depth(748, 52, -5000, obj_inventory_book);
 	}
+}
+if (global.game_data.gameStatus >= 4) {
 	if (!instance_exists(obj_inventory_taccuino)) {
 		instance_create_depth(676, 52, -5000, obj_inventory_taccuino);
+	}
+}
+
+// Draw objective
+if (global.game_data.gameStatus >= 0) {
+	if (!instance_exists(obj_objective)) {
+		instance_create_depth(16, 16, -5000, obj_objective);
 	}
 }

@@ -7,3 +7,7 @@ lineHeight = 28;
 welcome = "";
 
 global.playerControl = false;
+
+if (global.game_data.gameStatus == 0) {
+	global.game_data.gameStatus = 1;
+}

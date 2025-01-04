@@ -29,6 +29,6 @@ function scr_first_play() {
 function scr_first_play_end() {
 	global.game_data.firstPlay = false;
 	global.playerControl = true;
-	global.game_data.gameStatus = 1;
+	global.game_data.gameStatus = 0;
 	room_goto(rm_office_start);
 }
