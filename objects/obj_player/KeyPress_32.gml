@@ -2,8 +2,8 @@
 
 // Show dialogue if NPC is nearby
 if (nearbyNPC) {
-	if (!instance_exists(obj_dialog_sample_a)) {
-		scr_showDialogue(obj_dialog_sample_a);
+	if (global.game_data.gameStatus == 7 && npcName == "obj_johnsmith" && !instance_exists(obj_dialogue_parent)) {
+		scr_showDialogue(obj_dialogue_cafe_johnsmith);
 	}
 }
 

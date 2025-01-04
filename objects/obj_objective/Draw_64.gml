@@ -8,9 +8,14 @@ ds_map_add(description, 3, "Accedi al computer della OmniTech e analizza le emai
 ds_map_add(description, 4, "Esci dalla stanza e vai all'internet cafè");
 ds_map_add(description, 5, "Cerca un modo per entrare nell'internet cafè");
 ds_map_add(description, 6, "Entra nell'internet cafè");
+ds_map_add(description, 7, "Parla con John Smith");
+ds_map_add(description, 8, "Accedi al terminale sulla destra nell'internet cafè");
 
 draw_self();
 
 draw_set_font(fnt_common_bold);
+draw_set_halign(fa_left);  // Default is left-aligned
+draw_set_valign(fa_top);   // Default is top-aligned
+draw_set_color(c_black);   // Set text color to black
 draw_text_ext_color(16, 48, ds_map_find_value(description, global.game_data.gameStatus), 16, 300, c_white, c_white, c_white, c_white, image_alpha);
 draw_set_font(fnt_common);

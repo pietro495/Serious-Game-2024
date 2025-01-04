@@ -13,3 +13,5 @@ scaleFactor = 5;
 npcPrompt = noone;
 nearbyNPC = noone;
 lookRange = 64;
+npcIndex = -1;
+npcName = "";

@@ -10,6 +10,8 @@
 	4 - L'utente è nell'ufficio del tizio della OmniTech e ha superato il minigioco
 	5 - L'utente è all'esterno dell'internet cafè
 	6 - L'utente è all'esterno dell'internet cafè e ha sbloccato la porta
+	7 - L'utente è entrato nell'internet cafè
+	8 - L'utente è entrato nell'internet cafè, ha parlato con John Smith e deve accedere al terminale
 */
  
 global.game_data = {
