@@ -58,7 +58,7 @@ if (vx == 0 && vy == 0) {
 }
 
 // If moving
-if (vx != 0 || vy != 0) {
+if ((vx != 0 || vy != 0) && !instance_exists(obj_dialogue_parent)) {
 	// the first true is for precise check, the second true is to ignore the object itself
 	if (!collision_point(x+vx, y, obj_par_environment, true, true)) {
 		// If there is no collision at current location, then go right

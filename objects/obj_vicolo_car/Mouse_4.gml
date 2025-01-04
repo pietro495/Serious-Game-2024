@@ -10,5 +10,7 @@ if (can_click_on_hover) {
 	var center_x = viewport_coord[0];
 	var center_y = viewport_coord[1]; 
 	
-	instance_create_depth(400, center_y, -10000, obj_vicolo_id);
+	if (!instance_exists(obj_vicolo_id) && !instance_exists(obj_dialogue_parent) && !instance_exists(obj_overlay)) {
+		instance_create_depth(400, center_y, -10000, obj_vicolo_id);
+	}
 }

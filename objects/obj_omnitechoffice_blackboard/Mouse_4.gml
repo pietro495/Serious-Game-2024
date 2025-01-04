@@ -2,6 +2,8 @@
 
 var can_click_on_hover = (
 	!instance_exists(obj_omnitechoffice_password) && 
+	!instance_exists(obj_overlay) &&
+	!instance_exists(obj_dialogue_parent) &&
 	(!instance_exists(obj_menu_pause) || (instance_exists(obj_menu_pause) && !obj_menu_pause.pause))
 );
 

@@ -68,7 +68,9 @@ if (!click_processed && hovering_over_end && mouse_check_button_pressed(mb_left)
 				emails[i].userSelection = noone;
 			}
 		} else {
-			instance_create_depth(400, 272, -10000, obj_omnitechoffice_computer_quiz);
+			if (!instance_exists(obj_omnitechoffice_computer_quiz) && !instance_exists(obj_dialogue_parent) && !instance_exists(obj_overlay)) {
+				instance_create_depth(400, 272, -10000, obj_omnitechoffice_computer_quiz);
+			}
 		}
 		
 	} else {
