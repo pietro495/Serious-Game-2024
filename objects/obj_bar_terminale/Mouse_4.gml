@@ -6,6 +6,6 @@ if (global.game_data.gameStatus >= 8) {
 		var center_x = viewport_coord[0];
 		var center_y = viewport_coord[1]; 
 		
-		instance_create_depth(400, center_y, -10000, obj_bar_terminale_open);
+		instance_create_depth(400, center_y, -10000, obj_omnibar_test);
 	}
 }
