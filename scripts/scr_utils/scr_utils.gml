@@ -12,6 +12,10 @@
 	6 - L'utente è all'esterno dell'internet cafè e ha sbloccato la porta
 	7 - L'utente è entrato nell'internet cafè
 	8 - L'utente è entrato nell'internet cafè, ha parlato con John Smith e deve accedere al terminale
+	9 - L'utente è entrato nell'internet cafè, ha parlato con John Smith e ha superato il minigioco del phishing, in attesa di inserimento password efficace
+	10 - L'utente è entrato nell'internet cafè, ha inserito una password efficace e deve parlare con John Smith
+	11 - L'utente ha parlato con John Smith dopo aver inserito una password efficace
+	12 - L'utente ha lasciato l'internet cafè e si trova nel suo ufficio
 */
  
 global.game_data = {
@@ -90,4 +94,43 @@ function scr_get_viewport_coord() {
 	var center_x = cam_x + (view_w / 2);
 	var center_y = cam_y + (view_h / 2);
 	return [center_x, center_y];
+}
+
+function is_valid_password(password) {
+    var length = string_length(password);
+
+    if (length < 8 || length > 32) {
+        return false;
+    }
+
+    var has_uppercase = false;
+    var has_lowercase = false;
+    var has_special = false;
+	
+    var special_chars = "!?#@;:.-_";
+
+    for (var i = 1; i <= length; i++) {
+        var char = string_char_at(password, i);
+
+        // Controlla se è una maiuscola
+        if (ord(char) >= 65 && ord(char) <= 90) { // A-Z
+            has_uppercase = true;
+        }
+        // Controlla se è una minuscola
+        else if (ord(char) >= 97 && ord(char) <= 122) { // a-z
+            has_lowercase = true;
+        }
+        // Controlla se è un carattere speciale
+        else if (string_pos(char, special_chars) > 0) {
+            has_special = true;
+        }
+
+        // Se tutti i requisiti sono soddisfatti, interrompi il ciclo
+        if (has_uppercase && has_lowercase && has_special) {
+            break;
+        }
+    }
+
+    // Ritorna true solo se tutti i flag sono true
+    return has_uppercase && has_lowercase && has_special;
 }

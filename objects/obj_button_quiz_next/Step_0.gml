@@ -17,14 +17,12 @@ if (point_in_rectangle(computed_mouse_x, computed_mouse_y, x - sprite_width / 2,
 if (isHovering && mouse_check_button_pressed(mb_left) && array_length(global.current_answers) == global.current_question + 1 && !hasClickedOnceWhileActive) {	
 	//hasClickedOnceWhileActive = true;
 	
-	global.quiz_questions[? quizName] = [
-	    {question_sprite: spr_phishing_minigame_question, options_sprites: [spr_omnitech_quiz_q1_a3, spr_omnitech_quiz_q1_a1, spr_omnitech_quiz_q1_a2, spr_omnitech_quiz_q1_a4], correct_option: 1},
-	    {question_sprite: spr_phishing_minigame_question, options_sprites: [spr_omnitech_quiz_q2_a2, spr_omnitech_quiz_q2_a4, spr_omnitech_quiz_q2_a3, spr_omnitech_quiz_q2_a1], correct_option: 3}
-	];
-	
 	var userAnswer = global.current_answers[global.current_question];
 	var decodedAnswer = -1;
 	var correctAnswer = global.quiz_questions[? quizName][global.current_question].correct_option;
+	show_debug_message(userAnswer);
+	show_debug_message(decodedAnswer);
+	show_debug_message(correctAnswer);
 	switch (userAnswer) {
 		case "A":
 			decodedAnswer = 0;
@@ -42,8 +40,6 @@ if (isHovering && mouse_check_button_pressed(mb_left) && array_length(global.cur
 			decodedAnswer = -1;
 			break;
 	}
-	show_debug_message(correctAnswer);
-	show_debug_message(decodedAnswer);
 	if (correctAnswer == decodedAnswer) {
 		global.quizScore += 1;
 	}
@@ -72,6 +68,9 @@ if (isHovering && mouse_check_button_pressed(mb_left) && array_length(global.cur
 			if (quizName == "omnitech") {
 				instance_destroy(obj_omnitechoffice_computer_quiz);
 				instance_destroy(obj_button_quiz_next_omnitech);
+			} else if (quizName == "johnsmith") {
+				instance_destroy(obj_bar_terminale_quiz);
+				instance_destroy(obj_button_quiz_next_johnsmith);
 			}
 		} else {
 			show_message("Mi dispiace, ma non hai risposto correttamente a tutte le domande. Riprova.");

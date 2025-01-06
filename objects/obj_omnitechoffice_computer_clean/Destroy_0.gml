@@ -1,3 +1,5 @@
 /// @description Destroy remainings
 
-instance_destroy(obj_input_box);
+if (instance_exists(obj_input_box)) {
+	instance_destroy(obj_input_box);
+}

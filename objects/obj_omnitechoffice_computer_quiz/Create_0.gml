@@ -6,7 +6,6 @@ nextQuestionBtn = noone;
 padding = 16;
 textWidth = 600;
 lineHeight = 28;
-currentMail = 0;
 
 global.playerControl = false;
 

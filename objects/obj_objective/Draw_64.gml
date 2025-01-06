@@ -10,6 +10,9 @@ ds_map_add(description, 5, "Cerca un modo per entrare nell'internet cafè");
 ds_map_add(description, 6, "Entra nell'internet cafè");
 ds_map_add(description, 7, "Parla con John Smith");
 ds_map_add(description, 8, "Accedi al terminale sulla destra nell'internet cafè");
+ds_map_add(description, 9, "Accedi al terminale sulla destra e inserisci una password efficace");
+ds_map_add(description, 10, "Parla con John Smith");
+ds_map_add(description, 11, "Esci dalla stanza e torna in ufficio");
 
 draw_self();
 

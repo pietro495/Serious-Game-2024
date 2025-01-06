@@ -62,7 +62,11 @@ if (!click_processed && hovering_over_end && mouse_check_button_pressed(mb_left)
 		}
 		
 		if (numberOfErrors > 0) {
-			show_message("Attenzione! Hai commesso " + string(numberOfErrors) + " errori! Riprova dall'inizio!");
+			if (numberOfErrors == 1) {
+				show_message("Attenzione! Hai commesso 1 errore! Riprova dall'inizio!");
+			} else {
+				show_message("Attenzione! Hai commesso " + string(numberOfErrors) + " errori! Riprova dall'inizio!");
+			}
 			currentMail = 0;
 			for (var i = 0; i < array_length(emails); i++) {
 				emails[i].userSelection = noone;
