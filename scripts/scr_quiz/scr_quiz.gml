@@ -13,7 +13,11 @@ function show_quiz_question(quizName) {
     
     // Crea un'istanza per visualizzare lo sprite della domanda nella layer "Instances"
 	var question_instance = noone;
-	var question_instance = instance_create_depth(400, 437, -10001, obj_question_sprite)
+	if (quizName == "street") {
+		question_instance = instance_create_depth(400, 437, -10001, obj_question_sprite_street)
+	} else {
+		question_instance = instance_create_depth(400, 437, -10001, obj_question_sprite)
+	}
     
     question_instance.sprite_index = question_data.question_sprite; // Imposta lo sprite della domanda corrente
     
@@ -35,7 +39,13 @@ function show_quiz_question(quizName) {
 				answer_instance = instance_create_depth(210 + 379, i > 1 ? 632 : 525, -10001, obj_answer_sprite_johnsmith)
 			}
 		}
-		
+		if (quizName == "street") {
+			if (i % 2 == 0) { // pari
+				answer_instance = instance_create_depth(210, i > 1 ? 632 : 525, -10001, obj_answer_sprite_street)
+			} else {
+				answer_instance = instance_create_depth(210 + 379, i > 1 ? 632 : 525, -10001, obj_answer_sprite_street)
+			}
+		}
 		
 		draw_set_alpha(1);
 		

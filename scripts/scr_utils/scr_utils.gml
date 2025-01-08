@@ -16,6 +16,15 @@
 	10 - L'utente è entrato nell'internet cafè, ha inserito una password efficace e deve parlare con John Smith
 	11 - L'utente ha parlato con John Smith dopo aver inserito una password efficace
 	12 - L'utente ha lasciato l'internet cafè e si trova nel suo ufficio
+	13 - L'utente è nell'ufficio e ha cliccato sulla lavagna
+	14 - L'utente è per strada e deve parlare con la giornalista
+	15 - L'utente ha parlato con la giornalista
+	16 - L'utente ha parlato con la giornalista e deve finire il minigioco
+	17 - L'utente ha finito il minigioco ed è entrato nel market
+	18 - L'utente è nel market e deve parlare con il commesso
+	19 - L'utente è nel market e ha parlato con il commesso, ora deve andare in ufficio
+	20 - L'utente è in ufficio e deve aprire la lavagna
+	21 - L'utente ha scoperto l'identità dell'hacker e deve uscire dall'ufficio
 */
  
 global.game_data = {

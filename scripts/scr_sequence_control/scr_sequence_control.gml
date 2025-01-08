@@ -32,3 +32,14 @@ function scr_first_play_end() {
 	global.game_data.gameStatus = 0;
 	room_goto(rm_office_start);
 }
+
+function scr_journalist_start() {
+	global.playerControl = false;
+	global.game_data.gameStatus = 15;
+	room_goto(rm_street);
+}
+
+function scr_journalist_end() {
+	global.playerControl = true;
+	room_goto(rm_street);
+}

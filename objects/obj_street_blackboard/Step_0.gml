@@ -1,0 +1,1 @@
+/// @description Highlight hoverable clues

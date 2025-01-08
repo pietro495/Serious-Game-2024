@@ -13,6 +13,16 @@ ds_map_add(description, 8, "Accedi al terminale sulla destra nell'internet cafè
 ds_map_add(description, 9, "Accedi al terminale sulla destra e inserisci una password efficace");
 ds_map_add(description, 10, "Parla con John Smith");
 ds_map_add(description, 11, "Esci dalla stanza e torna in ufficio");
+ds_map_add(description, 12, "Guarda la lavagna");
+ds_map_add(description, 13, "Esci dall'ufficio");
+ds_map_add(description, 14, "Parla con l'intervistatrice");
+ds_map_add(description, 15, "Parla con l'intervistatrice");
+ds_map_add(description, 16, "Parla con l'intervistatrice e supera il minigioco");
+ds_map_add(description, 17, "Entra nel market e prosegui l'indagine");
+ds_map_add(description, 18, "Parla con le persone all'interno del market");
+ds_map_add(description, 19, "Esci dal market e torna in ufficio");
+ds_map_add(description, 20, "Guarda la lavagna per scoprire l'identità dell'hacker");
+ds_map_add(description, 21, "Esci dall'ufficio e raggiungi il tenente");
 
 draw_self();
 

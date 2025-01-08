@@ -20,9 +20,6 @@ if (isHovering && mouse_check_button_pressed(mb_left) && array_length(global.cur
 	var userAnswer = global.current_answers[global.current_question];
 	var decodedAnswer = -1;
 	var correctAnswer = global.quiz_questions[? quizName][global.current_question].correct_option;
-	show_debug_message(userAnswer);
-	show_debug_message(decodedAnswer);
-	show_debug_message(correctAnswer);
 	switch (userAnswer) {
 		case "A":
 			decodedAnswer = 0;
@@ -71,6 +68,9 @@ if (isHovering && mouse_check_button_pressed(mb_left) && array_length(global.cur
 			} else if (quizName == "johnsmith") {
 				instance_destroy(obj_bar_terminale_quiz);
 				instance_destroy(obj_button_quiz_next_johnsmith);
+			} else if (quizName == "street") {
+				instance_destroy(obj_street_quiz);
+				instance_destroy(obj_button_quiz_next_street);
 			}
 		} else {
 			show_message("Mi dispiace, ma non hai risposto correttamente a tutte le domande. Riprova.");

@@ -37,6 +37,14 @@ if (!collision_point(x+vx, y, obj_par_environment, true, true) && !collision_poi
 			if (global.game_data.gameStatus == 7 || global.game_data.gameStatus == 10) {
 				npcPrompt = scr_showPrompt(nearbyNPC, nearbyNPC.x, nearbyNPC.y - nearbyNPC.sprite_height - 30);
 			}
+		} else if (npcName == "obj_journalist") {
+			if (global.game_data.gameStatus == 16) {
+				npcPrompt = scr_showPrompt(nearbyNPC, nearbyNPC.x, nearbyNPC.y - nearbyNPC.sprite_height - 30);
+			}
+		} else if (npcName == "obj_worker2" || npcName == "obj_worker3") {
+			if (global.game_data.gameStatus == 18) {
+				npcPrompt = scr_showPrompt(nearbyNPC, nearbyNPC.x, nearbyNPC.y - nearbyNPC.sprite_height - 30);
+			}
 		} else if (npcName != "obj_johnsmith") {
 			npcPrompt = scr_showPrompt(nearbyNPC, nearbyNPC.x, nearbyNPC.y - nearbyNPC.sprite_height - 30);
 		}
