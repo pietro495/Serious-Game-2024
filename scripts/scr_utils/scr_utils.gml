@@ -25,6 +25,12 @@
 	19 - L'utente è nel market e ha parlato con il commesso, ora deve andare in ufficio
 	20 - L'utente è in ufficio e deve aprire la lavagna
 	21 - L'utente ha scoperto l'identità dell'hacker e deve uscire dall'ufficio
+	22 - L'utente è all'esterno dell'edificio degli hacker e non ha sbloccato la porta
+	23 - L'utente è all'esterno dell'edificio degli hacker e ha sbloccato la porta
+	24 - L'utente è nella prima stanza e deve battere il nemico
+	25 - L'utente è nella prima stanza e deve superare l'indovinello
+	26 - L'utente è nella prima stanza e ha superato l'indovinello
+	27 - L'utente è dal boss
 */
  
 global.game_data = {
@@ -142,4 +148,31 @@ function is_valid_password(password) {
 
     // Ritorna true solo se tutti i flag sono true
     return has_uppercase && has_lowercase && has_special;
+}
+
+function array_index_of(arr, value) {
+	var _arr = argument0;
+	var _value = argument1;
+
+	for (var i = 0; i < array_length(_arr); i++) {
+	    if (_arr[i] == _value) {
+	        return i;
+	    }
+	}
+	
+	return -1;
+}
+
+function array_delete_value(arr, value) {
+	var _arr = argument0;
+	var _value = argument1;
+
+	var _index = array_index_of(_arr, _value);
+	if (_index != -1) {
+	    for (var i = _index; i < array_length(_arr) - 1; i++) {
+	        _arr[i] = _arr[i + 1];
+	    }
+	    return array_resize(_arr, array_length(_arr) - 1);
+	}
+	return _arr;
 }

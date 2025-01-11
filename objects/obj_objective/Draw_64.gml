@@ -23,6 +23,10 @@ ds_map_add(description, 18, "Parla con le persone all'interno del market");
 ds_map_add(description, 19, "Esci dal market e torna in ufficio");
 ds_map_add(description, 20, "Guarda la lavagna per scoprire l'identità dell'hacker");
 ds_map_add(description, 21, "Esci dall'ufficio e raggiungi il tenente");
+ds_map_add(description, 22, "Trova l'ingresso ed entra nell'edificio");
+ds_map_add(description, 23, "Entra nell'edificio");
+ds_map_add(description, 24, "Sconfiggi l'hacker");
+ds_map_add(description, 25, "Vai al piano successivo");
 
 draw_self();
 
