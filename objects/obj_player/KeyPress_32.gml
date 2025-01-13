@@ -27,5 +27,8 @@ if (nearbyNPC) {
 	if (npcName == "obj_street_artist") {
 		scr_showDialogue(obj_dialogue_cafe_artist);
 	}
+	if (npcName == "obj_homeless" || npcName == "obj_gang") {
+		scr_showDialogue(obj_dialogue_street_lamentele);
+	}
 }
 
