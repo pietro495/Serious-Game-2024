@@ -53,7 +53,7 @@ if (!collision_point(x+vx, y, obj_par_environment, true, true) && !collision_poi
 	// Get rid of prompt
 	scr_dismissPrompt(npcPrompt, 0);
  }
-
+show_debug_message(global.game_data.gameStatus)
 // If idle
 if (vx == 0 && vy == 0) {
 	// Change idle Sprite based on last direction

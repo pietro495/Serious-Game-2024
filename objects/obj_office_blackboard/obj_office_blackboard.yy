@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_office_blackboard",
-    "path":"sprites/spr_office_blackboard/spr_office_blackboard.yy",
+    "name":"spr_boss0_board",
+    "path":"sprites/spr_boss0_board/spr_boss0_board.yy",
   },
   "spriteMaskId":null,
   "visible":true,

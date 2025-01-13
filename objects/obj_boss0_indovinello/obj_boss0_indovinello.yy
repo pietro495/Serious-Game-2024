@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bar_terminale_open",
-    "path":"sprites/spr_bar_terminale_open/spr_bar_terminale_open.yy",
+    "name":"spr_boss0_board",
+    "path":"sprites/spr_boss0_board/spr_boss0_board.yy",
   },
   "spriteMaskId":null,
   "visible":true,

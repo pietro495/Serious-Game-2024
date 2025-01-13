@@ -9,8 +9,8 @@
   "name":"obj_liutenant",
   "overriddenProperties":[],
   "parent":{
-    "name":"Office",
-    "path":"folders/Objects/Environment/Office.yy",
+    "name":"NPCs",
+    "path":"folders/Objects/NPCs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_male_idle_right",
-    "path":"sprites/spr_player_male_idle_right/spr_player_male_idle_right.yy",
+    "name":"spr_liutenant_idle_right",
+    "path":"sprites/spr_liutenant_idle_right/spr_liutenant_idle_right.yy",
   },
   "spriteMaskId":null,
   "visible":true,

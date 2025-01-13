@@ -17,7 +17,7 @@ global.playerControl = false;
  
 sms = [
 	{
-		number: "Numero: +39 351 987 6543",
+		number: "Numero: +39 351 987 6543 (Servizio Clienti Banca NazionaIe)",
 		body: "Salve, siamo il Servizio Clienti della Banca Nazionale.\nAbbiamo rilevato un'attività sospetta sul tuo conto.\nPer evitare il blocco, verifica immediatamente i tuoi dati cliccando su questo link: http://banca-verifica-secure.com.",
 		isFake: true,
 		clues: [
@@ -28,7 +28,7 @@ sms = [
 		userSelection: noone,
 	},
 	{
-		number: "Numero: +39 345 123 4567",
+		number: "Numero: +39 345 123 4567 (Michael Smith)",
 		body: "Ciao John, sono tuo figlio. Questo è il mio nuovo numero, ho perso il vecchio telefono. Sto molto male e ho bisogno di aiuto urgente. Puoi mandarmi 1.000$ sul conto IBAN IT12X1234567890123456789? Grazie, ti voglio bene.",
 		isFake: true,
 		clues: [
@@ -39,14 +39,14 @@ sms = [
 		userSelection: noone,
 	},
 	{
-		number: "Numero: +39 333 456 7890",
+		number: "Numero: +39 333 456 7890 (Marco Saltimbocca)",
 		body: "Ciao, sono Marco. Domani ci vediamo per il pranzo? Ho cambiato numero, scrivimi su WhatsApp per confermare. Porta tu il dolce!",
 		isFake: false,
 		clues: false,
 		userSelection: noone,
 	},
 	{
-	    number: "Numero: +39 392 654 3210",
+	    number: "Numero: +39 392 654 3210 (Premi x tutti)",
 	    body: "Congratulazioni! Sei stato selezionato per ricevere un buono regalo di 500$.\nPer ottenerlo, clicca qui: http://premio-vinci-subito.com.\nOfferta valida solo per oggi!",
 	    isFake: true,
 	    clues: [
@@ -57,7 +57,7 @@ sms = [
 	    userSelection: noone
 	},
 	{
-	    number: "Numero: +39 347 234 5678",
+	    number: "Numero: +39 347 234 5678 (Amason)",
 	    body: "Gentile cliente, il tuo account Amazon è stato sospeso per attività sospette.\nPer riattivarlo, accedi qui: http://amazon-account-verifica.com e aggiorna le tue credenziali.",
 	    isFake: true,
 	    clues: [

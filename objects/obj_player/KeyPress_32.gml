@@ -21,5 +21,11 @@ if (nearbyNPC) {
 	if (global.game_data.gameStatus == 18 && npcName == "obj_worker2" && !instance_exists(obj_dialogue_parent)) {
 		scr_showDialogue(obj_dialogue_market_worker2);
 	}
+	if (npcName == "obj_hooded_guy") {
+		scr_showDialogue(obj_dialogue_vicolo_hooded_guy);
+	}
+	if (npcName == "obj_street_artist") {
+		scr_showDialogue(obj_dialogue_cafe_artist);
+	}
 }
 
