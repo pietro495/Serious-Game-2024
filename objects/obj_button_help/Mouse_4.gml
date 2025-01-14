@@ -1,4 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-room_goto(rm_help);
+/// @description Go to help room
 
+room_goto(rm_credits);

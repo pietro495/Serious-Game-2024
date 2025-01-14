@@ -8,8 +8,8 @@
   "name":"obj_button_exit",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Button",
+    "path":"folders/Objects/Button.yy",
   },
   "parentObjectId":{
     "name":"obj_button_parent",
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"button_exit",
-    "path":"sprites/button_exit/button_exit.yy",
+    "name":"spr_btn_esci",
+    "path":"sprites/spr_btn_esci/spr_btn_esci.yy",
   },
   "spriteMaskId":null,
   "visible":true,

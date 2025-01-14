@@ -1,3 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-game_end();
+/// @description Close the game
+
+game_end();//mi porterà fuori dal gioco

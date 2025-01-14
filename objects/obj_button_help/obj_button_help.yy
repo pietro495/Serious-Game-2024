@@ -8,8 +8,8 @@
   "name":"obj_button_help",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Button",
+    "path":"folders/Objects/Button.yy",
   },
   "parentObjectId":{
     "name":"obj_button_parent",
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"button_help",
-    "path":"sprites/button_help/button_help.yy",
+    "name":"spr_btn_help",
+    "path":"sprites/spr_btn_help/spr_btn_help.yy",
   },
   "spriteMaskId":null,
   "visible":true,
