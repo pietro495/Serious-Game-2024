@@ -57,8 +57,8 @@ sms = [
 	    userSelection: noone
 	},
 	{
-	    number: "Numero: +39 347 234 5678 (Amason)",
-	    body: "Gentile cliente, il tuo account Amazon è stato sospeso per attività sospette.\nPer riattivarlo, accedi qui: http://amazon-account-verifica.com e aggiorna le tue credenziali.",
+	    number: "Numero: +39 347 234 5678 (Amazon)",
+	    body: "Gentile cliente, il tuo account Amazon è stato sospeso per attività sospette.\nPer riattivarlo, accedi qui: http://amason.com e aggiorna le tue credenziali.",
 	    isFake: true,
 	    clues: [
 	        "Il dominio del link non appartiene ad Amazon e sembra costruito per ingannare ('amazon-account-verifica.com').",

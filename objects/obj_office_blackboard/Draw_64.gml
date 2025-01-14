@@ -17,7 +17,7 @@ var center_y = viewport_coord[1];
 draw_self();
 
 // Draw text
-draw_set_font(fnt_common);
+draw_set_font(fnt_common_16);
 
 if (global.game_data.gameStatus >= 4 && global.game_data.gameStatus <= 8 ) {
 	draw_text_ext_color(105, 102, hint1, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
@@ -26,3 +26,5 @@ if (global.game_data.gameStatus >= 4 && global.game_data.gameStatus <= 8 ) {
 } else if (global.game_data.gameStatus >= 19) {
 	draw_text_ext_color(105, 102, hint3, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
 }
+
+draw_set_font(fnt_common);

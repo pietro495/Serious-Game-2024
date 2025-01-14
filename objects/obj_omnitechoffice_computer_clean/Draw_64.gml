@@ -56,3 +56,30 @@ if (!instance_exists(obj_button_mark_as_phishing)) {
 if (!instance_exists(obj_button_mark_as_real)) {
 	realBtn = instance_create_depth(601, 548, -10050, obj_button_mark_as_real);
 }
+
+if (currentMail == 0) {
+	draw_set_font(fnt_common);
+	draw_text_ext_color(134, 351, "__________________________________________", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (hovering_over_link1) {
+		draw_set_font(fnt_common_10);
+		draw_text_ext_color(102, 480, "https://omnitech.com/politica-aziendale-lavoro-ibrido", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	}
+}
+
+if (currentMail == 3) {
+	draw_set_font(fnt_common);
+	draw_text_ext_color(169, 351, "_________", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (hovering_over_link1) {
+		draw_set_font(fnt_common_10);
+		draw_text_ext_color(102, 480, "https://omniltech.xyz/cambio-password", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	}
+}
+
+if (currentMail == 4) {
+	draw_set_font(fnt_common);
+	draw_text_ext_color(339, 351, "_________", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (hovering_over_link1) {
+		draw_set_font(fnt_common_10);
+		draw_text_ext_color(102, 480, "https://omniltech.xyz/guarda-fattura", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	}
+}

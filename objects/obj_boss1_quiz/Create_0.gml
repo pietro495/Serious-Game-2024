@@ -21,7 +21,7 @@ emails = [
 		subject: "Oggetto: Verifica urgente del tuo conto!",
 		from: "Da: Banca Sicura (supporto@banca-sicura.xyz)",
 		to: "A: te",
-		body: "Gentile cliente,\n\nA causa di attività sospette, il tuo conto è stato temporaneamente bloccato. Per evitare la chiusura definitiva, clicca immediatamente sul link sottostante e verifica i tuoi dati.\n\nGrazie per la collaborazione,\nIl Team di Sicurezza Bancaria.",
+		body: "Gentile cliente,\n\nA causa di attività sospette, il tuo conto è stato temporaneamente bloccato. Per evitare la chiusura definitiva, clicca immediatamente su questo link e verifica i tuoi dati.\n\nGrazie per la collaborazione,\nIl Team di Sicurezza Bancaria.",
 		isFake: true,
 		clues: [],
 		userSelection: noone,

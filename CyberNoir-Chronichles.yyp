@@ -166,6 +166,7 @@
     {"id":{"name":"obj_dialogue_market_worker2","path":"objects/obj_dialogue_market_worker2/obj_dialogue_market_worker2.yy",},},
     {"id":{"name":"obj_dialogue_market_worker3","path":"objects/obj_dialogue_market_worker3/obj_dialogue_market_worker3.yy",},},
     {"id":{"name":"obj_dialogue_office_discover","path":"objects/obj_dialogue_office_discover/obj_dialogue_office_discover.yy",},},
+    {"id":{"name":"obj_dialogue_office_market","path":"objects/obj_dialogue_office_market/obj_dialogue_office_market.yy",},},
     {"id":{"name":"obj_dialogue_office_readBook","path":"objects/obj_dialogue_office_readBook/obj_dialogue_office_readBook.yy",},},
     {"id":{"name":"obj_dialogue_omnitech_cantexit","path":"objects/obj_dialogue_omnitech_cantexit/obj_dialogue_omnitech_cantexit.yy",},},
     {"id":{"name":"obj_dialogue_omnitech_passwordThought","path":"objects/obj_dialogue_omnitech_passwordThought/obj_dialogue_omnitech_passwordThought.yy",},},

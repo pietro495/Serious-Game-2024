@@ -51,3 +51,39 @@ if (!instance_exists(obj_button_mark_as_phishing)) {
 if (!instance_exists(obj_button_mark_as_real)) {
 	realBtn = instance_create_depth(601, 548, -10050, obj_button_mark_as_real);
 }
+
+if (currentMail == 0) {
+	draw_set_font(fnt_common);
+	draw_text_ext_color(374, 337, "_________", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (hovering_over_link1) {
+		draw_set_font(fnt_common_10);
+		draw_text_ext_color(85, 515, "http://banca-sicura.xyz", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	}
+}
+
+if (currentMail == 1) {
+	draw_set_font(fnt_common);
+	draw_text_ext_color(275, 367, "________", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (hovering_over_link2) {
+		draw_set_font(fnt_common_10);
+		draw_text_ext_color(85, 515, "http://guadagna-online-now.biz", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	}
+}
+
+if (currentMail == 3) {
+	draw_set_font(fnt_common);
+	draw_text_ext_color(371, 399, "________", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (hovering_over_link4) {
+		draw_set_font(fnt_common_10);
+		draw_text_ext_color(85, 515, "https://netflix.com", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	}
+}
+
+if (currentMail == 4) {
+	draw_set_font(fnt_common);
+	draw_text_ext_color(137, 399, "______________________", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (hovering_over_link5) {
+		draw_set_font(fnt_common_10);
+		draw_text_ext_color(85, 515, "http://intesapansaolo.it", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	}
+}

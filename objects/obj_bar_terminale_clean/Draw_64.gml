@@ -56,3 +56,30 @@ if (!instance_exists(obj_button_mark_as_phishing)) {
 if (!instance_exists(obj_button_mark_as_real)) {
 	realBtn = instance_create_depth(561, 405, -10050, obj_button_mark_as_real);
 }
+
+if (currentSms == 0) {
+	draw_set_font(fnt_common);
+	draw_text_ext_color(105, 274, "__________________________", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (hovering_over_link1) {
+		draw_set_font(fnt_common_10);
+		draw_text_ext_color(105, 350, "http://banca-verifica-secure.com", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	}
+}
+
+if (currentSms == 3) {
+	draw_set_font(fnt_common);
+	draw_text_ext_color(259, 241, "________________________", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (hovering_over_link4) {
+		draw_set_font(fnt_common_10);
+		draw_text_ext_color(105, 350, "http://premio-vinci-subito.com", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	}
+}
+
+if (currentSms == 4) {
+	draw_set_font(fnt_common);
+	draw_text_ext_color(269, 241, "_______________", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	if (hovering_over_link5) {
+		draw_set_font(fnt_common_10);
+		draw_text_ext_color(105, 350, "http://amason.com", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+	}
+}
