@@ -1,24 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_open_book",
+  "%Name":"obj_book_right_arrow",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_open_book",
+  "name":"obj_book_right_arrow",
   "overriddenProperties":[],
   "parent":{
     "name":"User Interface",
     "path":"folders/Objects/User Interface.yy",
   },
-  "parentObjectId":{
-    "name":"obj_overlay",
-    "path":"objects/obj_overlay/obj_overlay.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -37,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_open_book",
-    "path":"sprites/spr_open_book/spr_open_book.yy",
+    "name":"spr_right_arrow",
+    "path":"sprites/spr_right_arrow/spr_right_arrow.yy",
   },
   "spriteMaskId":null,
   "visible":true,

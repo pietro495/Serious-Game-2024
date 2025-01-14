@@ -8,7 +8,7 @@ var text_y = 18; // Posizione Y del testo
 var height = 32; // Altezza iniziale della finestra del dialogo
 var border = 5; // Spessore del bordo
 var padding = 16; // Spazio interno alla finestra
-    
+
 // Calcola l'altezza del testo del messaggio corrente
 	
 height = string_height(currentDialog.msg); 

@@ -37,5 +37,8 @@ if (nearbyNPC) {
 	
 		instance_create_depth(400, 340, -10000, obj_boss1_quiz);
 	}
+	if (global.game_data.gameStatus >= 25 && npcName == "obj_boss1") {
+		scr_showDialogue(obj_dialogue_boss1_defeat);
+	}
 }
 

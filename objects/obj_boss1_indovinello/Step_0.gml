@@ -15,8 +15,8 @@ hovering_over_bait = (computed_mouse_x > 595 && computed_mouse_x < 679 && comput
 var click_processed = false;
 
 if (!click_processed && hovering_over_lens && mouse_check_button_pressed(mb_left)) {
-    if (array_contains(currentOrder, "lentlentee")) {
-		array_delete_value(currentOrder, "");
+    if (array_contains(currentOrder, "lente")) {
+		array_delete_value(currentOrder, "lente");
 	} else {
 		array_push(currentOrder, "lente");
 	}
@@ -36,8 +36,8 @@ if (!click_processed && hovering_over_pw && mouse_check_button_pressed(mb_left))
 	}
 }
 if (!click_processed && hovering_over_bait && mouse_check_button_pressed(mb_left)) {
-    if (array_contains(currentOrder, "escaesca")) {
-		array_delete_value(currentOrder, "");
+    if (array_contains(currentOrder, "esca")) {
+		array_delete_value(currentOrder, "esca");
 	} else {
 		array_push(currentOrder, "esca");
 	}

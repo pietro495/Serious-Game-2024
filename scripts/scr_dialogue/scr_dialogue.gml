@@ -32,6 +32,12 @@ function Dialogue() constructor{
 
 	    // Aggiorna il dialogo precedente
 	    previousDialog = _t;
+		
+		// Play cue sound
+		if (audio_is_playing(snd_dialogue)) {
+			audio_stop_sound(snd_dialogue);
+		}
+		audio_play_sound(snd_dialogue, 1, false);
 
 	    return _t;
 	}
