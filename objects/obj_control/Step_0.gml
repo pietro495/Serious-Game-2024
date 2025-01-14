@@ -31,19 +31,13 @@ if (global.game_data.gameStatus >= 0 && room_get_name(room) != "rm_credits" && r
 	if (!instance_exists(obj_inventory_book)) {
 		instance_create_depth(748, 52, -5000, obj_inventory_book);
 	}
-	if (global.game_data.gameStatus < 4) {
-		if (!instance_exists(obj_inventory_help)) {
-			instance_create_depth(676, 52, -5000, obj_inventory_help);
-		}
-	} else {
-		if (!instance_exists(obj_inventory_help)) {
-			instance_create_depth(604, 52, -5000, obj_inventory_help);
-		}
+	if (!instance_exists(obj_inventory_help)) {
+		instance_create_depth(676, 52, -5000, obj_inventory_help);
 	}
 }
 if (global.game_data.gameStatus >= 4 && room_get_name(room) != "rm_credits" && room_get_name(room) != "rm_menu" && room_get_name(room) != "rm_choose_sprite") {
 	if (!instance_exists(obj_inventory_taccuino)) {
-		instance_create_depth(676, 52, -5000, obj_inventory_taccuino);
+		instance_create_depth(604, 52, -5000, obj_inventory_taccuino);
 	}
 }
 
@@ -53,8 +47,6 @@ if (global.game_data.gameStatus >= 0 && room_get_name(room) != "rm_credits" && r
 		instance_create_depth(16, 16, -5000, obj_objective);
 	}
 }
-
-show_debug_message(global.game_data.gameStatus);
 
 if (room_get_name(room) == "rm_menu") {
 	if(file_exists("save.txt")) {

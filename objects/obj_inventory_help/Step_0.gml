@@ -9,7 +9,7 @@ var center_y = viewport_coord[1];
 var computed_mouse_x = mouse_x - cam_x;
 var computed_mouse_y = mouse_y - cam_y;
 
-var isHovering = global.game_data.gameStatus < 4 ? computed_mouse_x > 640 && computed_mouse_x < 711 && computed_mouse_y > 16 && computed_mouse_y < 88 : computed_mouse_x > 568 && computed_mouse_x < 639 && computed_mouse_y > 16 && computed_mouse_y < 88;
+var isHovering = computed_mouse_x > 640 && computed_mouse_x < 711 && computed_mouse_y > 16 && computed_mouse_y < 88;
 
 if (isHovering) {
     if (mouse_check_button_pressed(mb_left) && !instance_exists(obj_open_help) && !instance_exists(obj_dialogue_parent) && !instance_exists(obj_overlay)) {

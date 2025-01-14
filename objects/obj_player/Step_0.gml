@@ -121,26 +121,6 @@ else {
 	audio_listener_set_position(0,x,y,0);
 }
 
-// Check for collisions with NPCs in a rectangle. Look for the parent NPC object (obj_par_npc)
-/* nearbyNPC = collision_rectangle(x-lookRange, y-lookRange, x+lookRange, y+lookRange, obj_par_npc, false, true);
- if (nearbyNPC) {
-	 // Play greeting sound
-	 if (!hasGreeted) {
-		audio_play_sound(snd_greeting01, 1, false);
-		hasGreeted = true;
-	 }
-		
-	 show_debug_message("obj_player has found an NPC");
- } else {
-	// Reset greeting
-	if (hasGreeted) {
-		hasGreeted = false;
-	}
-	 
-	 show_debug_message("obj_player hasn't found anything");
- }*/
-
-// Depth sorting
 depth = -y;
 
 var cam_x = camera_get_view_x(view_camera[0]);
@@ -150,11 +130,3 @@ var cam_y = camera_get_view_y(view_camera[0]);
 var view_w = camera_get_view_width(view_camera[0]);
 var view_h = camera_get_view_height(view_camera[0]);
 /*
-show_debug_message(cam_x);
-show_debug_message(cam_y);
-show_debug_message(mouse_x - cam_x);
-show_debug_message(mouse_y - cam_y);
-*/
-
-//show_debug_message(sprite_index)
-

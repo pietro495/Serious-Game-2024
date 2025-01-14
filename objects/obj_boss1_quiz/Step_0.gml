@@ -5,8 +5,8 @@ var cam_y = camera_get_view_y(view_camera[0]);
 var computed_mouse_x = mouse_x - cam_x;
 var computed_mouse_y = mouse_y - cam_y;
 
-show_debug_message(computed_mouse_x);
-show_debug_message(computed_mouse_y);
+//show_debug_message(computed_mouse_x);
+//show_debug_message(computed_mouse_y);
 
 hovering_over_phishing = (computed_mouse_x > 81 && computed_mouse_x < 351 && computed_mouse_y > 528 && computed_mouse_y < 562);
 hovering_over_real = (computed_mouse_x > 466 && computed_mouse_x < 738 && computed_mouse_y > 528 && computed_mouse_y < 562);
