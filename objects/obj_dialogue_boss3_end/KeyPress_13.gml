@@ -8,12 +8,24 @@ if (dialog.count() <= 0) {
 	}
 	alarm[0] = 10;
 	
-	global.game_data.gameStatus = 31;
-	global.playerControl = false;
-	
 	if (instance_exists(obj_dialogue_parent)) {
 		instance_destroy(obj_dialogue_parent);
 	}
+	if (instance_exists(obj_objective)) {
+		instance_destroy(obj_objective);
+	}
+	if (instance_exists(obj_inventory_book)) {
+		instance_destroy(obj_inventory_book);
+	}
+	if (instance_exists(obj_inventory_help)) {
+		instance_destroy(obj_inventory_help);
+	}
+	if (instance_exists(obj_inventory_taccuino)) {
+		instance_destroy(obj_inventory_taccuino);
+	}
+	global.game_data.gameStatus = 31;
+	global.playerControl = false;
+	room_goto(rm_credits);
 } else {
 	currentDialog = dialog.pop(); 
 }

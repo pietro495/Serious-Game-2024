@@ -31,11 +31,7 @@ if (nearbyNPC) {
 		scr_showDialogue(obj_dialogue_street_lamentele);
 	}
 	if (global.game_data.gameStatus == 24 && npcName == "obj_boss1") {
-		var viewport_coord = scr_get_viewport_coord();
-		var center_x = viewport_coord[0];
-		var center_y = viewport_coord[1]; 
-	
-		instance_create_depth(400, 340, -10000, obj_boss1_quiz);
+		scr_showDialogue(obj_dialogue_boss1_start);
 	}
 	if (global.game_data.gameStatus >= 25 && npcName == "obj_boss1") {
 		scr_showDialogue(obj_dialogue_boss1_defeat);

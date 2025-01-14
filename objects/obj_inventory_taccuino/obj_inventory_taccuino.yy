@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_inventory_book",
-    "path":"sprites/spr_inventory_book/spr_inventory_book.yy",
+    "name":"spr_inventory_notes",
+    "path":"sprites/spr_inventory_notes/spr_inventory_notes.yy",
   },
   "spriteMaskId":null,
   "visible":true,

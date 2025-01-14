@@ -35,7 +35,7 @@ draw_text_ext_color(48, 200, userLives, lineHeight, textWidth, c_black, c_black,
 draw_set_font(fnt_common_16_bold);
 draw_text_ext_color(48, 240, "Tempo rimanente per rispondere a questa domanda: " + string(remainingTime), lineHeight, textWidth, c_red, c_red, c_red, c_red, image_alpha);
 
-if (!instance_exists(obj_button_quiz_next_street)) {
+if (!instance_exists(obj_button_quiz_next_final)) {
 	nextQuestionBtn = instance_create_depth(635, 717, -10050, obj_button_quiz_next_final);
 } else {
 	if (array_length(global.current_answers) == global.current_question + 1) {

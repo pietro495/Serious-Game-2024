@@ -1,17 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_main_menu_control",
+  "%Name":"obj_dialogue_boss1_start",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":13,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_main_menu_control",
+  "name":"obj_dialogue_boss1_start",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objects/Menu.yy",
+    "name":"Dialogue",
+    "path":"folders/Objects/Dialogue.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_dialogue_parent",
+    "path":"objects/obj_dialogue_parent/obj_dialogue_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

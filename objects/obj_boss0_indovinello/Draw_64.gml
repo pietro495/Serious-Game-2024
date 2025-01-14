@@ -20,3 +20,7 @@ draw_self();
 // Draw text
 draw_set_font(fnt_common);
 draw_text_ext_color(105, 102, welcome, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+
+if (!instance_exists(obj_button_boss0_next)) {
+	instance_create_depth(550, 480, -10050, obj_button_boss0_next);
+}

@@ -33,6 +33,9 @@ if (!instance_exists(obj_boss1_shield)) {
 if (!instance_exists(obj_boss1_phishing)) {
 	instance_create_depth(600, 340, -10050, obj_boss1_phishing);
 }
+if (!instance_exists(obj_button_boss1_next)) {
+	instance_create_depth(550, 500, -10050, obj_button_boss1_next);
+}
 
 var orderString = "";
 

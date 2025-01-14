@@ -27,7 +27,7 @@ switch sequenceState {
 }
 
 // Draw inventory
-if (global.game_data.gameStatus >= 0) {
+if (global.game_data.gameStatus >= 0 && room_get_name(room) != "rm_credits" && room_get_name(room) != "rm_menu" && room_get_name(room) != "rm_choose_sprite") {
 	if (!instance_exists(obj_inventory_book)) {
 		instance_create_depth(748, 52, -5000, obj_inventory_book);
 	}
@@ -41,17 +41,30 @@ if (global.game_data.gameStatus >= 0) {
 		}
 	}
 }
-if (global.game_data.gameStatus >= 4) {
+if (global.game_data.gameStatus >= 4 && room_get_name(room) != "rm_credits" && room_get_name(room) != "rm_menu" && room_get_name(room) != "rm_choose_sprite") {
 	if (!instance_exists(obj_inventory_taccuino)) {
 		instance_create_depth(676, 52, -5000, obj_inventory_taccuino);
 	}
 }
 
 // Draw objective
-if (global.game_data.gameStatus >= 0) {
+if (global.game_data.gameStatus >= 0 && room_get_name(room) != "rm_credits" && room_get_name(room) != "rm_menu" && room_get_name(room) != "rm_choose_sprite") {
 	if (!instance_exists(obj_objective)) {
 		instance_create_depth(16, 16, -5000, obj_objective);
 	}
 }
 
 show_debug_message(global.game_data.gameStatus);
+
+if (room_get_name(room) == "rm_menu") {
+	if(file_exists("save.txt")) {
+		instance_create_depth(725, 128, -10000, obj_button_load);
+		instance_create_depth(725, 292, -10000, obj_button_new);
+		instance_create_depth(725, 456, -10000, obj_button_help);
+		instance_create_depth(725, 620, -10000, obj_button_exit);
+	} else {
+		instance_create_depth(725, 170, -10000, obj_button_new);
+		instance_create_depth(725, 334, -10000, obj_button_help);
+		instance_create_depth(725, 498, -10000, obj_button_exit);
+	}
+}
