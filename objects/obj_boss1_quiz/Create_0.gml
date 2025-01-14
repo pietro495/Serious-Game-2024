@@ -48,7 +48,7 @@ emails = [
 		subject: "Oggetto: Nuovi contenuti in arrivo su Netflix",
 		from: "Da: Servizio di Streaming (info@netflix.com)",
 		to: "A: te",
-		body: "Ciao utente,\nGennaio sarà un mese entusiasmante su Netflix! Ecco alcune delle novità in arrivo:\n\nSerie Originale: \"Detective Digitale\" (dal 12 gennaio)\nFilm: \"Il mondo nascosto\" (disponibile ora)\nDocumentario: \"Cyber Sicurezza per Tutti\" (dal 20 gennaio)\n\nAccedi ora per scoprire il catalogo completo: Clicca qui\n\nGrazie per far parte della nostra community,\nIl Team di [Servizio di Streaming]",
+		body: "Ciao utente,\nGennaio sarà un mese entusiasmante su Netflix! Ecco alcune delle novità in arrivo:\n\nSerie Originale: \"Detective Digitale\" (dal 12 gennaio)\nFilm: \"Il mondo nascosto\" (disponibile ora)\nDocumentario: \"Cyber Sicurezza per Tutti\" (dal 20 gennaio)\n\nAccedi ora per scoprire il catalogo completo: Clicca qui\n\nGrazie per far parte della nostra community,\nIl Team di Netflix",
 		isFake: false,
 		clues: false,
 		userSelection: noone,

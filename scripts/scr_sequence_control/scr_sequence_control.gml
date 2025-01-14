@@ -43,3 +43,13 @@ function scr_journalist_end() {
 	global.playerControl = true;
 	room_goto(rm_street);
 }
+
+function scr_liutenant_run_end() {
+	global.playerControl = false;
+	global.game_data.gameStatus = 28;
+}
+
+function scr_liutenant_defeat_end() {
+	global.playerControl = false;
+	global.game_data.gameStatus = 30;
+}

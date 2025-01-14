@@ -28,7 +28,9 @@ ds_map_add(description, 23, "Entra nell'edificio");
 ds_map_add(description, 24, "Sconfiggi l'hacker");
 ds_map_add(description, 25, "Supera l'indovinello della porta");
 ds_map_add(description, 26, "Vai al piano successivo");
-ds_map_add(description, 27, "TBD");
+ds_map_add(description, 27, "Parla con il tenente");
+ds_map_add(description, 28, "Parla con il tenente");
+ds_map_add(description, 29, "Sconfiggi il tenente");
 
 draw_self();
 

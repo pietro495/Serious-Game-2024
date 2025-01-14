@@ -31,6 +31,15 @@ if (global.game_data.gameStatus >= 0) {
 	if (!instance_exists(obj_inventory_book)) {
 		instance_create_depth(748, 52, -5000, obj_inventory_book);
 	}
+	if (global.game_data.gameStatus < 4) {
+		if (!instance_exists(obj_inventory_help)) {
+			instance_create_depth(676, 52, -5000, obj_inventory_help);
+		}
+	} else {
+		if (!instance_exists(obj_inventory_help)) {
+			instance_create_depth(604, 52, -5000, obj_inventory_help);
+		}
+	}
 }
 if (global.game_data.gameStatus >= 4) {
 	if (!instance_exists(obj_inventory_taccuino)) {
@@ -44,3 +53,5 @@ if (global.game_data.gameStatus >= 0) {
 		instance_create_depth(16, 16, -5000, obj_objective);
 	}
 }
+
+show_debug_message(global.game_data.gameStatus);

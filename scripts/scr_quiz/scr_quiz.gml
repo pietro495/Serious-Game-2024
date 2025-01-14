@@ -15,6 +15,8 @@ function show_quiz_question(quizName) {
 	var question_instance = noone;
 	if (quizName == "street") {
 		question_instance = instance_create_depth(400, 437, -10001, obj_question_sprite_street)
+	} else if (quizName == "final") {
+		question_instance = instance_create_depth(400, 437, -10001, obj_question_sprite_final)
 	} else {
 		question_instance = instance_create_depth(400, 437, -10001, obj_question_sprite)
 	}
@@ -44,6 +46,13 @@ function show_quiz_question(quizName) {
 				answer_instance = instance_create_depth(210, i > 1 ? 632 : 525, -10001, obj_answer_sprite_street)
 			} else {
 				answer_instance = instance_create_depth(210 + 379, i > 1 ? 632 : 525, -10001, obj_answer_sprite_street)
+			}
+		}
+		if (quizName == "final") {
+			if (i % 2 == 0) { // pari
+				answer_instance = instance_create_depth(210, i > 1 ? 632 : 525, -10001, obj_answer_sprite_final)
+			} else {
+				answer_instance = instance_create_depth(210 + 379, i > 1 ? 632 : 525, -10001, obj_answer_sprite_final)
 			}
 		}
 		

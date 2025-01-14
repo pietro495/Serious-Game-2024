@@ -7,7 +7,7 @@
 	room_goto(rm_boss_1);
 }*/
 
-if (!instance_exists(obj_overlay)) {
+if (!instance_exists(obj_overlay) && nearbyPlayer) {
 	if (global.game_data.gameStatus == 24) {
 		scr_showDialogue(obj_dialogue_boss1_cantenter);
 	} else if (global.game_data.gameStatus == 25) {

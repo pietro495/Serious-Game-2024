@@ -1,6 +1,7 @@
 /// @description Open blackboard
 
 var can_click_on_hover = (
+	nearbyPlayer &&
 	!instance_exists(obj_omnitechoffice_password) && 
 	!instance_exists(obj_overlay) &&
 	!instance_exists(obj_dialogue_parent) &&

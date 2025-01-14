@@ -30,7 +30,11 @@
 	24 - L'utente è nella prima stanza e deve battere il nemico
 	25 - L'utente è nella prima stanza e deve superare l'indovinello
 	26 - L'utente è nella prima stanza e ha superato l'indovinello
-	27 - L'utente è dal boss
+	27 - L'utente è dal boss e la sequenza parte
+	28 - L'utente è dal boss e la sequenza finisce, parte il dialogo
+	29 - L'utente è dal boss e il dialogo finisce, parte il quizzone
+	30 - L'utente ha sconfitto il boss
+	31 - Gioco finito, partono i credits
 */
  
 global.game_data = {

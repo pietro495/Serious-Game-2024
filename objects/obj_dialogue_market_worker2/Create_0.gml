@@ -19,7 +19,7 @@ dialog.add(global.game_data.dialogueSprite,"*... lavora al computer*");
 dialog.add(global.game_data.dialogueSprite,"Ecco fatto. Sa, sto lavorando ad un'indagine per trovare il colpevole di una serie di cyberattacchi in città e ho trovato qualcosa di molto interessante sul vostro terminale...");
 dialog.add(global.game_data.dialogueSprite,"In ogni caso, assicuratevi di avere un sistema di backup automatico attivo e, se dovesse ricapitare di essere vittima di un simile attacco, spegnete i computer non necessari e impedite l'accesso a internet per evitare che l'infezione si diffonda. ");
 dialog.add(spr_dialogue_worker2,"Grazie mille per il suo aiuto. Non avrei mai pensato che un supermercato potesse essere vittima di un attacco del genere.");
-dialog.add(global.game_data.dialogueSprite,"Purtroppo, i criminali informatici non fanno distinzioni. Spero che possiate risolvere presto. Buona giornata");
+dialog.add(global.game_data.dialogueSprite,"Purtroppo, i criminali informatici non fanno distinzioni. Spero che possiate risolvere presto. Buona giornata.\n (ndr: per leggere di più sul ransomware, apri il libro in alto a destra)");
 dialog.add(spr_dialogue_worker3,"FINALMENTE!!!");
 
 global.game_data.gameStatus = 19;

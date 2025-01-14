@@ -144,5 +144,5 @@ if (remainingTime <= 0) {
 	} else {
 		process_end();
 	}
-	remainingTime = 1;
+	remainingTime = 35;
 }
