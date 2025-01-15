@@ -39,13 +39,3 @@ if (global.computed_mouse_x > 568 && global.computed_mouse_x < 639 && global.com
 		}
     }
 }
-
-
-// Hand pointer
-var hovered_object = instance_position(mouse_x, mouse_y, obj_inventory_book);
-
-if (hovered_object != noone) {
-	window_set_cursor(cr_handpoint);
-} else {
-	window_set_cursor(cr_arrow);
-}

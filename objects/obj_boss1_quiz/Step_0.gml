@@ -8,12 +8,6 @@ hovering_over_link2 = (global.computed_mouse_x > 271 && global.computed_mouse_x 
 hovering_over_link4 = (global.computed_mouse_x > 371 && global.computed_mouse_x < 436 && global.computed_mouse_y > 399 && global.computed_mouse_y < 412); 
 hovering_over_link5 = (global.computed_mouse_x > 137 && global.computed_mouse_x < 315 && global.computed_mouse_y > 399 && global.computed_mouse_y < 412); 
 
-if (hovering_over_phishing || hovering_over_real || hovering_over_next) {
-	window_set_cursor(cr_handpoint);
-} else {
-	window_set_cursor(cr_arrow);
-}
-
 var click_processed = false;
 
 function process_end() {

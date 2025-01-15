@@ -8,12 +8,6 @@ hovering_over_link1 = (global.computed_mouse_x > 134 && global.computed_mouse_x 
 hovering_over_link4 = (global.computed_mouse_x > 169 && global.computed_mouse_x < 240 && global.computed_mouse_y > 352 && global.computed_mouse_y < 364);
 hovering_over_link5 = (global.computed_mouse_x > 339 && global.computed_mouse_x < 409 && global.computed_mouse_y > 352 && global.computed_mouse_y < 364);
 
-if (hovering_over_phishing || hovering_over_real || hovering_over_next || hovering_over_prev) {
-	window_set_cursor(cr_handpoint);
-} else {
-	window_set_cursor(cr_arrow);
-}
-
 var click_processed = false;
 
 if (!click_processed && hovering_over_phishing && mouse_check_button_pressed(mb_left)) {
