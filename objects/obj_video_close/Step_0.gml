@@ -9,4 +9,6 @@ if (hovering_over_btn && mouse_check_button_pressed(mb_left)) {
 	global.playerControl = true;
 	
 	instance_destroy();
+	
+	audio_play_sound(snd_omnitechoffice, 1, true);
 }

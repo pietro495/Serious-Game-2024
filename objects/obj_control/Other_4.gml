@@ -14,8 +14,8 @@ switch room {
 	} break;
 	case rm_johnsmith_bar: {
 		audio_stop_all();
-		if (!audio_is_playing(snd_johnsmith)) {
-			audio_play_sound(snd_johnsmith, 1, true);
+		if (!audio_is_playing(snd_johnsmiths_bar)) {
+			audio_play_sound(snd_johnsmiths_bar, 1, true);
 		}
 	} break;
 	case rm_boss_3: {
@@ -26,7 +26,7 @@ switch room {
 	} break;
 	case rm_omnitech_office: {
 		audio_stop_all();
-		if (!audio_is_playing(snd_omnitechoffice)) {
+		if (!audio_is_playing(snd_omnitechoffice) && !audio_is_playing(snd_phishing_tutorial)) {
 			audio_play_sound(snd_omnitechoffice, 1, true);
 		}
 	} break;
@@ -34,8 +34,8 @@ switch room {
 		if (audio_is_playing(snd_omnitechoffice)) {
 			audio_stop_sound(snd_omnitechoffice);		
 		}
-		if (audio_is_playing(snd_johnsmith)) {
-			audio_stop_sound(snd_johnsmith);		
+		if (audio_is_playing(snd_johnsmiths_bar)) {
+			audio_stop_sound(snd_johnsmiths_bar);		
 		}
 		if (audio_is_playing(snd_boss03)) {
 			audio_stop_sound(snd_boss03);		

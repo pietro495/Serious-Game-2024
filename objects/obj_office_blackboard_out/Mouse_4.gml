@@ -5,5 +5,8 @@ var can_click_on_hover = (
 );
 
 if (can_click_on_hover) {
-	instance_create_depth(400, 264, -10000, obj_office_blackboard);
+	var viewport_coord = scr_get_viewport_coord();
+	var center_y = viewport_coord[1];
+	
+	instance_create_depth(400, center_y, -10000, obj_office_notes);
 }

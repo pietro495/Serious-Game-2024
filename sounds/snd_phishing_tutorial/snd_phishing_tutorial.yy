@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_phishing_tutorial",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":27.028027,
+  "name":"snd_phishing_tutorial",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_phishing_tutorial.wav",
+  "type":1,
+  "volume":1.0,
+}

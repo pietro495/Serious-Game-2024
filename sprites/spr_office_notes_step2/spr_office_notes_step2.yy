@@ -23,7 +23,7 @@
   ],
   "name":"spr_office_notes_step2",
   "nineSlice":null,
-  "origin":3,
+  "origin":4,
   "parent":{
     "name":"Office",
     "path":"folders/Sprites/Environment/Office.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
+    "xorigin":384,
     "yorigin":184,
   },
   "swatchColours":null,

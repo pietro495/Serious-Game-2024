@@ -3,8 +3,8 @@
   "%Name":"obj_office_notes",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":27,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_office_notes",
@@ -13,7 +13,10 @@
     "name":"Office",
     "path":"folders/Objects/Environment/Office.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_overlay",
+    "path":"objects/obj_overlay/obj_overlay.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_office_blackboard",
-    "path":"sprites/spr_office_blackboard/spr_office_blackboard.yy",
+    "name":"spr_office_notes",
+    "path":"sprites/spr_office_notes/spr_office_notes.yy",
   },
   "spriteMaskId":null,
   "visible":true,
