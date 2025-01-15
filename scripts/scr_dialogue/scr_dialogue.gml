@@ -26,9 +26,14 @@ function Dialogue() constructor{
 	    array_delete(_dialogs, 0, 1);
 
 	    // Controlla se il personaggio è cambiato (sprite diverso)
-	    if (!is_undefined(previousDialog) && previousDialog.sprite != _t.sprite) {
+		if (_t.sprite == global.game_data.dialogueSprite) {
+			currentPosition = "left";
+		} else {
+			currentPosition = "right";
+		}
+	    /*if (!is_undefined(previousDialog) && previousDialog.sprite != _t.sprite) {
 	        currentPosition = (currentPosition == "left") ? "right" : "left";
-	    }
+	    }*/
 
 	    // Aggiorna il dialogo precedente
 	    previousDialog = _t;

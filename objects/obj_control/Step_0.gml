@@ -71,12 +71,12 @@ if (room_get_name(room) == "rm_menu") {
 
 
 // Hand pointer
-var hovered_object = instance_position(global.computed_mouse_x, global.computed_mouse_y, obj_inventory_taccuino) || 
+var hovered_object = ((instance_position(global.computed_mouse_x, global.computed_mouse_y, obj_inventory_taccuino) || 
 					 instance_position(global.computed_mouse_x, global.computed_mouse_y, obj_inventory_book) || 
 					 instance_position(global.computed_mouse_x, global.computed_mouse_y, obj_inventory_help) || 
 					 instance_position(global.computed_mouse_x, global.computed_mouse_y, obj_button_parent) ||
 					 instance_position(mouse_x, mouse_y, obj_button_parent) ||
-					 instance_position(mouse_x, mouse_y, obj_interactable);
+					 instance_position(mouse_x, mouse_y, obj_interactable)) && !instance_exists(obj_dialogue_parent) && !instance_exists(obj_overlay));
 
 if (hovered_object) {
 	window_set_cursor(cr_handpoint);
