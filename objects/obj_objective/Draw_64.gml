@@ -3,6 +3,8 @@
 var description = ds_map_create();
 ds_map_add(description, 0, "Apri il libro cliccando in alto a destra e informati sul phishing");
 ds_map_add(description, 50, "Esci dalla stanza e vai nell'ufficio della OmniTech");
+ds_map_add(description, 55, "Cerca un modo per entrare negli uffici della OmniTech");
+ds_map_add(description, 60, "Entra negli uffici della OmniTech");
 ds_map_add(description, 100, "Apri il computer della OmniTech. Potrebbe esser necessaria una password");
 ds_map_add(description, 150, "Accedi al computer della OmniTech e analizza le email");
 ds_map_add(description, 200, "Esci dalla stanza e vai all'internet cafè");

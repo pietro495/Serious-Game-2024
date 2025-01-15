@@ -5,6 +5,8 @@
 	-1 - Game start
 	0 - Il giocatore ha parlato con il tenente nella room firstPlay
 	1 50 - Il giocatore ha letto il libro nella room firstPlay
+	55 - L'utente è nella OmniTech Street
+	60 - L'utente ha risolto l'indovinello nella strada OmniTech
 	2 100 - L'utente è nell'ufficio del tizio della OmniTech
 	3 150 - L'utente è nell'ufficio del tizio della OmniTech e ha sbloccato il computer
 	4 200 - L'utente è nell'ufficio del tizio della OmniTech e ha superato il minigioco

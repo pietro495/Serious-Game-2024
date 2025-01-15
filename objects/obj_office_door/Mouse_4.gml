@@ -4,8 +4,8 @@ if (!instance_exists(obj_overlay) && !instance_exists(obj_dialogue_parent) && ne
 	if (global.game_data.gameStatus == 0) {
 		scr_showDialogue(obj_dialogue_office_readBook);
 	} else if (global.game_data.gameStatus == 50) {
-		global.game_data.gameStatus = 100;
-		room_goto(rm_omnitech_office);
+		global.game_data.gameStatus = 55;
+		room_goto(rm_omnitech_street);
 	} else if (global.game_data.gameStatus == 600 || global.game_data.gameStatus == 1000) {
 		scr_showDialogue(obj_dialogue_cafe_cantexit);
 	} else if (global.game_data.gameStatus == 650) {
