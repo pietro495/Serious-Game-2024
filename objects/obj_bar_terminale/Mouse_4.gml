@@ -1,7 +1,7 @@
 /// @description Open terminal
 
 if (nearbyPlayer) {
-	if (global.game_data.gameStatus == 8) {
+	if (global.game_data.gameStatus == 400) {
 		if (!instance_exists(obj_bar_terminale_clean) && !instance_exists(obj_overlay) && !instance_exists(obj_dialogue_parent)) {
 			var viewport_coord = scr_get_viewport_coord();
 			var center_x = viewport_coord[0];
@@ -11,7 +11,7 @@ if (nearbyPlayer) {
 		}
 	}
 
-	if (global.game_data.gameStatus == 9) {
+	if (global.game_data.gameStatus == 450) {
 		if (!instance_exists(obj_input_box_johnsmith)) {
 			instance_create_depth(0, 0, -10001, obj_input_box_johnsmith);
 		}

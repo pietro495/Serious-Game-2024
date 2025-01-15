@@ -61,7 +61,7 @@ if (mouse_check_button_pressed(mb_left) && point_in_rectangle(computed_mouse_x, 
 				scr_showDialogue(obj_dialogue_vicolo_doorOpen);
 				
 				global.playerControl = true;
-				global.game_data.gameStatus = 6;
+				global.game_data.gameStatus = 300;
 			}
 		} else {
 			show_message("Codice sbagliato. Riprova.");

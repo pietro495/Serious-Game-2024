@@ -22,4 +22,4 @@ dialog.add(spr_dialogue_worker2,"Grazie mille per il suo aiuto. Non avrei mai pe
 dialog.add(global.game_data.dialogueSprite,"Purtroppo, i criminali informatici non fanno distinzioni. Spero che possiate risolvere presto. Buona giornata.\n(ndr: per leggere di più sul ransomware, apri il libro in alto a destra)");
 dialog.add(spr_dialogue_worker3,"FINALMENTE!!!");
 
-global.game_data.gameStatus = 19;
+global.game_data.gameStatus = 950;

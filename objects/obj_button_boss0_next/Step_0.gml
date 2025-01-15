@@ -24,7 +24,7 @@ if (isHovering && mouse_check_button_pressed(mb_left)) {
 	if (instance_exists(obj_boss0_indovinello)) {
 		with (obj_boss0_indovinello) {
 			if (string_lower(obj_input_box_boss0.input_text) == "phishing") {
-				global.game_data.gameStatus = 23;
+				global.game_data.gameStatus = 1150;
 				global.playerControl = true;
 				if (!audio_is_playing(snd_door_unlock)) {
 					audio_play_sound(snd_door_unlock, 1, false);

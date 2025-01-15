@@ -5,4 +5,4 @@ if (global.game_data.gender == 0) {
 } else {
 	scr_playSequence(seq_vicolo_journalist_end_female);
 }
-global.game_data.gameStatus = 17;
+global.game_data.gameStatus = 850;

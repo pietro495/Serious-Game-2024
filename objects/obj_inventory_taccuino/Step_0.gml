@@ -10,8 +10,8 @@ var computed_mouse_x = mouse_x - cam_x;
 var computed_mouse_y = mouse_y - cam_y;
 
 if (computed_mouse_x > 568 && computed_mouse_x < 639 && computed_mouse_y > 16 && computed_mouse_y < 88) {
-    if (mouse_check_button_pressed(mb_left) && !instance_exists(obj_open_taccuino) && !instance_exists(obj_dialogue_parent) && !instance_exists(obj_overlay) && global.game_data.gameStatus >= 4) {
-		if (global.game_data.gameStatus <= 8 ) {
+    if (mouse_check_button_pressed(mb_left) && !instance_exists(obj_open_taccuino) && !instance_exists(obj_dialogue_parent) && !instance_exists(obj_overlay) && global.game_data.gameStatus >= 200) {
+		if (global.game_data.gameStatus <= 400 ) {
 			if (!instance_exists(obj_open_taccuino_1)) {
 				if (instance_exists(obj_open_taccuino_2)) {
 					instance_destroy(obj_open_taccuino_2);
@@ -21,7 +21,7 @@ if (computed_mouse_x > 568 && computed_mouse_x < 639 && computed_mouse_y > 16 &&
 				}
 				instance_create_depth(400, center_y, -10000, obj_open_taccuino_1);
 			}
-		} else if (global.game_data.gameStatus <= 18) {
+		} else if (global.game_data.gameStatus <= 900) {
 			if (!instance_exists(obj_open_taccuino_2)) {
 				if (instance_exists(obj_open_taccuino_1)) {
 					instance_destroy(obj_open_taccuino_1);

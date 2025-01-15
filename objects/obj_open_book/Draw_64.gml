@@ -44,14 +44,14 @@ draw_text_ext_color(60, 144, leftPage, lineHeight, textWidth, c_black, c_black, 
 draw_text_ext_color(420, 144, rightPage, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
 draw_set_halign(fa_left);
 
-if (global.game_data.gameStatus >= 9) {
+if (global.game_data.gameStatus >= 450) {
 	if (currentPage >= 1 && currentPage <= maxPage) {
 		if (currentPage == 1) {
 			draw_text_ext_color(580, 590, "Gestione password", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
 		}
 		if (currentPage == 2) {
 			draw_text_ext_color(95, 590, "Phishing", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
-			if (global.game_data.gameStatus >= 19) {
+			if (global.game_data.gameStatus >= 950) {
 				draw_text_ext_color(620, 590, "Ransomware", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
 			}
 		}
@@ -72,11 +72,11 @@ if (global.game_data.gameStatus >= 9) {
 				instance_destroy(obj_book_right_arrow);
 			}
 		} else {
-			if (currentPage == 1 || (currentPage == 2 && global.game_data.gameStatus >= 19)) {
+			if (currentPage == 1 || (currentPage == 2 && global.game_data.gameStatus >= 950)) {
 				if (!instance_exists(obj_book_right_arrow)) {
 					instance_create_depth(730, 600, -10060, obj_book_right_arrow);
 				}
-			} else if (currentPage == 2 && global.game_data.gameStatus < 19) {
+			} else if (currentPage == 2 && global.game_data.gameStatus < 950) {
 				if (instance_exists(obj_book_right_arrow)) {
 					instance_destroy(obj_book_right_arrow);
 				}

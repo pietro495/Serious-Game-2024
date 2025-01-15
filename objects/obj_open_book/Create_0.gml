@@ -16,5 +16,5 @@ ransomware2 = "E' inoltre molto utile fare dei backup regolari dei tuoi file: in
 global.playerControl = false;
 
 if (global.game_data.gameStatus == 0) {
-	global.game_data.gameStatus = 1;
+	global.game_data.gameStatus = 50;
 }

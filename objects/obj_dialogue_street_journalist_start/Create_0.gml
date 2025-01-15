@@ -10,4 +10,4 @@ dialog.add(global.game_data.dialogueSprite,"Beh, qualcosa si. State attenti alle
 dialog.add(spr_dialogue_journalist,"E quali sarebbero queste password adeguate? Può mostrarmene qualcuna?");
 dialog.add(global.game_data.dialogueSprite,"Volentieri.");
 
-global.game_data.gameStatus = 16;
+global.game_data.gameStatus = 800;

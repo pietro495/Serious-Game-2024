@@ -11,7 +11,7 @@ help = "COMANDI\n\nFrecce direzionali: movimento\n\nInvio: per mandare avanti i 
 global.playerControl = false;
 
 if (global.game_data.gameStatus == 0) {
-	global.game_data.gameStatus = 1;
+	global.game_data.gameStatus = 50;
 }
 
 instance_create_depth(0, 0, -10050, obj_video);

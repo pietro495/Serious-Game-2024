@@ -1,21 +1,14 @@
 /// @description Exit the room
 
-/*if (global.game_data.gameStatus == 22) {
-	scr_showDialogue(obj_dialogue_boss0_cantenter);
-} else if (global.game_data.gameStatus >= 23) {
-	global.game_data.gameStatus = 24;
-	room_goto(rm_boss_1);
-}*/
-
 if (!instance_exists(obj_overlay) && nearbyPlayer) {
-	if (global.game_data.gameStatus == 24) {
+	if (global.game_data.gameStatus == 1200) {
 		scr_showDialogue(obj_dialogue_boss1_cantenter);
-	} else if (global.game_data.gameStatus == 25) {
+	} else if (global.game_data.gameStatus == 1250) {
 		if (!instance_exists(obj_boss1_indovinello) && !instance_exists(obj_overlay) && !instance_exists(obj_dialogue_parent)) {
 			instance_create_depth(400, 310, -10000, obj_boss1_indovinello);
 		}
-	} else if (global.game_data.gameStatus >= 26) {
-		global.game_data.gameStatus = 27;
+	} else if (global.game_data.gameStatus >= 1300) {
+		global.game_data.gameStatus = 1350;
 		room_goto(rm_boss_3);
 	}
 }

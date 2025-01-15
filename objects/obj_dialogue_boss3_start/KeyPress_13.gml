@@ -8,7 +8,7 @@ if (dialog.count() <= 0) {
 	}
 	alarm[0] = 10;
 	
-	global.game_data.gameStatus = 29;
+	global.game_data.gameStatus = 1450;
 	global.playerControl = false;
 	
 	if (instance_exists(obj_dialogue_parent)) {

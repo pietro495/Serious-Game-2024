@@ -11,9 +11,9 @@ hovering_over_prev = (computed_mouse_x > 46 && computed_mouse_x < 84 && computed
 var click_processed = false;
 
 if (!click_processed && hovering_over_next && mouse_check_button_pressed(mb_left) && currentPage < maxPage) {
-    if (global.game_data.gameStatus >= 9 && currentPage == 1) {
+    if (global.game_data.gameStatus >= 450 && currentPage == 1) {
 		currentPage = 2;
-	} else if (global.game_data.gameStatus >= 19 && currentPage == 2) {
+	} else if (global.game_data.gameStatus >= 950 && currentPage == 2) {
 		currentPage = 3;
 	}
 	

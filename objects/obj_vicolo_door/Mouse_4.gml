@@ -3,7 +3,7 @@
 if (nearbyPlayer) {
 	with (obj_vicolo_control) {
 		if (hasUnlockedDoor) {
-			global.game_data.gameStatus = 7;
+			global.game_data.gameStatus = 350;
 			room_goto(rm_johnsmith_bar);
 		} else {
 			if (!instance_exists(obj_dialogue_parent) && !instance_exists(obj_overlay)) {

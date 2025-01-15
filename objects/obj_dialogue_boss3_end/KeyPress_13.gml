@@ -23,7 +23,7 @@ if (dialog.count() <= 0) {
 	if (instance_exists(obj_inventory_taccuino)) {
 		instance_destroy(obj_inventory_taccuino);
 	}
-	global.game_data.gameStatus = 31;
+	global.game_data.gameStatus = 1550;
 	global.playerControl = false;
 	room_goto(rm_credits);
 } else {

@@ -11,4 +11,4 @@ dialog.add(global.game_data.dialogueSprite,"E, per favore, non lasciare bigliett
 dialog.add(spr_dialogue_johnsmith,"Assolutamente. Grazie detective.");
 dialog.add(global.game_data.dialogueSprite,"Credo sia arrivato il momento di tornare in ufficio a mettere insieme i pezzi del puzzle.");
 
-global.game_data.gameStatus = 11;
+global.game_data.gameStatus = 550;

@@ -16,4 +16,4 @@ dialog.add(global.game_data.dialogueSprite,"Ottima idea, non proteggere un termi
 dialog.add(global.game_data.dialogueSprite,"Ti consiglio di impostare una password di almeno 8 caratteri contenente almeno un numero, una lettera maiuscola, una lettera minuscola e un carattere speciale.");
 dialog.add(global.game_data.dialogueSprite,"In generale, più una password è lunga, più tempo richiede per essere scoperta, a patto che non contenga dei termini o parole comunemente usati o che fanno riferimento ai tuoi dati personali.");
 
-global.game_data.gameStatus = 8;
+global.game_data.gameStatus = 400;

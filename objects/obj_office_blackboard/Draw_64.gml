@@ -19,11 +19,11 @@ draw_self();
 // Draw text
 draw_set_font(fnt_common_16);
 
-if (global.game_data.gameStatus >= 4 && global.game_data.gameStatus <= 8 ) {
+if (global.game_data.gameStatus >= 200 && global.game_data.gameStatus <= 400 ) {
 	draw_text_ext_color(105, 102, hint1, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
-} else if (global.game_data.gameStatus >= 9 && global.game_data.gameStatus <= 18) {
+} else if (global.game_data.gameStatus >= 450 && global.game_data.gameStatus <= 900) {
 	draw_text_ext_color(105, 102, hint2, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
-} else if (global.game_data.gameStatus >= 19) {
+} else if (global.game_data.gameStatus >= 950) {
 	draw_text_ext_color(105, 102, hint3, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
 }
 

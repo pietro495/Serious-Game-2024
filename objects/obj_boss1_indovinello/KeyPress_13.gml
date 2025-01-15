@@ -20,7 +20,7 @@ if (array_equals(currentOrder, correctOrder)) {
 		instance_destroy(obj_boss1_indovinello);
 	}
 	
-	global.game_data.gameStatus = 26;
+	global.game_data.gameStatus = 1300;
 	show_message("La porta si è aperta!");
 } else {
     show_message("Ordine sbagliato.");

@@ -35,7 +35,7 @@ function scr_first_play_end() {
 
 function scr_journalist_start() {
 	global.playerControl = false;
-	global.game_data.gameStatus = 15;
+	global.game_data.gameStatus = 750;
 	room_goto(rm_street);
 }
 
@@ -46,10 +46,10 @@ function scr_journalist_end() {
 
 function scr_liutenant_run_end() {
 	global.playerControl = false;
-	global.game_data.gameStatus = 28;
+	global.game_data.gameStatus = 1400;
 }
 
 function scr_liutenant_defeat_end() {
 	global.playerControl = false;
-	global.game_data.gameStatus = 30;
+	global.game_data.gameStatus = 1500;
 }

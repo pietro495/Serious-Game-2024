@@ -11,7 +11,7 @@ lineHeight = 28;
 emailText = "From: hacker@hacker.hack\nTo: anziano@scam.com\nSubject: Update your account!\n\nClick here to log in: http://facebok.com";
 
 global.playerControl = false;
-global.game_data.gameStatus = 13;
+global.game_data.gameStatus = 650;
 
 clues = [
     { clue: "Sender email looks suspicious (hacker@hacker.hack)", type: "sender" },

@@ -1,3 +1,3 @@
 /// @description Show dialogue
 
-global.game_data.gameStatus = 30;
+global.game_data.gameStatus = 1500;

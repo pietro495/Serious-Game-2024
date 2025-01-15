@@ -34,15 +34,15 @@ if (!collision_point(x+vx, y, obj_par_environment, true, true) && !collision_poi
 		npcIndex = nearbyNPC.object_index;
 		npcName = object_get_name(npcIndex);
 		if (npcName == "obj_johnsmith") {
-			if (global.game_data.gameStatus == 7 || global.game_data.gameStatus == 10) {
+			if (global.game_data.gameStatus == 350 || global.game_data.gameStatus == 500) {
 				npcPrompt = scr_showPrompt(nearbyNPC, nearbyNPC.x, nearbyNPC.y - nearbyNPC.sprite_height - 30);
 			}
 		} else if (npcName == "obj_journalist") {
-			if (global.game_data.gameStatus == 16) {
+			if (global.game_data.gameStatus == 800) {
 				npcPrompt = scr_showPrompt(nearbyNPC, nearbyNPC.x, nearbyNPC.y - nearbyNPC.sprite_height - 30);
 			}
 		} else if (npcName == "obj_worker2" || npcName == "obj_worker3") {
-			if (global.game_data.gameStatus == 18) {
+			if (global.game_data.gameStatus == 900) {
 				npcPrompt = scr_showPrompt(nearbyNPC, nearbyNPC.x, nearbyNPC.y - nearbyNPC.sprite_height - 30);
 			}
 		} else if (npcName != "obj_johnsmith") {

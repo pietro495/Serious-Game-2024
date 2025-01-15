@@ -1,10 +1,10 @@
 /// @description Email setup
 
 global.playerControl = false;
-if (global.game_data.gameStatus == 12) {
-	global.game_data.gameStatus = 13;
-} else if (global.game_data.gameStatus == 20) {
-	global.game_data.gameStatus = 21;
+if (global.game_data.gameStatus == 600) {
+	global.game_data.gameStatus = 650;
+} else if (global.game_data.gameStatus == 1000) {
+	global.game_data.gameStatus = 1050;
 }
 
 padding = 16;
