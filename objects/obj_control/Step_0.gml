@@ -1,5 +1,13 @@
 /// @description Deal with sequences by state
 
+// Otteniamo la posizione della telecamera
+var cam_x = camera_get_view_x(view_camera[0]);
+var cam_y = camera_get_view_y(view_camera[0]);
+
+// Calcoliamo la posizione del mouse rispetto alla vista
+global.computed_mouse_x = mouse_x - cam_x;
+global.computed_mouse_y = mouse_y - cam_y;
+
 //Control sequences
 switch sequenceState {
 	case seqState.playing: {

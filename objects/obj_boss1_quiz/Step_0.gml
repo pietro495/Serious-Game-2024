@@ -1,21 +1,12 @@
 /// @description Hover and camera
-var cam_x = camera_get_view_x(view_camera[0]);
-var cam_y = camera_get_view_y(view_camera[0]);
-
-var computed_mouse_x = mouse_x - cam_x;
-var computed_mouse_y = mouse_y - cam_y;
-
-//show_debug_message(computed_mouse_x);
-//show_debug_message(computed_mouse_y);
-
-hovering_over_phishing = (computed_mouse_x > 81 && computed_mouse_x < 351 && computed_mouse_y > 528 && computed_mouse_y < 562);
-hovering_over_real = (computed_mouse_x > 466 && computed_mouse_x < 738 && computed_mouse_y > 528 && computed_mouse_y < 562);
-hovering_over_next = (computed_mouse_x > 591 && computed_mouse_x < 694 && computed_mouse_y > 459 && computed_mouse_y < 480);
-hovering_over_end = (computed_mouse_x > 591 && computed_mouse_x < 694 && computed_mouse_y > 459 && computed_mouse_y < 480);
-hovering_over_link1 = (computed_mouse_x > 374 && computed_mouse_x < 443 && computed_mouse_y > 337 && computed_mouse_y < 352); 
-hovering_over_link2 = (computed_mouse_x > 271 && computed_mouse_x < 339 && computed_mouse_y > 367 && computed_mouse_y < 383); 
-hovering_over_link4 = (computed_mouse_x > 371 && computed_mouse_x < 436 && computed_mouse_y > 399 && computed_mouse_y < 412); 
-hovering_over_link5 = (computed_mouse_x > 137 && computed_mouse_x < 315 && computed_mouse_y > 399 && computed_mouse_y < 412); 
+hovering_over_phishing = (global.computed_mouse_x > 81 && global.computed_mouse_x < 351 && global.computed_mouse_y > 528 && global.computed_mouse_y < 562);
+hovering_over_real = (global.computed_mouse_x > 466 && global.computed_mouse_x < 738 && global.computed_mouse_y > 528 && global.computed_mouse_y < 562);
+hovering_over_next = (global.computed_mouse_x > 591 && global.computed_mouse_x < 694 && global.computed_mouse_y > 459 && global.computed_mouse_y < 480);
+hovering_over_end = (global.computed_mouse_x > 591 && global.computed_mouse_x < 694 && global.computed_mouse_y > 459 && global.computed_mouse_y < 480);
+hovering_over_link1 = (global.computed_mouse_x > 374 && global.computed_mouse_x < 443 && global.computed_mouse_y > 337 && global.computed_mouse_y < 352); 
+hovering_over_link2 = (global.computed_mouse_x > 271 && global.computed_mouse_x < 339 && global.computed_mouse_y > 367 && global.computed_mouse_y < 383); 
+hovering_over_link4 = (global.computed_mouse_x > 371 && global.computed_mouse_x < 436 && global.computed_mouse_y > 399 && global.computed_mouse_y < 412); 
+hovering_over_link5 = (global.computed_mouse_x > 137 && global.computed_mouse_x < 315 && global.computed_mouse_y > 399 && global.computed_mouse_y < 412); 
 
 if (hovering_over_phishing || hovering_over_real || hovering_over_next) {
 	window_set_cursor(cr_handpoint);
