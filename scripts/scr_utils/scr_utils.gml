@@ -4,40 +4,40 @@
 /** gameStatusIndex = description
 	-1 - Game start
 	0 - Il giocatore ha parlato con il tenente nella room firstPlay
-	1 50 - Il giocatore ha letto il libro nella room firstPlay
+	50 - Il giocatore ha letto il libro nella room firstPlay
 	55 - L'utente è nella OmniTech Street
 	60 - L'utente ha risolto l'indovinello nella strada OmniTech
 	65 - L'utente è nell'ufficio del tizio della OmniTech e deve guardare il tutorial
-	2 100 - L'utente è nell'ufficio del tizio della OmniTech e ha guardato il tutorial
-	3 150 - L'utente è nell'ufficio del tizio della OmniTech e ha sbloccato il computer
-	4 200 - L'utente è nell'ufficio del tizio della OmniTech e ha superato il minigioco
-	5 250 - L'utente è all'esterno dell'internet cafè
-	6 300 - L'utente è all'esterno dell'internet cafè e ha sbloccato la porta
-	7 350 - L'utente è entrato nell'internet cafè
-	8 400 - L'utente è entrato nell'internet cafè, ha parlato con John Smith e deve accedere al terminale
-	9 450 - L'utente è entrato nell'internet cafè, ha parlato con John Smith e ha superato il minigioco del phishing, in attesa di inserimento password efficace
-	10 500 - L'utente è entrato nell'internet cafè, ha inserito una password efficace e deve parlare con John Smith
-	11 550 - L'utente ha parlato con John Smith dopo aver inserito una password efficace
-	12 600 - L'utente ha lasciato l'internet cafè e si trova nel suo ufficio
-	13 650 - L'utente è nell'ufficio e ha cliccato sulla lavagna
-	14 700 - L'utente è per strada e deve parlare con la giornalista
-	15 750 - L'utente ha parlato con la giornalista
-	16 800 - L'utente ha parlato con la giornalista e deve finire il minigioco
-	17 850 - L'utente ha finito il minigioco ed è entrato nel market
-	18 900 - L'utente è nel market e deve parlare con il commesso
-	19 950 - L'utente è nel market e ha parlato con il commesso, ora deve andare in ufficio
-	20 1000 - L'utente è in ufficio e deve aprire la lavagna
-	21 1050 - L'utente ha scoperto l'identità dell'hacker e deve uscire dall'ufficio
-	22 1100 - L'utente è all'esterno dell'edificio degli hacker e non ha sbloccato la porta
-	23 1150 - L'utente è all'esterno dell'edificio degli hacker e ha sbloccato la porta
-	24 1200 - L'utente è nella prima stanza e deve battere il nemico
-	25 1250 - L'utente è nella prima stanza e deve superare l'indovinello
-	26 1300 - L'utente è nella prima stanza e ha superato l'indovinello
-	27 1350 - L'utente è dal boss e la sequenza parte
-	28 1400 - L'utente è dal boss e la sequenza finisce, parte il dialogo
-	29 1450 - L'utente è dal boss e il dialogo finisce, parte il quizzone
-	30 1500 - L'utente ha sconfitto il boss
-	31 1550 - Gioco finito, partono i credits
+	100 - L'utente è nell'ufficio del tizio della OmniTech e ha guardato il tutorial
+	150 - L'utente è nell'ufficio del tizio della OmniTech e ha sbloccato il computer
+	200 - L'utente è nell'ufficio del tizio della OmniTech e ha superato il minigioco
+	250 - L'utente è all'esterno dell'internet cafè
+	300 - L'utente è all'esterno dell'internet cafè e ha sbloccato la porta
+	350 - L'utente è entrato nell'internet cafè
+	400 - L'utente è entrato nell'internet cafè, ha parlato con John Smith e deve accedere al terminale
+	450 - L'utente è entrato nell'internet cafè, ha parlato con John Smith e ha superato il minigioco del phishing, in attesa di inserimento password efficace
+	500 - L'utente è entrato nell'internet cafè, ha inserito una password efficace e deve parlare con John Smith
+	550 - L'utente ha parlato con John Smith dopo aver inserito una password efficace
+	600 - L'utente ha lasciato l'internet cafè e si trova nel suo ufficio
+	650 - L'utente è nell'ufficio e ha cliccato sulla lavagna
+	700 - L'utente è per strada e deve parlare con la giornalista
+	750 - L'utente ha parlato con la giornalista
+	800 - L'utente ha parlato con la giornalista e deve finire il minigioco
+	850 - L'utente ha finito il minigioco ed è entrato nel market
+	900 - L'utente è nel market e deve parlare con il commesso
+	950 - L'utente è nel market e ha parlato con il commesso, ora deve andare in ufficio
+	1000 - L'utente è in ufficio e deve aprire la lavagna
+	1050 - L'utente ha scoperto l'identità dell'hacker e deve uscire dall'ufficio
+	1100 - L'utente è all'esterno dell'edificio degli hacker e non ha sbloccato la porta
+	1150 - L'utente è all'esterno dell'edificio degli hacker e ha sbloccato la porta
+	1200 - L'utente è nella prima stanza e deve battere il nemico
+	1250 - L'utente è nella prima stanza e deve superare l'indovinello
+	1300 - L'utente è nella prima stanza e ha superato l'indovinello
+	1350 - L'utente è dal boss e la sequenza parte
+	1400 - L'utente è dal boss e la sequenza finisce, parte il dialogo
+	1450 - L'utente è dal boss e il dialogo finisce, parte il quizzone
+	1500 - L'utente ha sconfitto il boss
+	1550 - Gioco finito, partono i credits
 */
  
 global.game_data = {
