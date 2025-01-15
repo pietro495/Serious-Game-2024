@@ -9,7 +9,7 @@ if (nearbyPlayer) {
 			instance_create_depth(400, 300, -10000, obj_omnitechstreet_indovinello);
 		}
 	} else if (global.game_data.gameStatus == 60) {
-		global.game_data.gameStatus = 100;
+		global.game_data.gameStatus = 65;
 		room_goto(rm_omnitech_office);
 	}
 }

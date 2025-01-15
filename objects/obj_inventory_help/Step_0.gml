@@ -8,6 +8,11 @@ var isHovering = global.computed_mouse_x > 640 && global.computed_mouse_x < 711 
 
 if (isHovering) {
     if (mouse_check_button_pressed(mb_left) && !instance_exists(obj_open_help) && !instance_exists(obj_dialogue_parent) && !instance_exists(obj_overlay)) {
-		instance_create_depth(400, center_y, -10000, obj_open_help);
+		if (global.game_data.gameStatus == 65) {
+			instance_create_depth(768, 32, -10050, obj_video_close);
+			instance_create_depth(0, 0, -10050, obj_video_fullscreen);
+		} else {
+			instance_create_depth(400, center_y, -10000, obj_open_help);
+		}
     }
 }

@@ -14,4 +14,8 @@ if (global.game_data.gameStatus == 0) {
 	global.game_data.gameStatus = 50;
 }
 
-instance_create_depth(0, 0, -10050, obj_video);
+if (global.game_data.gameStatus >= 100) {
+	if (!instance_exists(obj_video)) {
+		instance_create_depth(0, 0, -10050, obj_video);
+	}
+}

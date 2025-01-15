@@ -21,5 +21,7 @@ draw_self();
 draw_set_font(fnt_common);
 draw_set_halign(fa_left);
 draw_text_ext_color(60, 144, help, lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
-draw_text_ext_color(420, 144, "TUTORIAL MINIGIOCO PHISHING", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+if (global.game_data.gameStatus >= 100) {
+	draw_text_ext_color(420, 144, "TUTORIAL MINIGIOCO PHISHING", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
+}
 draw_set_halign(fa_left);

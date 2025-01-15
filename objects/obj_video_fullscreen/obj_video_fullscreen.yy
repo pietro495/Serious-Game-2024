@@ -1,15 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_omnitechoffice_control",
+  "%Name":"obj_video_fullscreen",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":27,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_omnitechoffice_control",
+  "name":"obj_video_fullscreen",
   "overriddenProperties":[],
   "parent":{
-    "name":"Omnitech Office",
-    "path":"folders/Objects/Environment/Omnitech Office.yy",
+    "name":"Video",
+    "path":"folders/Objects/Video.yy",
   },
   "parentObjectId":null,
   "persistent":false,

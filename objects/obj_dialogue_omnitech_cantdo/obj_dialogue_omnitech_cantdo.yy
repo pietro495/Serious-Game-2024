@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_office_door",
+  "%Name":"obj_dialogue_omnitech_cantdo",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_office_door",
+  "name":"obj_dialogue_omnitech_cantdo",
   "overriddenProperties":[],
   "parent":{
-    "name":"Office",
-    "path":"folders/Objects/Environment/Office.yy",
+    "name":"Dialogue",
+    "path":"folders/Objects/Dialogue.yy",
   },
   "parentObjectId":{
-    "name":"obj_interactable",
-    "path":"objects/obj_interactable/obj_interactable.yy",
+    "name":"obj_dialogue_parent",
+    "path":"objects/obj_dialogue_parent/obj_dialogue_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_office_door",
-    "path":"sprites/spr_office_door/spr_office_door.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
