@@ -9,9 +9,10 @@ if (string_lower(obj_input_box_boss0.input_text) == "phishing") {
 	if (instance_exists(obj_input_box_boss0)) {
 		instance_destroy(obj_input_box_boss0);
 	}
-	if (instance_exists(obj_boss0_indovinello)) {
-		instance_destroy(obj_boss0_indovinello);
+	if (instance_exists(obj_boss0_help)) {
+		instance_destroy(obj_boss0_help);
 	}
+	instance_destroy();
     show_message("La porta si è aperta!");
 } else {
 	if (!audio_is_playing(snd_bad_password)) {

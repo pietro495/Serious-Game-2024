@@ -7,15 +7,18 @@ hovering_over_esci = (global.computed_mouse_x > 368 && global.computed_mouse_x <
 // Gestione del click del mouse
 if (mouse_check_button_pressed(mb_left) && pause) {
     if (hovering_over_continua) {
+		global.playerControl = true;
         pause = !pause;
     }
 
     if (hovering_over_salva) {
-        save_game();
+		global.playerControl = true;
 		pause = !pause;
+        save_game();
     }
 
     if (hovering_over_esci) {
+		global.playerControl = true;
 		pause = !pause;
         room_goto(rm_menu);
     }

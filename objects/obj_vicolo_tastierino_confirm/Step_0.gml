@@ -2,6 +2,11 @@
 // Verifica se il mouse è sopra l'oggetto
 if (mouse_check_button_pressed(mb_left) && point_in_rectangle(global.computed_mouse_x, global.computed_mouse_y, x - sprite_width / 2, y - sprite_height / 2, x + sprite_width / 2, y + sprite_height / 2)) {
 	with (obj_vicolo_tastierino) {
+		if (!array_contains(insertedCodes, currentCode)) {
+			
+		}
+		array_push(insertedCodes, currentCode);
+		
 		if (currentCode == correctCode) {
 			if (!audio_is_playing(snd_door_unlock)) {
 				if (instance_exists(obj_vicolo_tastierino)) {
@@ -42,6 +47,9 @@ if (mouse_check_button_pressed(mb_left) && point_in_rectangle(global.computed_mo
 				}
 				if (instance_exists(obj_vicolo_tastierino_confirm)) {
 					instance_destroy(obj_vicolo_tastierino_confirm);
+				}
+				if (instance_exists(obj_vicolo_help)) {
+					instance_destroy(obj_vicolo_help);
 				}
 				audio_play_sound(snd_door_unlock, 1, false);
 				currentCode = "";

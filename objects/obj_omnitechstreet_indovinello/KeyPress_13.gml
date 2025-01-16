@@ -12,6 +12,9 @@ if (string_lower(obj_input_box_omnitechstreet.input_text) == "hacker") {
 	if (instance_exists(obj_omnitechstreet_indovinello)) {
 		instance_destroy(obj_omnitechstreet_indovinello);
 	}
+	if (instance_exists(obj_omnitechstreet_help)) {
+		instance_destroy(obj_omnitechstreet_help);
+	}
     show_message("La porta si è aperta!");
 } else {
 	if (!audio_is_playing(snd_bad_password)) {

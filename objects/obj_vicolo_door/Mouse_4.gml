@@ -1,6 +1,6 @@
 /// @description Enter the bar
 
-if (nearbyPlayer) {
+if (nearbyPlayer && (!instance_exists(obj_menu_pause) || (instance_exists(obj_menu_pause) && !obj_menu_pause.pause))) {
 	with (obj_vicolo_control) {
 		if (hasUnlockedDoor) {
 			global.game_data.gameStatus = 350;
@@ -49,6 +49,9 @@ if (nearbyPlayer) {
 				}
 				if (!instance_exists(obj_vicolo_tastierino_confirm)) {
 					instance_create_depth(490, 567, -10001, obj_vicolo_tastierino_confirm);
+				}
+				if (!instance_exists(obj_vicolo_help)) {
+					instance_create_depth(400, 80, -10001, obj_vicolo_help);
 				}
 			}
 		}

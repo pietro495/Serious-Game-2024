@@ -1,6 +1,6 @@
 /// @description Go into another room
 
-if (!instance_exists(obj_overlay) && !instance_exists(obj_dialogue_parent) && nearbyPlayer) {
+if (!instance_exists(obj_overlay) && !instance_exists(obj_dialogue_parent) && nearbyPlayer && (!instance_exists(obj_menu_pause) || (instance_exists(obj_menu_pause) && !obj_menu_pause.pause))) {
 	if (global.game_data.gameStatus == 0) {
 		scr_showDialogue(obj_dialogue_office_readBook);
 	} else if (global.game_data.gameStatus == 50) {

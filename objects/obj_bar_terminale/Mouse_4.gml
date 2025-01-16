@@ -1,6 +1,6 @@
 /// @description Open terminal
 
-if (nearbyPlayer) {
+if (nearbyPlayer && (!instance_exists(obj_menu_pause) || (instance_exists(obj_menu_pause) && !obj_menu_pause.pause))) {
 	if (global.game_data.gameStatus == 400) {
 		if (!instance_exists(obj_bar_terminale_clean) && !instance_exists(obj_overlay) && !instance_exists(obj_dialogue_parent)) {
 			var viewport_coord = scr_get_viewport_coord();

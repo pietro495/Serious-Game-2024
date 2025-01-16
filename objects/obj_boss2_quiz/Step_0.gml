@@ -84,7 +84,7 @@ if (!click_processed && hovering_over_real && mouse_check_button_pressed(mb_left
 }
 if (!click_processed && hovering_over_next && mouse_check_button_pressed(mb_left) && currentMail + 1 < array_length(passwords)) {
 	currentMail += 1;
-	remainingTime = 10;
+	remainingTime = 15;
 	click_processed = true;
 }
 
@@ -136,5 +136,5 @@ if (remainingTime <= 0) {
 	} else {
 		process_end();
 	}
-	remainingTime = 10;
+	remainingTime = 15;
 }

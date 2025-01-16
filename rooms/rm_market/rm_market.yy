@@ -40,8 +40,8 @@
   ],
   "name":"rm_market",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

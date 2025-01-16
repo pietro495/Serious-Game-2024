@@ -1,7 +1,7 @@
 /// @description Open computer
 
 var can_click_on_hover = (
-	nearbyPlayer && !instance_exists(obj_overlay) && !instance_exists(obj_dialogue_parent)
+	nearbyPlayer && !instance_exists(obj_overlay) && !instance_exists(obj_dialogue_parent) && (!instance_exists(obj_menu_pause) || (instance_exists(obj_menu_pause) && !obj_menu_pause.pause))
 );
 
 if (can_click_on_hover) {

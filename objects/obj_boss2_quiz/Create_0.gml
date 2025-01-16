@@ -11,7 +11,7 @@ padding = 16;
 textWidth = 600;
 lineHeight = 28;
 currentMail = 0;
-remainingTime = 10;
+remainingTime = 15;
 frameCounter = 0;
 
 global.playerControl = false;

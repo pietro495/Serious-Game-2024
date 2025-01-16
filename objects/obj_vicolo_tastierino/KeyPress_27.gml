@@ -38,3 +38,6 @@ if (instance_exists(obj_vicolo_tastierino_canc)) {
 if (instance_exists(obj_vicolo_tastierino_confirm)) {
 	instance_destroy(obj_vicolo_tastierino_confirm);
 }
+if (instance_exists(obj_vicolo_help)) {
+	instance_destroy(obj_vicolo_help);
+}

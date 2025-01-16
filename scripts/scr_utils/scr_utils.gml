@@ -133,7 +133,8 @@ function is_valid_password(password) {
     var has_uppercase = false;
     var has_lowercase = false;
     var has_special = false;
-	
+    var has_number = false; // Nuovo flag per i numeri
+
     var special_chars = "!?#@;:.-_";
 
     for (var i = 1; i <= length; i++) {
@@ -151,15 +152,19 @@ function is_valid_password(password) {
         else if (string_pos(char, special_chars) > 0) {
             has_special = true;
         }
+        // Controlla se è un numero
+        else if (ord(char) >= 48 && ord(char) <= 57) { // 0-9
+            has_number = true;
+        }
 
         // Se tutti i requisiti sono soddisfatti, interrompi il ciclo
-        if (has_uppercase && has_lowercase && has_special) {
+        if (has_uppercase && has_lowercase && has_special && has_number) {
             break;
         }
     }
 
     // Ritorna true solo se tutti i flag sono true
-    return has_uppercase && has_lowercase && has_special;
+    return has_uppercase && has_lowercase && has_special && has_number;
 }
 
 function array_index_of(arr, value) {

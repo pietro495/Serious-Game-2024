@@ -8,6 +8,7 @@ hovering_over_bait = (global.computed_mouse_x > 595 && global.computed_mouse_x <
 var click_processed = false;
 
 if (!click_processed && hovering_over_lens && mouse_check_button_pressed(mb_left)) {
+	audio_play_sound(snd_phishing_answer, 1, false, 3);	
     if (array_contains(currentOrder, "lente")) {
 		array_delete_value(currentOrder, "lente");
 	} else {
@@ -15,6 +16,7 @@ if (!click_processed && hovering_over_lens && mouse_check_button_pressed(mb_left
 	}
 }
 if (!click_processed && hovering_over_hacker && mouse_check_button_pressed(mb_left)) {
+	audio_play_sound(snd_phishing_answer, 1, false, 3);	
     if (array_contains(currentOrder, "hacker")) {
 		array_delete_value(currentOrder, "hacker");
 	} else {
@@ -22,6 +24,7 @@ if (!click_processed && hovering_over_hacker && mouse_check_button_pressed(mb_le
 	}
 }
 if (!click_processed && hovering_over_pw && mouse_check_button_pressed(mb_left)) {
+	audio_play_sound(snd_phishing_answer, 1, false, 3);	
     if (array_contains(currentOrder, "password")) {
 		array_delete_value(currentOrder, "password");
 	} else {
@@ -29,6 +32,7 @@ if (!click_processed && hovering_over_pw && mouse_check_button_pressed(mb_left))
 	}
 }
 if (!click_processed && hovering_over_bait && mouse_check_button_pressed(mb_left)) {
+	audio_play_sound(snd_phishing_answer, 1, false, 3);	
     if (array_contains(currentOrder, "esca")) {
 		array_delete_value(currentOrder, "esca");
 	} else {

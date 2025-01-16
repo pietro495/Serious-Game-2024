@@ -19,7 +19,7 @@ emails = [
 		subject: "Oggetto: Aiuto per un'inchiesta sul dark web",
 		from: "Da: Mary Valley (mary.valley@cityjournal.com)",
 		to: "A: te",
-		body: "Caro Detective,\nmi Mary Valley, sono una giornalista investigativa del City Journal. Sto lavorando a un'inchiesta su un mercato nero online che sembra vendere dati rubati di cittadini della nostra città. Le tracce che ho seguito mi hanno portato a credere che dietro ci sia qualcuno molto vicino a noi, forse un pezzo grosso.\nSe è interessato, posso condividere le informazioni che ho raccolto finora. Credo che la sua esperienza sia fondamentale per portare alla luce la verità. Posso fidarmi di lei?\n\nAttendo una sua risposta.\nMaria",
+		body: "Caro Detective,\nmi Mary Valley, sono una giornalista investigativa del City Journal. Sto lavorando a un'inchiesta su un mercato nero online che sembra vendere dati rubati di cittadini della nostra città. Le tracce che ho seguito mi hanno portato a credere che dietro ci sia qualcuno molto vicino a noi, forse un pezzo grosso.\nSe è interessato, posso condividere le informazioni che ho raccolto finora. Credo che la sua esperienza sia fondamentale per portare alla luce la verità. Posso fidarmi di lei?\n\nAttendo una sua risposta.\nMary",
 		isFake: false,
 		clues: [],
 		userSelection: noone,

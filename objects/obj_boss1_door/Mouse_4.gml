@@ -1,6 +1,6 @@
 /// @description Exit the room
 
-if (!instance_exists(obj_overlay) && nearbyPlayer) {
+if (!instance_exists(obj_overlay) && nearbyPlayer && (!instance_exists(obj_menu_pause) || (instance_exists(obj_menu_pause) && !obj_menu_pause.pause))) {
 	if (global.game_data.gameStatus == 1200) {
 		scr_showDialogue(obj_dialogue_boss1_cantenter);
 	} else if (global.game_data.gameStatus == 1250) {
