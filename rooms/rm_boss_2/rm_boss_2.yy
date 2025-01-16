@@ -21,6 +21,7 @@
     {"name":"inst_6640C930","path":"rooms/rm_boss_2/rm_boss_2.yy",},
     {"name":"inst_78D43FE4","path":"rooms/rm_boss_2/rm_boss_2.yy",},
     {"name":"inst_5936E422","path":"rooms/rm_boss_2/rm_boss_2.yy",},
+    {"name":"inst_365C543B","path":"rooms/rm_boss_2/rm_boss_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -43,6 +44,7 @@
         {"$GMRInstance":"v1","%Name":"inst_21CC1DCC_1_2_1_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_21CC1DCC_1_2_1_3","objectId":{"name":"obj_save","path":"objects/obj_save/obj_save.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":-64.0,},
         {"$GMRInstance":"v1","%Name":"inst_78D43FE4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_78D43FE4","objectId":{"name":"obj_boss2","path":"objects/obj_boss2/obj_boss2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":4.6667,"scaleY":4.6667,"x":1120.0,"y":544.0,},
         {"$GMRInstance":"v1","%Name":"inst_5936E422","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5936E422","objectId":{"name":"obj_boss2_door","path":"objects/obj_boss2_door/obj_boss2_door.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":652.0,"y":252.0,},
+        {"$GMRInstance":"v1","%Name":"inst_365C543B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_365C543B","objectId":{"name":"obj_boss2_computer","path":"objects/obj_boss2_computer/obj_boss2_computer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":823.0,"y":304.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":300,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_bg_boss2","path":"sprites/spr_bg_boss2/spr_bg_boss2.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
