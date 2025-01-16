@@ -6,4 +6,4 @@ draw_set_alpha(1);
 
 draw_self();
 
-instance_create_depth(400, 600, -10060, obj_button_backmenu);
+instance_create_depth(400, 650, -10060, obj_button_backmenu);

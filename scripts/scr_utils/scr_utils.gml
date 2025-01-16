@@ -36,6 +36,8 @@
 	1200 - L'utente è nella prima stanza e deve battere il nemico
 	1250 - L'utente è nella prima stanza e deve superare l'indovinello
 	1300 - L'utente è nella prima stanza e ha superato l'indovinello
+	1310 - L'utente è nella seconda stanza e deve battere il nemico
+	1320 - L'utente è nella seconda stanza e ha battuto il nemico
 	1350 - L'utente è dal boss e la sequenza parte
 	1400 - L'utente è dal boss e la sequenza finisce, parte il dialogo
 	1450 - L'utente è dal boss e il dialogo finisce, parte il quizzone

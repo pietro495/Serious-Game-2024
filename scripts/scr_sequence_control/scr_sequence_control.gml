@@ -57,5 +57,6 @@ function scr_liutenant_defeat_end() {
 function scr_wakeup() {
 	global.playerControl = true;
 	global.game_data.gameStatus = 1000;
+	obj_player.image_alpha = 1;
 	room_goto(rm_office_1);
 }

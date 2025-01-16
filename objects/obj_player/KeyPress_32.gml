@@ -38,5 +38,11 @@ if (nearbyNPC && !instance_exists(obj_overlay)) {
 	if (global.game_data.gameStatus >= 1250 && npcName == "obj_boss1") {
 		scr_showDialogue(obj_dialogue_boss1_defeat);
 	}
+	if (global.game_data.gameStatus == 1310 && npcName == "obj_boss2") {
+		scr_showDialogue(obj_dialogue_boss2_start);
+	}
+	if (global.game_data.gameStatus >= 1320 && npcName == "obj_boss2") {
+		scr_showDialogue(obj_dialogue_boss2_defeat);
+	}
 }
 

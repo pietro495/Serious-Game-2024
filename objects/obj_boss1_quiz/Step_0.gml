@@ -72,6 +72,9 @@ function process_end() {
 		if (instance_exists(obj_button_mark_as_real)) {
 			instance_destroy(obj_button_mark_as_real);
 		}
+		if (!audio_is_playing(snd_success)) {
+			audio_play_sound(snd_success, 1, false);
+		}
 		scr_showDialogue(obj_dialogue_boss1_defeat);
 	}
 }
@@ -95,9 +98,7 @@ if (!click_processed && hovering_over_next && mouse_check_button_pressed(mb_left
     if (emails[currentMail].userSelection == noone) {
 		emails[currentMail].userSelection = "none";
 	}
-	if (!audio_is_playing(snd_phishing_answer)) {
-		audio_play_sound(snd_phishing_answer, 1, false, 3);
-	}
+
 	currentMail += 1;
 	remainingTime = 35;
 	click_processed = true;

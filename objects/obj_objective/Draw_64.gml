@@ -34,6 +34,8 @@ ds_map_add(description, 1150, "Entra nell'edificio");
 ds_map_add(description, 1200, "Sconfiggi l'hacker");
 ds_map_add(description, 1250, "Supera l'indovinello della porta");
 ds_map_add(description, 1300, "Vai al piano successivo");
+ds_map_add(description, 1310, "Sconfiggi l'hacker");
+ds_map_add(description, 1320, "Vai al piano successivo");
 ds_map_add(description, 1350, "Parla con il tenente");
 ds_map_add(description, 1400, "Parla con il tenente");
 ds_map_add(description, 1450, "Sconfiggi il tenente");
