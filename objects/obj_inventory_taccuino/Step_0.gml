@@ -16,7 +16,7 @@ if (global.computed_mouse_x > 568 && global.computed_mouse_x < 639 && global.com
 				}
 				instance_create_depth(400, center_y, -10000, obj_open_taccuino_1);
 			}
-		} else if (global.game_data.gameStatus <= 900) {
+		} else if (global.game_data.gameStatus < 1050) {
 			if (!instance_exists(obj_open_taccuino_2)) {
 				if (instance_exists(obj_open_taccuino_1)) {
 					instance_destroy(obj_open_taccuino_1);

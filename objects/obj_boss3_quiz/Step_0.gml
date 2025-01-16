@@ -47,6 +47,9 @@ if (remainingTime <= 0) {
 		}
 			
 		if (global.quizScore == array_length(global.quiz_questions[? "final"])) {
+			if (!audio_is_playing(snd_success)) {
+				audio_play_sound(snd_success, 1, false, 1, 0.5);
+			}
 			show_message("Complimenti! Hai risposto correttamente a tutte le domande!");
 			global.quizScore = 0;
 			global.current_question = 0;
@@ -58,6 +61,9 @@ if (remainingTime <= 0) {
 			instance_destroy(obj_button_quiz_next_final);
 		} else {
 			if (life > 1) {
+				if (!audio_is_playing(snd_fail)) {
+					audio_play_sound(snd_fail, 1, false);
+				}
 				show_message("Mi dispiace, ma non hai risposto correttamente a tutte le domande. Riprova.");
 				global.quizScore = 0;
 				global.current_question = 0;
@@ -69,6 +75,9 @@ if (remainingTime <= 0) {
 				remainingTime = 35;
 				show_quiz_question("final"); 
 			} else {
+				if (!audio_is_playing(snd_gameover)) {
+					audio_play_sound(snd_gameover, 1, false);
+				}
 				show_message("Game over! Riapri il gioco e ricomincia dall'ultimo salvataggio.");
 				game_end();
 			}

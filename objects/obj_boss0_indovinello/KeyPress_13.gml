@@ -14,6 +14,9 @@ if (string_lower(obj_input_box_boss0.input_text) == "phishing") {
 	}
     show_message("La porta si è aperta!");
 } else {
+	if (!audio_is_playing(snd_bad_password)) {
+		audio_play_sound(snd_bad_password, 1, false);
+	}
     show_message("Risposta sbagliata.");
 	obj_input_box_boss0.input_text = "";
 }

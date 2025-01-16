@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_johnsmiths_bar.mp3",
   "type":1,
-  "volume":0.6,
+  "volume":0.3,
 }

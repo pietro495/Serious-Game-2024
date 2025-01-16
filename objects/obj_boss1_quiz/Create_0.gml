@@ -57,7 +57,7 @@ emails = [
 		subject: "Oggetto: Urgente: Modifica delle condizioni del tuo contratto bancario",
 		from: "Da: Istituto San Paolo (assistenza@issp.it)",
 		to: "A: te",
-		body: "Gentile Cliente,\n\nLa informiamo che, a partire dal 31 gennaio 2025, entreranno in vigore alcune modifiche importanti ai termini e alle condizioni del suo contratto bancario. È necessario che lei confermi di aver letto e accettato i nuovi termini per continuare a usufruire dei nostri servizi senza interruzioni.\nPer procedere, acceda alla sua area clienti e confermi il suo consenso cliccando sul link di seguito: Modifica il tuo contratto ora\nQualora non completasse l’operazione entro 48 ore, il suo conto potrebbe essere temporaneamente sospeso.\nRestiamo a disposizione per eventuali chiarimenti.\n\nCordiali saluti,\nAssistenza Clienti Banca ISP",
+		body: "Gentile Cliente,\n\nLa informiamo che, a partire dal 31 gennaio 2025, entreranno in vigore alcune modifiche importanti ai termini e alle condizioni del suo contratto bancario. È necessario che lei confermi di aver letto e accettato i nuovi termini per continuare a usufruire dei nostri servizi senza interruzioni.\nPer procedere, acceda alla sua area clienti e confermi il suo consenso cliccando sul link di seguito: Modifica il tuo contratto ora\nQualora non completasse l'operazione entro 48 ore, il suo conto potrebbe essere temporaneamente sospeso.\nRestiamo a disposizione per eventuali chiarimenti.\n\nCordiali saluti,\nAssistenza Clienti Banca ISP",
 		isFake: true,
 		clues: [
 			

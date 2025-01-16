@@ -48,6 +48,13 @@ function show_quiz_question(quizName) {
 				answer_instance = instance_create_depth(210 + 379, i > 1 ? 632 : 525, -10001, obj_answer_sprite_street)
 			}
 		}
+		if (quizName == "bedroom") {
+			if (i % 2 == 0) { // pari
+				answer_instance = instance_create_depth(210, i > 1 ? 632 : 525, -10001, obj_answer_sprite_bedroom)
+			} else {
+				answer_instance = instance_create_depth(210 + 379, i > 1 ? 632 : 525, -10001, obj_answer_sprite_bedroom)
+			}
+		}
 		if (quizName == "final") {
 			if (i % 2 == 0) { // pari
 				answer_instance = instance_create_depth(210, i > 1 ? 632 : 525, -10001, obj_answer_sprite_final)

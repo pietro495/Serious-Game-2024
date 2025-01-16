@@ -28,4 +28,5 @@ if (isHovering && mouse_check_button_pressed(mb_left)) {
 			break;
 	}
 	global.current_answers[global.current_question] = letter;
+	audio_play_sound(snd_phishing_answer, 1, false, 3);
 }

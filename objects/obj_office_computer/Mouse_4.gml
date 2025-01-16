@@ -6,6 +6,8 @@ var can_click_on_hover = (
 
 if (can_click_on_hover) {
 	if (!instance_exists(obj_office_computer_open)) {
+		global.playerControl = false;
+		
 		var viewport_coord = scr_get_viewport_coord();
 		var center_y = viewport_coord[1];
 

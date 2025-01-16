@@ -20,6 +20,9 @@ global.quiz_questions[? "street"] = [
     {question_sprite: spr_quiz_pw_question4, options_sprites: [spr_quiz_pw_q4_a3, spr_quiz_pw_q4_a2, spr_quiz_pw_q4_a4, spr_quiz_pw_q4_a1], correct_option: 1}
 ];
 
+global.quiz_questions[? "bedroom"] = [
+    {question_sprite: spr_phishing_minigame_question, options_sprites: [spr_bedroom_quiz_q1_a1, spr_bedroom_quiz_q1_a2, spr_bedroom_quiz_q1_a3, spr_bedroom_quiz_q1_a4], correct_option: 1},
+];
 global.quiz_questions[? "final"] = [
     {question_sprite: spr_quiz_final_question1, options_sprites: [spr_quiz_final_q1_a1, spr_quiz_final_q1_a2, spr_quiz_final_q1_a3, spr_quiz_final_q1_a4], correct_option: 1},
     {question_sprite: spr_quiz_final_question2, options_sprites: [spr_quiz_final_q2_a1, spr_quiz_final_q2_a2, spr_quiz_final_q2_a3, spr_quiz_final_q2_a4], correct_option: 3},

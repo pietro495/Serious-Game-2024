@@ -13,7 +13,9 @@ if (nearbyNPC && !instance_exists(obj_overlay)) {
 		var center_x = viewport_coord[0];
 		var center_y = viewport_coord[1]; 
 	
-		instance_create_depth(16, center_y, -10000, obj_street_blackboard);
+		if (!instance_exists(obj_street_blackboard)) {
+			instance_create_depth(16, center_y, -10000, obj_street_blackboard);
+		}
 	}
 	if (global.game_data.gameStatus == 900 && npcName == "obj_worker3" && !instance_exists(obj_dialogue_parent)) {
 		scr_showDialogue(obj_dialogue_market_worker3);

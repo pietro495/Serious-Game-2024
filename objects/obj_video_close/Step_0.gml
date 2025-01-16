@@ -13,5 +13,5 @@ if (hovering_over_btn && mouse_check_button_pressed(mb_left)) {
 	if (audio_is_playing(snd_phishing_tutorial)) {
 		audio_stop_sound(snd_phishing_tutorial);
 	}
-	audio_play_sound(snd_omnitechoffice, 1, true);
+	audio_resume_sound(snd_omnitechoffice);
 }

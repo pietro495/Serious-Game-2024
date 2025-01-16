@@ -69,7 +69,7 @@ if (currentMail == 0) {
 if (currentMail == 3) {
 	draw_set_font(fnt_common);
 	draw_text_ext_color(169, 351, "_________", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
-	if (hovering_over_link1) {
+	if (hovering_over_link4) {
 		draw_set_font(fnt_common_10);
 		draw_text_ext_color(102, 480, "https://omniltech.xyz/cambio-password", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
 	}
@@ -78,7 +78,7 @@ if (currentMail == 3) {
 if (currentMail == 4) {
 	draw_set_font(fnt_common);
 	draw_text_ext_color(339, 351, "_________", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
-	if (hovering_over_link1) {
+	if (hovering_over_link5) {
 		draw_set_font(fnt_common_10);
 		draw_text_ext_color(102, 480, "https://omniltech.xyz/guarda-fattura", lineHeight, textWidth, c_black, c_black, c_black, c_black, image_alpha);
 	}

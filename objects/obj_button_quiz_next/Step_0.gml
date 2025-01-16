@@ -46,6 +46,9 @@ if (isHovering && mouse_check_button_pressed(mb_left) && array_length(global.cur
 		}
 			
 		if (global.quizScore == array_length(global.quiz_questions[? quizName])) {
+			if (!audio_is_playing(snd_success)) {
+				audio_play_sound(snd_success, 1, false, 1, 0.5);
+			}
 			show_message("Complimenti! Hai risposto correttamente a tutte le domande!");
 			global.quizScore = 0;
 			global.current_question = 0;
@@ -62,8 +65,14 @@ if (isHovering && mouse_check_button_pressed(mb_left) && array_length(global.cur
 			} else if (quizName == "street") {
 				instance_destroy(obj_street_quiz);
 				instance_destroy(obj_button_quiz_next_street);
+			} else if (quizName == "bedroom") {
+				instance_destroy(obj_bedroom_computer_quiz);
+				instance_destroy(obj_button_quiz_next_bedroom);
 			}
 		} else {
+			if (!audio_is_playing(snd_fail)) {
+				audio_play_sound(snd_fail, 1, false);
+			}
 			show_message("Mi dispiace, ma non hai risposto correttamente a tutte le domande. Riprova.");
 			global.quizScore = 0;
 			global.current_question = 0;

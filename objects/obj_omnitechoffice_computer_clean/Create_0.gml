@@ -28,7 +28,7 @@ emails = [
 		subject: "Oggetto: Manutenzione Programmata - 15 Gennaio 2024",
 		from: "Da: IT Support OmniTech (it-support@omnitech.com)",
 		to: "A: Tutti i dipendenti OmniTech",
-		body: "Gentili colleghi,\nVi informiamo che il giorno 15 gennaio 2024, dalle ore 22:00 alle 02:00, verrà effettuata una manutenzione programmata sui server aziendali. Durante questo intervallo di tempo, alcuni servizi (incluso l’accesso ai file condivisi e alla posta elettronica) potrebbero non essere disponibili.\nVi preghiamo di pianificare il vostro lavoro tenendo conto di questa interruzione.\nPer ulteriori dettagli, potete contattare il nostro help desk al numero interno 800-555-OMNI.\nGrazie per la comprensione.\nCordiali saluti,\nTeam IT OmniTech",
+		body: "Gentili colleghi,\nVi informiamo che il giorno 15 gennaio 2024, dalle ore 22:00 alle 02:00, verrà effettuata una manutenzione programmata sui server aziendali. Durante questo intervallo di tempo, alcuni servizi (incluso l'accesso ai file condivisi e alla posta elettronica) potrebbero non essere disponibili.\nVi preghiamo di pianificare il vostro lavoro tenendo conto di questa interruzione.\nPer ulteriori dettagli, potete contattare il nostro help desk al numero interno 800-555-OMNI.\nGrazie per la comprensione.\nCordiali saluti,\nTeam IT OmniTech",
 		isFake: false,
 		clues: [],
 		userSelection: noone,

@@ -29,9 +29,15 @@ function process_end() {
 		if (life > 0) {
 			life -= 1;
 			if (life <= 0) {
+				if (!audio_is_playing(snd_gameover)) {
+					audio_play_sound(snd_gameover, 1, false);
+				}
 				show_message("Game over! Riapri il gioco e ricomincia dall'ultimo salvataggio.");
 				game_end(); 
 			} else {
+				if (!audio_is_playing(snd_fail)) {
+					audio_play_sound(snd_fail, 1, false);
+				}
 				if (numberOfErrors == 1) {
 					show_message("Attenzione! Hai commesso 1 errore! Riprova dall'inizio!");
 				} else {
@@ -43,6 +49,9 @@ function process_end() {
 				}
 			}
 		} else {
+			if (!audio_is_playing(snd_gameover)) {
+				audio_play_sound(snd_gameover, 1, false);
+			}
 			show_message("Game over! Ricomincia dall'ultimo salvataggio.");
 			load_game();
 		}
@@ -69,16 +78,25 @@ function process_end() {
 
 if (!click_processed && hovering_over_phishing && mouse_check_button_pressed(mb_left)) {
     emails[currentMail].userSelection = "phishing";
+	if (!audio_is_playing(snd_phishing_answer)) {
+		audio_play_sound(snd_phishing_answer, 1, false, 3);
+	}
 	click_processed = true;
 }
 
 if (!click_processed && hovering_over_real && mouse_check_button_pressed(mb_left)) {
 	emails[currentMail].userSelection = "reale";
+	if (!audio_is_playing(snd_phishing_answer)) {
+		audio_play_sound(snd_phishing_answer, 1, false, 3);
+	}
 	click_processed = true;
 }
 if (!click_processed && hovering_over_next && mouse_check_button_pressed(mb_left) && currentMail + 1 < array_length(emails)) {
     if (emails[currentMail].userSelection == noone) {
 		emails[currentMail].userSelection = "none";
+	}
+	if (!audio_is_playing(snd_phishing_answer)) {
+		audio_play_sound(snd_phishing_answer, 1, false, 3);
 	}
 	currentMail += 1;
 	remainingTime = 35;

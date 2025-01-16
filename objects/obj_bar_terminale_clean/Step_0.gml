@@ -12,11 +12,17 @@ var click_processed = false;
  
 if (!click_processed && hovering_over_phishing && mouse_check_button_pressed(mb_left)) {
     sms[currentSms].userSelection = "phishing";
+	if (!audio_is_playing(snd_phishing_answer)) {
+		audio_play_sound(snd_phishing_answer, 1, false, 3);
+	}
 	click_processed = true;
 }
  
 if (!click_processed && hovering_over_real && mouse_check_button_pressed(mb_left)) {
 	sms[currentSms].userSelection = "reale";
+	if (!audio_is_playing(snd_phishing_answer)) {
+		audio_play_sound(snd_phishing_answer, 1, false, 3);
+	}
 	click_processed = true;
 }
 if (!click_processed && hovering_over_next && mouse_check_button_pressed(mb_left) && currentSms + 1 < array_length(sms)) {
@@ -47,6 +53,9 @@ if (!click_processed && hovering_over_end && mouse_check_button_pressed(mb_left)
 			}
 		}
 		if (numberOfErrors > 0) {
+			if (!audio_is_playing(snd_fail)) {
+				audio_play_sound(snd_fail, 1, false);
+			}
 			if (numberOfErrors == 1) {
 				show_message("Attenzione! Hai commesso 1 errore! Riprova dall'inizio!");
 			} else {
@@ -62,6 +71,9 @@ if (!click_processed && hovering_over_end && mouse_check_button_pressed(mb_left)
 			}
 		}
 	} else {
+		if (!audio_is_playing(snd_fail)) {
+			audio_play_sound(snd_fail, 1, false);
+		}
 		show_message("Attenzione! Non hai segnato tutti gli SMS come phishing o reale!");
 	}
 	click_processed = true;

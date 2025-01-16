@@ -12,7 +12,7 @@ if (isHovering) {
 			instance_create_depth(768, 32, -10050, obj_video_close);
 			instance_create_depth(0, 0, -10050, obj_video_fullscreen);
 			if (audio_is_playing(snd_omnitechoffice)) {
-				audio_stop_sound(snd_omnitechoffice);
+				audio_pause_sound(snd_omnitechoffice);
 			}
 			if (!audio_is_playing(snd_phishing_tutorial)) {
 				audio_play_sound(snd_phishing_tutorial, 1, false);

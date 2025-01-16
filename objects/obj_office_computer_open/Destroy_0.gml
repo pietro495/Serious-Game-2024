@@ -13,3 +13,6 @@ if (global.game_data.gameStatus < 750 && !showFirst) {
 } else if (global.game_data.gameStatus >= 750 && !showSecond) {
 	scr_showDialogue(obj_dialogue_office_annieThought);
 }
+
+
+global.playerControl = true;

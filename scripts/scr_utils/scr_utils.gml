@@ -25,7 +25,10 @@
 	800 - L'utente ha parlato con la giornalista e deve finire il minigioco
 	850 - L'utente ha finito il minigioco ed è entrato nel market
 	900 - L'utente è nel market e deve parlare con il commesso
-	950 - L'utente è nel market e ha parlato con il commesso, ora deve andare in ufficio
+	950 - L'utente è nel market e ha parlato con il commesso, ora deve andare a casa
+	951 - Clicca sul computer per controllare le mail (dialogue status)
+	955 - Clicca sul computer per controllare le mail
+	960 - Clicca sul letto e vai a dormire
 	1000 - L'utente è in ufficio e deve aprire la lavagna
 	1050 - L'utente ha scoperto l'identità dell'hacker e deve uscire dall'ufficio
 	1100 - L'utente è all'esterno dell'edificio degli hacker e non ha sbloccato la porta
