@@ -3,8 +3,8 @@
 // Inherit the parent event Create()
 event_inherited(); 
 
-dialog.add(global.game_data.dialogueSprite,"Ciao John.");
-dialog.add(spr_dialogue_johnsmith,"Ciao. Come hai fatto a entrare?");
+dialog.add(global.game_data.dialogueSprite,"Ciao Smith.");
+dialog.add(spr_dialogue_johnsmith,"Ciao. Come hai fatto a entrare? Ti ha aiutato il signor Anderson lì fuori?");
 dialog.add(global.game_data.dialogueSprite,"Ho trovato la tua carta di identità nella tua auto... Dovresti stare più attento a dove lasci i tuoi averi.");
 dialog.add(global.game_data.dialogueSprite,"Inoltre, non è assolutamente saggio impostare la tua password utilizzando informazioni personali. Mi è bastato usare la tua data di nascita per entrare nel cafè.");
 dialog.add(spr_dialogue_johnsmith,"Ah... riguardo a questo... qualcuno mi ha prosciugato il conto in banca, ma giuro di non aver fatto nulla di male.");

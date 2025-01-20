@@ -68,9 +68,7 @@
     {"$GMFolder":"","%Name":"Video","folderPath":"folders/Video.yy","name":"Video","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"phishing_tutorial_big.mp4","CopyToMask":-1,"filePath":"datafiles","name":"phishing_tutorial_big.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"phishing_tutorial_big.webm","CopyToMask":-1,"filePath":"datafiles","name":"phishing_tutorial_big.webm","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"phishing_tutorial.mp4","CopyToMask":-1,"filePath":"datafiles","name":"phishing_tutorial.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"phishing_tutorial.webm","CopyToMask":-1,"filePath":"datafiles","name":"phishing_tutorial.webm","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,

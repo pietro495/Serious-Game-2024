@@ -11,10 +11,10 @@ ds_map_add(description, 150, "Accedi al computer della OmniTech e analizza le em
 ds_map_add(description, 200, "Esci dalla stanza e vai all'internet cafè");
 ds_map_add(description, 250, "Cerca un modo per entrare nell'internet cafè");
 ds_map_add(description, 300, "Entra nell'internet cafè");
-ds_map_add(description, 350, "Parla con John Smith");
+ds_map_add(description, 350, "Parla con il signor Smith");
 ds_map_add(description, 400, "Accedi al terminale sulla destra nell'internet cafè");
 ds_map_add(description, 450, "Accedi al terminale sulla destra e inserisci una password efficace");
-ds_map_add(description, 500, "Parla con John Smith");
+ds_map_add(description, 500, "Parla con il signor Smith");
 ds_map_add(description, 550, "Esci dal bar e torna in ufficio");
 ds_map_add(description, 600, "Guarda la lavagna");
 ds_map_add(description, 650, "Esci dall'ufficio");

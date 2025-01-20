@@ -29,7 +29,7 @@ sms = [
 	},
 	{
 		number: "Numero: +39 345 123 4567 (Michael Smith)",
-		body: "Ciao John, sono tuo figlio. Questo è il mio nuovo numero, ho perso il vecchio telefono. Sto molto male e ho bisogno di aiuto urgente. Puoi mandarmi 1.000$ sul conto IBAN IT12X1234567890123456789? Grazie, ti voglio bene.",
+		body: "Ciao Smith, sono tuo figlio. Questo è il mio nuovo numero, ho perso il vecchio telefono. Sto molto male e ho bisogno di aiuto urgente. Puoi mandarmi 1.000$ sul conto IBAN IT12X1234567890123456789? Grazie, ti voglio bene.",
 		isFake: true,
 		clues: [
 			{ clue: "Il mittente richiede denaro in modo urgente, sfruttando una situazione emotiva per manipolare l'utente.",},
